@@ -1,0 +1,33 @@
+// Don't forget to CLONE config
+git clone https://gitlab.com/sis-cc/.stat-suite/dotstatsuite-config.git config
+
+// Get config ready
+yarn
+yarn dist
+
+// Spin up
+docker-compose up --build
+
+curl -X POST http://localhost:3004/admin/dataflows?api-key=secret
+
+// DE page
+http://localhost:7001
+
+// DLM page
+http://localhost:7000
+
+// Keycloak
+http://localhost:8080 - admin - password
+Realm: OECD client: app
+User: admin, Create group: admins, add user to it. Add protocol mapper to client, Group Membership. Not full group path.
+add http://localhost:7000, http://localhost:7001, http://localhost:93 and http://localhost:94 to its redirect uris and CORS.
+Make sure implicit flow is enabled.
+
+// Dataflow
+KH_NIS:DF_CULTURE(1.1)
+
+// Transfer URL
+http://localhost:93/swagger
+
+// Auth management
+http://localhost:94/swagger

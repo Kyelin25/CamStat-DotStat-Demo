@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+}
+
+:focus {
+  outline: 0 !important;
+}

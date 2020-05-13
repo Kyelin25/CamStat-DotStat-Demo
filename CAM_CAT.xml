@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v6.16.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF10</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2020-05-12T07:12:22.4504723+00:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:CategorySchemes>
+      <structure:CategoryScheme id="CAM_CAT" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.CategoryScheme=KH_NIS:CAM_CAT(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Topic</common:Name>
+        <common:Name xml:lang="km">ប្រធានបទ</common:Name>
+        <structure:Category id="AGRI" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI">
+          <common:Name xml:lang="en">Agriculture</common:Name>
+          <common:Name xml:lang="km">កសិកម្</common:Name>
+          <structure:Category id="YIELD" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI.YIELD">
+            <common:Name xml:lang="en">Yield</common:Name>
+          </structure:Category>
+          <structure:Category id="LIVESTOCK" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI.LIVESTOCK">
+            <common:Name xml:lang="en">Livestock</common:Name>
+          </structure:Category>
+          <structure:Category id="FOREST" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI.FOREST">
+            <common:Name xml:lang="en">Forestry</common:Name>
+          </structure:Category>
+          <structure:Category id="FISH" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI.FISH">
+            <common:Name xml:lang="en">Fisheries</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="DEMO" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).DEMO">
+          <common:Name xml:lang="en">Demography</common:Name>
+          <common:Name xml:lang="km">ប្រជាសាស្រ្ត</common:Name>
+        </structure:Category>
+        <structure:Category id="ECO" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).ECO">
+          <common:Name xml:lang="en">Economy</common:Name>
+          <common:Name xml:lang="km">សេដ្ឋកិច្</common:Name>
+          <structure:Category id="GDP" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).ECO.GDP">
+            <common:Name xml:lang="en">GDP</common:Name>
+          </structure:Category>
+          <structure:Category id="CPI" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).ECO.CPI">
+            <common:Name xml:lang="en">Consumer Price Index</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="EDU" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).EDU">
+          <common:Name xml:lang="en">Education</common:Name>
+          <common:Name xml:lang="km">អប់រំ</common:Name>
+          <structure:Category id="EDU_CHAR" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).EDU.EDU_CHAR">
+            <common:Name xml:lang="en">Educational Characteristic</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="EMP" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).EMP">
+          <common:Name xml:lang="en">Employment</common:Name>
+          <common:Name xml:lang="km">ភាពមានការងារ</common:Name>
+        </structure:Category>
+        <structure:Category id="ENV" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).ENV">
+          <common:Name xml:lang="en">Environment</common:Name>
+          <common:Name xml:lang="km">បរិស្ថាន</common:Name>
+        </structure:Category>
+        <structure:Category id="GENDER" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).GENDER">
+          <common:Name xml:lang="en">Gender</common:Name>
+          <common:Name xml:lang="km">យេនឌ័រ</common:Name>
+        </structure:Category>
+        <structure:Category id="GOV" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).GOV">
+          <common:Name xml:lang="en">Governance</common:Name>
+          <common:Name xml:lang="km">អភិបាលកិច្</common:Name>
+        </structure:Category>
+        <structure:Category id="HEALTH_NUT" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).HEALTH_NUT">
+          <common:Name xml:lang="en">Health and Nutrition</common:Name>
+          <common:Name xml:lang="km">សុខាភិបាលនិងអាហារូបត្ថម្</common:Name>
+        </structure:Category>
+        <structure:Category id="IDPOOR" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).IDPOOR">
+          <common:Name xml:lang="en">IDPoor</common:Name>
+        </structure:Category>
+        <structure:Category id="INFRA" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).INFRA">
+          <common:Name xml:lang="en">Infrastructure</common:Name>
+          <common:Name xml:lang="km">ហេថារចនាសម្ព័ន្</common:Name>
+        </structure:Category>
+        <structure:Category id="SOC" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).SOC">
+          <common:Name xml:lang="en">Social</common:Name>
+        </structure:Category>
+        <structure:Category id="TOURISM" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).TOURISM">
+          <common:Name xml:lang="en">Tourism</common:Name>
+          <common:Name xml:lang="km">ទេសចរណ៍</common:Name>
+          <structure:Category id="VISIT" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).TOURISM.VISIT">
+            <common:Name xml:lang="en">Visitor</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="SDG" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).SDG">
+          <common:Name xml:lang="en">SDG indicators</common:Name>
+          <common:Name xml:lang="km">SDG</common:Name>
+        </structure:Category>
+      </structure:CategoryScheme>
+      <structure:CategoryScheme id="OECDCS1" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.CategoryScheme=OECD:OECDCS1(1.0)" agencyID="OECD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Topic</common:Name>
+        <common:Name xml:lang="fr">FR_Dissemination category scheme</common:Name>
+        <common:Name xml:lang="ar">AR_Dissemination category scheme</common:Name>
+        <structure:Category id="AGRI" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).AGRI">
+          <common:Name xml:lang="en">Agriculture and fisheries</common:Name>
+          <common:Name xml:lang="fr">Agriculture et pêche</common:Name>
+          <common:Name xml:lang="ar">الزراعة ومصايد الأسماك</common:Name>
+        </structure:Category>
+        <structure:Category id="DEMO" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).DEMO">
+          <common:Name xml:lang="en">Demography and population</common:Name>
+          <common:Name xml:lang="fr">Démographie et population</common:Name>
+          <common:Name xml:lang="ar">الديموغرافيا والسكان</common:Name>
+          <structure:Category id="DEMO1" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).DEMO.DEMO1">
+            <common:Name xml:lang="en">Deaths, births and marriages</common:Name>
+            <common:Name xml:lang="fr">Décès, naissances et mariages</common:Name>
+            <common:Name xml:lang="ar">الوفيات والولادات والزواج</common:Name>
+          </structure:Category>
+          <structure:Category id="DEMO2" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).DEMO.DEMO2">
+            <common:Name xml:lang="en">Population</common:Name>
+            <common:Name xml:lang="fr">Population</common:Name>
+            <common:Name xml:lang="ar">السكان</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="ECO" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).ECO">
+          <common:Name xml:lang="en">Economy and finance</common:Name>
+          <common:Name xml:lang="fr">Économie et finance</common:Name>
+          <common:Name xml:lang="ar">الاقتصاد والمالية</common:Name>
+          <structure:Category id="ECO1" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).ECO.ECO1">
+            <common:Name xml:lang="en">Economy</common:Name>
+            <common:Name xml:lang="fr">Économie</common:Name>
+            <common:Name xml:lang="ar">اقتصاد</common:Name>
+            <structure:Category id="GDP" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).ECO.ECO1.GDP">
+              <common:Name xml:lang="en">Gross domestic product</common:Name>
+              <common:Name xml:lang="fr">Produit intérieur brut</common:Name>
+              <common:Name xml:lang="ar">الناتج المحلي الإجمالي</common:Name>
+            </structure:Category>
+          </structure:Category>
+          <structure:Category id="ECO2" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).ECO.ECO2">
+            <common:Name xml:lang="en">Finance</common:Name>
+            <common:Name xml:lang="fr">Finance</common:Name>
+            <common:Name xml:lang="ar">المالية</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="ENV" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).ENV">
+          <common:Name xml:lang="en">Environment and energy</common:Name>
+          <common:Name xml:lang="fr">Environnement et énergie</common:Name>
+          <common:Name xml:lang="ar">البيئة والطاقة</common:Name>
+        </structure:Category>
+        <structure:Category id="IND_TOUR" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).IND_TOUR">
+          <common:Name xml:lang="en">Industry and tourism</common:Name>
+          <common:Name xml:lang="fr">Industrie et tourisme</common:Name>
+          <common:Name xml:lang="ar">الصناعة والسياحة</common:Name>
+        </structure:Category>
+        <structure:Category id="INT_TRADE" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).INT_TRADE">
+          <common:Name xml:lang="en">International trade</common:Name>
+          <common:Name xml:lang="fr">Échange international</common:Name>
+          <common:Name xml:lang="ar">التجارة العالمية</common:Name>
+        </structure:Category>
+        <structure:Category id="LAB" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).LAB">
+          <common:Name xml:lang="en">Labour and income</common:Name>
+          <common:Name xml:lang="fr">Travail et revenu</common:Name>
+          <common:Name xml:lang="ar">العمل والدخل</common:Name>
+        </structure:Category>
+        <structure:Category id="SCI" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).SCI">
+          <common:Name xml:lang="en">Science, technology, digital society</common:Name>
+          <common:Name xml:lang="fr">Science, technologie, société numérique</common:Name>
+          <common:Name xml:lang="ar">العلوم والتكنولوجيا والعالم الدجتلي</common:Name>
+        </structure:Category>
+        <structure:Category id="SOC" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).SOC">
+          <common:Name xml:lang="en">Social conditions</common:Name>
+          <common:Name xml:lang="fr">Conditions sociales</common:Name>
+          <common:Name xml:lang="ar">الحالات الإجتماعية</common:Name>
+        </structure:Category>
+        <structure:Category id="TRAN" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=OECD:OECDCS1(1.0).TRAN">
+          <common:Name xml:lang="en">Transport</common:Name>
+          <common:Name xml:lang="fr">Transport</common:Name>
+          <common:Name xml:lang="ar">وسائل النقل</common:Name>
+        </structure:Category>
+      </structure:CategoryScheme>
+    </structure:CategorySchemes>
+  </message:Structures>
+</message:Structure>

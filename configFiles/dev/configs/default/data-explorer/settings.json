@@ -1,0 +1,127 @@
+{
+  "sdmx": {
+    "datasourceIds": [
+      "CamStat-stable"
+    ],
+    "range": [0, 2500],
+    "attributes": {
+      "flags": ["OBS_STATUS", "BASE_PER", "SOURCE_DETAIL"],
+      "footnotes": ["TIME_FORMAT", "UNIT_MULT", "UNIT_MEASURE", "REF_PERIOD", "TRANSFORMATION", "VALUATION", "METHODOLOGY"],
+      "prefscale": "PREF_SCALE", 
+      "decimals": "DECIMALS"
+    },
+    "units": {
+      "id": "UNIT",
+      "annotationsDefinitionCodes": {
+        "concepts": ["UNIT_MEASURE_CONCEPTS"]
+      },
+      "defaultCodes": ["UNIT_MEASURE", "UNIT_MULT", "BASE_PER"],
+      "rejectedValueIds": ["_L", "_T", "_Z", "0"]
+    },
+    "period": {
+      "boundaries": ["1970", "2020"],
+      "default": ["1990", "2020"]
+    },
+    "frequency": "A"
+  },
+  "viewer": {
+    "owner": "OECD",
+    "logo": "http://localhost:5007/assets/default/webapp/images/sis-cc-icon.png",
+    "terms": {
+      "label": "Terms & Conditions",
+      "link": "http://www.oecd.org/termsandconditions/"
+    },
+    "api": {
+      "doc": "https://data.oecd.org/api/sdmx-json-documentation/",
+      "contact": "https://stats.oecd.org/FAQAndContact.aspx"
+    }
+  },
+  "app": {
+    "title": "OECD Data Explorer",
+    "favicon": "/assets/siscc/data-explorer/images/favicon.ico"
+  },
+  "assets": {
+    "header": "http://localhost:5007/assets/default/webapp/images/nis-logo-header.jpg",
+    "subheader": "http://localhost:5007/assets/default/webapp/images/nis-logo-sub-header.png",
+    "footer": "http://localhost:5007/assets/default/webapp/images/sis-cc-icon.png",
+    "splash": "http://localhost:5007/assets/default/webapp/images/cambodia-data-explorer-logo.png"
+  },
+  "chart": {
+    "url": "",
+    "source": "http://dotstat.oecd.org/",
+    "maps": {
+      "fra-poc": {
+        "id": "fra-poc",
+        "projection": "mercator",
+        "path": "/assets/siscc/data-explorer/maps/fra-poc.json",
+        "levels": ["dep"],
+        "scale": 2000
+      }
+    },
+    "options": {
+      "base": {
+        "height": 700
+      },
+      "axis": {
+        "x": {
+          "font": {
+            "family": "'Segoe UI'"
+          }
+        },
+        "y": {
+          "font": {
+            "family": "'Segoe UI'"
+          }
+        }
+      },
+      "serie": {
+        "annotation": {
+          "font": {
+            "family": "'Segoe UI'"
+          }
+        },
+        "tooltip": {
+          "font": {
+            "family": "'Segoe UI'"
+          }
+        }
+      }
+    },
+    "size": {
+      "height": 400
+    }
+  },
+  "table": {
+    "cellsLimit": 6000
+  },
+  "theme": {
+    "visFont": "'Segoe UI'"
+  },
+  "i18n": {
+    "localeId": "en",
+    "locales": {
+      "en": {
+        "id": "en",
+        "delimiters": { "thousands": ",", "decimal": "."  },
+        "timeFormat": "YYYY-MMM"
+      },
+      "fr": {
+        "id": "fr",
+        "delimiters": { "thousands": " ", "decimal": ","  },
+        "timeFormat": "MMM YYYY"
+      }
+    }
+  },
+  "ga": {},
+  "styles": "http://localhost:5007/assets/default/data-explorer/styles/styles.css",
+  "search": {
+    "endpoint": "http://localhost:3004/api",
+    "homeFacetIds": ["Topic"],
+    "defaultRows": 10
+  },
+  "share": {
+    "confirmUrl": "http://localhost:7002",
+    "endpoint": "http://localhost:3005/api/charts",
+    "policy": "http://www.oecd.org/general/privacypolicy.htm"
+  }
+}

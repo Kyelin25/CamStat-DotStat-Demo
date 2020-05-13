@@ -1,0 +1,63 @@
+{
+  "sdmx": {
+    "datasourceIds": [
+      "CamStat-stable",
+      "CamStat-origina"
+    ],
+    "datasources": {
+      "CamStat-stable": {
+        "color": "white",
+        "backgroundColor": "#606A80",
+        "dataExplorerUrl": "http://localhost:7001"
+      },
+      "CamStat-original": {
+        "color": "white",
+        "backgroundColor": "#606A80",
+        "dataExplorerUrl": "http://camstat.nis.gov.kh/#/"
+      }
+    },
+    "typeIds": [
+      "agencyscheme",
+      "attachmentconstraint",
+      "categoryscheme",
+      "categorisation",
+      "codelist",
+      "conceptscheme",
+      "contentconstraint",
+      "dataconsumerscheme",
+      "dataproviderscheme",
+      "datastructure",
+      "dataflow",
+      "hierarchicalcodelist",
+      "metadatastructure",
+      "metadataflow",
+      "organisationscheme",
+      "organisationunitscheme",
+      "process",
+      "provisionagreement",
+      "reportingtaxonomy",
+      "structureset"
+    ],
+    "uploadSizeLimit": 30000000
+  },
+  "i18n": {
+    "localeId": "en",
+    "locales": {
+      "en": {
+        "id": "en",
+        "delimiters": { "thousands": ",", "decimal": "."  },
+        "timeFormat": "YYYY-MMM"
+      },
+      "fr": {
+        "id": "fr",
+        "delimiters": { "thousands": " ", "decimal": ","  },
+        "timeFormat": "MMM YYYY"
+      }
+    }
+  },
+  "assets": {
+    "logo": "http://localhost:5007/assets/default/webapp/images/nis-logo-header.jpg",
+    "icon": "http://localhost:5007/assets/default/webapp/images/sis-cc-icon.png"
+  },
+  "styles": "http://localhost:5007/assets/default/data-lifecycle-manager/styles/styles.css"
+}

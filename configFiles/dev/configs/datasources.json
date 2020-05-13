@@ -1,0 +1,21 @@
+{
+  "CamStat-stable": {
+    "label": "CamStat-stable",
+    "url": "http://localhost:81/rest",
+    "hasRangeHeader": true,
+    "supportsReferencePartial": true,
+    "hasLastNObservations": false,
+    "indexed": true,
+    "queries": [
+      { "version": "1.0", "categorySchemeId": "CAM_CAT", "agencyId": "KH_NIS" }
+    ]
+  },
+  "CamStat-original":{
+    "label": "Original CamStat",
+    "url": "http://cambodgia-statvm1.eastasia.cloudapp.azure.com/SeptemberDisseminateNSIService/rest",
+    "hasRangeHeader": false,
+    "supportsReferencePartial": false,
+    "hasLastNObservations": false,
+    "indexed": false
+  }
+}

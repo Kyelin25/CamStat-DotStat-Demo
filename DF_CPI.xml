@@ -1,0 +1,2237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v6.16.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF4</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2020-05-13T07:47:20.3667058+00:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:Dataflows>
+      <structure:Dataflow id="DF_CPI" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=KH_NIS:DF_CPI(1.1)" agencyID="KH_NIS" version="1.1" isFinal="true">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>NonProductionDataflow</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">true</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">Consumer Price Index</common:Name>
+        <common:Name xml:lang="km">សន្ទស្សថ្លៃទំនិញប្រើប្រាស់</common:Name>
+        <structure:Structure>
+          <Ref id="DSD_NIS_ECO" version="1.1" agencyID="KH_NIS" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+    </structure:Dataflows>
+    <structure:CategorySchemes>
+      <structure:CategoryScheme id="CAM_CAT" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.CategoryScheme=KH_NIS:CAM_CAT(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Topic</common:Name>
+        <common:Name xml:lang="km">ប្រធានបទ</common:Name>
+        <structure:Category id="AGRI" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI">
+          <common:Name xml:lang="en">Agriculture</common:Name>
+          <common:Name xml:lang="km">កសិកម្</common:Name>
+          <structure:Category id="YIELD" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI.YIELD">
+            <common:Name xml:lang="en">Yield</common:Name>
+          </structure:Category>
+          <structure:Category id="LIVESTOCK" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI.LIVESTOCK">
+            <common:Name xml:lang="en">Livestock</common:Name>
+          </structure:Category>
+          <structure:Category id="FOREST" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI.FOREST">
+            <common:Name xml:lang="en">Forestry</common:Name>
+          </structure:Category>
+          <structure:Category id="FISH" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).AGRI.FISH">
+            <common:Name xml:lang="en">Fisheries</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="DEMO" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).DEMO">
+          <common:Name xml:lang="en">Demography</common:Name>
+          <common:Name xml:lang="km">ប្រជាសាស្រ្ត</common:Name>
+        </structure:Category>
+        <structure:Category id="ECO" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).ECO">
+          <common:Name xml:lang="en">Economy</common:Name>
+          <common:Name xml:lang="km">សេដ្ឋកិច្</common:Name>
+          <structure:Category id="GDP" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).ECO.GDP">
+            <common:Name xml:lang="en">GDP</common:Name>
+          </structure:Category>
+          <structure:Category id="CPI" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).ECO.CPI">
+            <common:Name xml:lang="en">Consumer Price Index</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="EDU" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).EDU">
+          <common:Name xml:lang="en">Education</common:Name>
+          <common:Name xml:lang="km">អប់រំ</common:Name>
+          <structure:Category id="EDU_CHAR" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).EDU.EDU_CHAR">
+            <common:Name xml:lang="en">Educational Characteristic</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="EMP" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).EMP">
+          <common:Name xml:lang="en">Employment</common:Name>
+          <common:Name xml:lang="km">ភាពមានការងារ</common:Name>
+        </structure:Category>
+        <structure:Category id="ENV" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).ENV">
+          <common:Name xml:lang="en">Environment</common:Name>
+          <common:Name xml:lang="km">បរិស្ថាន</common:Name>
+        </structure:Category>
+        <structure:Category id="GENDER" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).GENDER">
+          <common:Name xml:lang="en">Gender</common:Name>
+          <common:Name xml:lang="km">យេនឌ័រ</common:Name>
+        </structure:Category>
+        <structure:Category id="GOV" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).GOV">
+          <common:Name xml:lang="en">Governance</common:Name>
+          <common:Name xml:lang="km">អភិបាលកិច្</common:Name>
+        </structure:Category>
+        <structure:Category id="HEALTH_NUT" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).HEALTH_NUT">
+          <common:Name xml:lang="en">Health and Nutrition</common:Name>
+          <common:Name xml:lang="km">សុខាភិបាលនិងអាហារូបត្ថម្</common:Name>
+        </structure:Category>
+        <structure:Category id="IDPOOR" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).IDPOOR">
+          <common:Name xml:lang="en">IDPoor</common:Name>
+        </structure:Category>
+        <structure:Category id="INFRA" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).INFRA">
+          <common:Name xml:lang="en">Infrastructure</common:Name>
+          <common:Name xml:lang="km">ហេថារចនាសម្ព័ន្</common:Name>
+        </structure:Category>
+        <structure:Category id="SOC" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).SOC">
+          <common:Name xml:lang="en">Social</common:Name>
+        </structure:Category>
+        <structure:Category id="TOURISM" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).TOURISM">
+          <common:Name xml:lang="en">Tourism</common:Name>
+          <common:Name xml:lang="km">ទេសចរណ៍</common:Name>
+          <structure:Category id="VISIT" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).TOURISM.VISIT">
+            <common:Name xml:lang="en">Visitor</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="SDG" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=KH_NIS:CAM_CAT(1.0).SDG">
+          <common:Name xml:lang="en">SDG indicators</common:Name>
+          <common:Name xml:lang="km">SDG</common:Name>
+        </structure:Category>
+      </structure:CategoryScheme>
+    </structure:CategorySchemes>
+    <structure:Categorisations>
+      <structure:Categorisation id="DF_CPI@ECO" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=KH_NIS:DF_CPI@ECO(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">CPI categorisation</common:Name>
+        <structure:Source>
+          <Ref id="DF_CPI" version="1.1" agencyID="KH_NIS" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="ECO" maintainableParentID="CAM_CAT" maintainableParentVersion="1.0" agencyID="KH_NIS" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+    </structure:Categorisations>
+    <structure:Codelists>
+      <structure:Codelist id="CL_DATASOURCE_ECON" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_DATASOURCE_ECON(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Economy Datasource</common:Name>
+        <structure:Code id="ds_econ_1" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_1">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2001</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_2" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_2">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2002</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_3" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_3">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2003</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_4" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_4">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2004</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_5" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_5">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2005</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_6" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_6">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2006</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_7" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_7">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2007</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_8" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_8">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2008</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_9" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_9">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_10">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2010</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_11" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_11">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2011</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_12" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_12">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2012</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_13" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_13">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2013</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_14" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_14">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2014</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_15" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_15">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2015</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_16" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_16">
+          <common:Name xml:lang="en">CDC_Ministry Administrative Information System_2016</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_17" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_17">
+          <common:Name xml:lang="en">MEF</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_18" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_18">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_1994</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_19" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_19">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_1995</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_20" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_20">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_1996</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_21" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_21">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_1997</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_22" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_22">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_1998</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_23" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_23">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_1999</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_24" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_24">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2000</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_25" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_25">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2001</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_26" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_26">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2002</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_27" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_27">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2003</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_28" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_28">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2004</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_29" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_29">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2005</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_30" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_30">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2006</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_31" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_31">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2007</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_32" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_32">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2008</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_33" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_33">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_34" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_34">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2010</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_35" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_35">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2011</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_36" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_36">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2012</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_37" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_37">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2013</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_38" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_38">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2014</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_39" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_39">
+          <common:Name xml:lang="en">MEF_Macroeconomic Framework_2015</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_40" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_40">
+          <common:Name xml:lang="en">MOC_Ministry administrative information system_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_41" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_41">
+          <common:Name xml:lang="en">MOC_Ministry administrative information system_2010</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_42" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_42">
+          <common:Name xml:lang="en">MOC_Ministry administrative information system_2011</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_43" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_43">
+          <common:Name xml:lang="en">MOP_Poverty in Cambodia - A New Approach: Redefine a New Poverty Line (2013) based on CSES 2007-2012</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_44" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_44">
+          <common:Name xml:lang="en">MOP_Poverty in Cambodia - A New Approach: Redefine a New Poverty Line based on CSES_2014</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_45" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_45">
+          <common:Name xml:lang="en">MOP_Poverty in Cambodia - A New Approach: Redefine a New Poverty Line based on CSES_2015</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_46" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_46">
+          <common:Name xml:lang="en">MOP_Poverty in Cambodia - A New Approach: Redefine a New Poverty Linebased on CSES_2014</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_47" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_47">
+          <common:Name xml:lang="en">MOP_Poverty in Cambodia - A New Approach: Redefine a New Poverty Linebased on CSES_2015</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_48" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_48">
+          <common:Name xml:lang="en">MoP, NIS</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_49" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_49">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-Economic Survey (CSES)_2013</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_50" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_50">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 1993-1994_1995</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_51" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_51">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 1997_1998</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_52" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_52">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2004_2005</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_53" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_53">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2004_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_54" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_54">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2007_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_55" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_55">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2008_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_56" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_56">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2009_2010</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_57" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_57">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2009_2011</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_58" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_58">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2011_2012</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_59" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_59">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2012_2013</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_60" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_60">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2012_2014</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_61" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_61">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2012_2015</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_62" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_62">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2012_2016</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_63" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_63">
+          <common:Name xml:lang="en">MoP, NIS_Cambodia Socio-economic Surveys (CSES) 2012_2017</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_64" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_64">
+          <common:Name xml:lang="en">MoP, NIS_Consumer Price Index, Bulletin_2011</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_65" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_65">
+          <common:Name xml:lang="en">MoP, NIS_Consumer Price Index, Bulletin_2012</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_66" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_66">
+          <common:Name xml:lang="en">MoP, NIS_Consumer Price Index, Bulletin_2013</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_67" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_67">
+          <common:Name xml:lang="en">MoP, NIS_Consumer Price Index, Bulletin_2014</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_68" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_68">
+          <common:Name xml:lang="en">MoP, NIS_Consumer Price Index, Bulletin_2015</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_69" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_69">
+          <common:Name xml:lang="en">MoP, NIS_Consumer Price Index, Bulletin_2016</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_70" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_70">
+          <common:Name xml:lang="en">MoP, NIS_Consumer Price Index, Bulletin_2017</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_71" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_71">
+          <common:Name xml:lang="en">MoP, NIS_Consumer Price Index, Bulletin_2018</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_72" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_72">
+          <common:Name xml:lang="en">MoP, NIS_National Accounts, Bulletin</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_73" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_73">
+          <common:Name xml:lang="en">MoP, NIS_National Accounts, Bulletin_2011</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_74" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_74">
+          <common:Name xml:lang="en">MoP, NIS_National Accounts, Bulletin_2012</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_75" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_75">
+          <common:Name xml:lang="en">MoP, NIS_National Accounts, Bulletin_2013</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_76" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_76">
+          <common:Name xml:lang="en">MoP, NIS_National Accounts, Bulletin_2014</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_77" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_77">
+          <common:Name xml:lang="en">MoP, NIS_National Accounts, Bulletin_2015</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_78" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_78">
+          <common:Name xml:lang="en">MoP, NIS_National Accounts, Bulletin_2016</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_79" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_79">
+          <common:Name xml:lang="en">MoP, NIS_National Accounts, Bulletin_2017</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_80" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_80">
+          <common:Name xml:lang="en">MoP, NIS_National Accounts, Bulletin_2018</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_81" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_81">
+          <common:Name xml:lang="en">MoP_A Poverty Profile and Trends in Cambodia_2004</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_82" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_82">
+          <common:Name xml:lang="en">MoP_A Poverty Profile and Trends in Cambodia_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_83" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_83">
+          <common:Name xml:lang="en">MoP_Cambodia Poverty Assessment_1998</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_84" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_84">
+          <common:Name xml:lang="en">MoP_Poverty alleviation an approach to an action plan for CMDG-1_2014</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_85" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_85">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2000</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_86" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_86">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2003</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_87" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_87">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2004</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_88" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_88">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2005</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_89" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_89">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2006</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_90" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_90">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2007</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_91" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_91">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2008</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_92" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_92">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_93" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_93">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2010</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_94" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_94">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2011</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_95" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_95">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2012</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_96" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_96">
+          <common:Name xml:lang="en">NBC_ Economic and Monetary Statistic  Bulletin_2013</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_97" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_97">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2000</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_98" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_98">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2001</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_99" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_99">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2002</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_100">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2003</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_101" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_101">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2004</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_102" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_102">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2005</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_103" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_103">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2006</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_104" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_104">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2007</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_105" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_105">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2008</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_106" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_106">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_107" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_107">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2010</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_108" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_108">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2011</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_109" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_109">
+          <common:Name xml:lang="en">NBC_Balance of Payments Statistics Bulletin_2012</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_110" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_110">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_1994</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_111" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_111">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_1995</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_112" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_112">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_1996</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_113" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_113">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_1997</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_114" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_114">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_1998</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_115" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_115">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_1999</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_116" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_116">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2000</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_117" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_117">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2001</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_118" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_118">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2002</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_119" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_119">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2003</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_120" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_120">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2004</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_121" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_121">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2005</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_122" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_122">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2006</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_123" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_123">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2007</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_124" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_124">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2008</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_125" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_125">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_126" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_126">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2010</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_127" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_127">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2011</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_128" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_128">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2012</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_129" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_129">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2013</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_130" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_130">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2014</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_131" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_131">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2015</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_132" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_132">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2016</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_133" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_133">
+          <common:Name xml:lang="en">NBC_National Bank of Cambodia_2017</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_134" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_134">
+          <common:Name xml:lang="en">WB_A Poverty Profile and Trends in Cambodia_2009</common:Name>
+        </structure:Code>
+        <structure:Code id="ds_econ_135" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DATASOURCE_ECON(1.0).ds_econ_135">
+          <common:Name xml:lang="en">WB_A Poverty Profile of Cambodia_1997</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_DEPOSIT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_DEPOSIT(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Deposit</common:Name>
+        <structure:Code id="_Z" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0)._Z">
+          <common:Name xml:lang="en">NA</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_FIXED_DEPOSIT_1_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_FIXED_DEPOSIT_1_MONTH">
+          <common:Name xml:lang="en">Riels Fixed Deposit 1 Month</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_FIXED_DEPOSIT_12_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_FIXED_DEPOSIT_12_MONTH">
+          <common:Name xml:lang="en">Riels Fixed Deposit 12 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_FIXED_DEPOSIT_3_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_FIXED_DEPOSIT_3_MONTH">
+          <common:Name xml:lang="en">Riels Fixed Deposit 3 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_FIXED_DEPOSIT_6_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_FIXED_DEPOSIT_6_MONTH">
+          <common:Name xml:lang="en">Riels Fixed Deposit 6 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_SAVINGS_DEPOSITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_SAVINGS_DEPOSITS">
+          <common:Name xml:lang="en">Riels Fixed Deposits</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_FIXED_DEPOSIT_1_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_FIXED_DEPOSIT_1_MONTH">
+          <common:Name xml:lang="en">US Dollar Fixed Deposit 1 Month</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_FIXED_DEPOSIT_12_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_FIXED_DEPOSIT_12_MONTH">
+          <common:Name xml:lang="en">US Dollar Fixed Deposit 12 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_DAILY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_DAILY">
+          <common:Name xml:lang="en">Riels Daily</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_1_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_1_MONTH">
+          <common:Name xml:lang="en">US Dollar 1 Month</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_12_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_12_MONTH">
+          <common:Name xml:lang="en">US Dollar 12 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_3_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_3_MONTH">
+          <common:Name xml:lang="en">US Dollar 3 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_6_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_6_MONTH">
+          <common:Name xml:lang="en">US Dollar 6 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_DAILY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_DAILY">
+          <common:Name xml:lang="en">US Dollar Daily</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_1_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_1_MONTH">
+          <common:Name xml:lang="en">Riels 1 Month</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_12_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_12_MONTH">
+          <common:Name xml:lang="en">Riels 12 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_3_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_3_MONTH">
+          <common:Name xml:lang="en">Riels 3 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_6_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_6_MONTH">
+          <common:Name xml:lang="en">Riels 6 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_FIXED_DEPOSIT_6_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_FIXED_DEPOSIT_6_MONTH">
+          <common:Name xml:lang="en">US Dollar Fixed Deposit 6 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_SAVINGS_DEPOSITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_SAVINGS_DEPOSITS">
+          <common:Name xml:lang="en">US Dollar Savings Deposits</common:Name>
+        </structure:Code>
+        <structure:Code id="US_DOLLAR_FIXED_DEPOSIT_3_MONTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).US_DOLLAR_FIXED_DEPOSIT_3_MONTH">
+          <common:Name xml:lang="en">US Dollar Fixed Deposit 3 Months</common:Name>
+        </structure:Code>
+        <structure:Code id="FOREIGN_CURRENCY_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).FOREIGN_CURRENCY_TOTAL">
+          <common:Name xml:lang="en">Foreign Currency Total</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_DEMAND_DEPOSITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_DEMAND_DEPOSITS">
+          <common:Name xml:lang="en">Riels Demand Deposits</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_FIXED_DEPOSITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_FIXED_DEPOSITS">
+          <common:Name xml:lang="en">Riels Fixed Deposits</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_OTHERS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_OTHERS">
+          <common:Name xml:lang="en">Riels Others</common:Name>
+        </structure:Code>
+        <structure:Code id="RIELS_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).RIELS_TOTAL">
+          <common:Name xml:lang="en">Riels Total</common:Name>
+        </structure:Code>
+        <structure:Code id="_T" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0)._T">
+          <common:Name xml:lang="en">Total</common:Name>
+        </structure:Code>
+        <structure:Code id="FOREIGN_CURRENCY_DEMAND_DEPOSITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).FOREIGN_CURRENCY_DEMAND_DEPOSITS">
+          <common:Name xml:lang="en">Foreign Currency Demand Deposits</common:Name>
+        </structure:Code>
+        <structure:Code id="FOREIGN_CURRENCY_FIXED_DEPOSITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).FOREIGN_CURRENCY_FIXED_DEPOSITS">
+          <common:Name xml:lang="en">Foreign Currency Fixed Deposits</common:Name>
+        </structure:Code>
+        <structure:Code id="FOREIGN_CURRENCY_OTHERS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).FOREIGN_CURRENCY_OTHERS">
+          <common:Name xml:lang="en">Foreign Currency Others</common:Name>
+        </structure:Code>
+        <structure:Code id="FOREIGN_CURRENCY_SAVINGS_DEPOSITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).FOREIGN_CURRENCY_SAVINGS_DEPOSITS">
+          <common:Name xml:lang="en">Foreign Currency Savings Deposits</common:Name>
+        </structure:Code>
+        <structure:Code id="FIXED" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).FIXED">
+          <common:Name xml:lang="en">Fixed</common:Name>
+        </structure:Code>
+        <structure:Code id="FIXED_WEIGHTED_AVERAGE_RATE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_DEPOSIT(1.0).FIXED_WEIGHTED_AVERAGE_RATE">
+          <common:Name xml:lang="en">Fixed Weighted Average Rate</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_ECONOMIC_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_ECONOMIC_SECTOR(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Economic Sector</common:Name>
+        <structure:Code id="_Z" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0)._Z">
+          <common:Name xml:lang="en">NA</common:Name>
+        </structure:Code>
+        <structure:Code id="INDUSTRY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).INDUSTRY">
+          <common:Name xml:lang="en">Industry</common:Name>
+        </structure:Code>
+        <structure:Code id="SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).SERVICES">
+          <common:Name xml:lang="en">Services</common:Name>
+        </structure:Code>
+        <structure:Code id="TAXES_LESS_SUBSIDIES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TAXES_LESS_SUBSIDIES">
+          <common:Name xml:lang="en">Taxes Less Subsidies</common:Name>
+        </structure:Code>
+        <structure:Code id="_T" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0)._T">
+          <common:Name xml:lang="en">Total</common:Name>
+        </structure:Code>
+        <structure:Code id="AGRICULTURE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).AGRICULTURE">
+          <common:Name xml:lang="en">Agriculture</common:Name>
+        </structure:Code>
+        <structure:Code id="TOURISM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TOURISM">
+          <common:Name xml:lang="en">Tourism</common:Name>
+        </structure:Code>
+        <structure:Code id="AGRICULTURE_FISHERY_FORESTRY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).AGRICULTURE_FISHERY_FORESTRY">
+          <common:Name xml:lang="en">Agriculture Fishery Forestry</common:Name>
+        </structure:Code>
+        <structure:Code id="MANUFACTURING" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MANUFACTURING">
+          <common:Name xml:lang="en">Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="CONSTRUCTION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).CONSTRUCTION">
+          <common:Name xml:lang="en">Construction</common:Name>
+        </structure:Code>
+        <structure:Code id="WHOLESALES_RETAIL_TRADE_RESTAURANTS_HOTELS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).WHOLESALES_RETAIL_TRADE_RESTAURANTS_HOTELS">
+          <common:Name xml:lang="en">Wholesales Retail Trade Restaurants Hotels</common:Name>
+        </structure:Code>
+        <structure:Code id="SERVICE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).SERVICE">
+          <common:Name xml:lang="en">Service</common:Name>
+        </structure:Code>
+        <structure:Code id="TRANSPORTATION_STORAGEINFORMATION_AND_COMMUNICATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TRANSPORTATION_STORAGEINFORMATION_AND_COMMUNICATION">
+          <common:Name xml:lang="en">Transportation Storageinformation And Communication</common:Name>
+        </structure:Code>
+        <structure:Code id="FINANCE_INSURANCEREAL_ESTATE_AND_BUSINESS_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FINANCE_INSURANCEREAL_ESTATE_AND_BUSINESS_SERVICES">
+          <common:Name xml:lang="en">Finance Insurancereal Estate And Business Services</common:Name>
+        </structure:Code>
+        <structure:Code id="PUBLIC_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).PUBLIC_SERVICES">
+          <common:Name xml:lang="en">Public Services</common:Name>
+        </structure:Code>
+        <structure:Code id="OTHERS_MINING_QUARRYING_ELECTRICITY_GAS_WATERUNKNOWN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).OTHERS_MINING_QUARRYING_ELECTRICITY_GAS_WATERUNKNOWN">
+          <common:Name xml:lang="en">Others Mining Quarrying Electricity Gas Waterunknown</common:Name>
+        </structure:Code>
+        <structure:Code id="FOOD_BEVERAGES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FOOD_BEVERAGES">
+          <common:Name xml:lang="en">Food Beverages</common:Name>
+        </structure:Code>
+        <structure:Code id="HEALTH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).HEALTH">
+          <common:Name xml:lang="en">Health</common:Name>
+        </structure:Code>
+        <structure:Code id="HOUSING" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).HOUSING">
+          <common:Name xml:lang="en">Housing</common:Name>
+        </structure:Code>
+        <structure:Code id="TRANSPORTATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TRANSPORTATION">
+          <common:Name xml:lang="en">Transportation</common:Name>
+        </structure:Code>
+        <structure:Code id="CLOTHING_AND_FOOTWEAR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).CLOTHING_AND_FOOTWEAR">
+          <common:Name xml:lang="en">Clothing And Footwear</common:Name>
+        </structure:Code>
+        <structure:Code id="FOOD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FOOD">
+          <common:Name xml:lang="en">Food</common:Name>
+        </structure:Code>
+        <structure:Code id="ALCOHOLIC_BEVERAGES_AND_TOBACCO" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).ALCOHOLIC_BEVERAGES_AND_TOBACCO">
+          <common:Name xml:lang="en">Alcoholic Beverages And Tobacco</common:Name>
+        </structure:Code>
+        <structure:Code id="CLOTHING_FOOTWEAR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).CLOTHING_FOOTWEAR">
+          <common:Name xml:lang="en">Clothing Footwear</common:Name>
+        </structure:Code>
+        <structure:Code id="TRANSPORT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TRANSPORT">
+          <common:Name xml:lang="en">Transport</common:Name>
+        </structure:Code>
+        <structure:Code id="RECREATION_CULTURE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).RECREATION_CULTURE">
+          <common:Name xml:lang="en">Recreation Culture</common:Name>
+        </structure:Code>
+        <structure:Code id="EDUCATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).EDUCATION">
+          <common:Name xml:lang="en">Education</common:Name>
+        </structure:Code>
+        <structure:Code id="MISCELLANEOUS_GOODS_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MISCELLANEOUS_GOODS_SERVICES">
+          <common:Name xml:lang="en">Miscellaneous Goods Services</common:Name>
+        </structure:Code>
+        <structure:Code id="HOUSING_WATER_ELECTIRICY_FUELS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).HOUSING_WATER_ELECTIRICY_FUELS">
+          <common:Name xml:lang="en">Housing Water Electiricy Fuels</common:Name>
+        </structure:Code>
+        <structure:Code id="FURNISHING_HOUSEHOLD_EQUIPMT_ROUTINE_MAINTENANCE_OF_THE_HOUSE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FURNISHING_HOUSEHOLD_EQUIPMT_ROUTINE_MAINTENANCE_OF_THE_HOUSE">
+          <common:Name xml:lang="en">Furnishing Household Equipmt Routine Maintenance Of The House</common:Name>
+        </structure:Code>
+        <structure:Code id="COMMUNICATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).COMMUNICATION">
+          <common:Name xml:lang="en">Communication</common:Name>
+        </structure:Code>
+        <structure:Code id="RESTAURANT_HOTEL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).RESTAURANT_HOTEL">
+          <common:Name xml:lang="en">Restaurant Hotel</common:Name>
+        </structure:Code>
+        <structure:Code id="WOOD_AND_RELATED_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).WOOD_AND_RELATED_PRODUCTS">
+          <common:Name xml:lang="en">Wood And Related Products</common:Name>
+        </structure:Code>
+        <structure:Code id="ANIMAL_AND_VEGETABLE_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).ANIMAL_AND_VEGETABLE_PRODUCTS">
+          <common:Name xml:lang="en">Animal And Vegetable Products</common:Name>
+        </structure:Code>
+        <structure:Code id="BEVERAGES_AND_TOBACCO" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).BEVERAGES_AND_TOBACCO">
+          <common:Name xml:lang="en">Beverages And Tobacco</common:Name>
+        </structure:Code>
+        <structure:Code id="MISCELLANEOUS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MISCELLANEOUS">
+          <common:Name xml:lang="en">Miscellaneous</common:Name>
+        </structure:Code>
+        <structure:Code id="OTHER_MANUFACTURED_GOODS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).OTHER_MANUFACTURED_GOODS">
+          <common:Name xml:lang="en">Other Manufactured Goods</common:Name>
+        </structure:Code>
+        <structure:Code id="RUBBER_AND_RELATED_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).RUBBER_AND_RELATED_PRODUCTS">
+          <common:Name xml:lang="en">Rubber And Related Products</common:Name>
+        </structure:Code>
+        <structure:Code id="TEXTILES_AND_TEXTILE_ARTICLES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TEXTILES_AND_TEXTILE_ARTICLES">
+          <common:Name xml:lang="en">Textiles And Textile Articles</common:Name>
+        </structure:Code>
+        <structure:Code id="FISHERY_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FISHERY_PRODUCTS">
+          <common:Name xml:lang="en">Fishery Products</common:Name>
+        </structure:Code>
+        <structure:Code id="GENERAL_SYSTEM_PREFERENCE_GSP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).GENERAL_SYSTEM_PREFERENCE_GSP">
+          <common:Name xml:lang="en">General System Preference Gsp</common:Name>
+        </structure:Code>
+        <structure:Code id="RUBBER_AND_RUBBER_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).RUBBER_AND_RUBBER_PRODUCTS">
+          <common:Name xml:lang="en">Rubber And Rubber Products</common:Name>
+        </structure:Code>
+        <structure:Code id="WOOD_AND_WOOD_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).WOOD_AND_WOOD_PRODUCTS">
+          <common:Name xml:lang="en">Wood And Wood Products</common:Name>
+        </structure:Code>
+        <structure:Code id="MINING_AND_QUARRYING" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MINING_AND_QUARRYING">
+          <common:Name xml:lang="en">Mining And Quarrying</common:Name>
+        </structure:Code>
+        <structure:Code id="ELECTRICITYGAS_AND_WATER_SUPPLY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).ELECTRICITYGAS_AND_WATER_SUPPLY">
+          <common:Name xml:lang="en">Electricitygas And Water Supply</common:Name>
+        </structure:Code>
+        <structure:Code id="TRANSPORTATION_STORAGE_AND_COMMUNICATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TRANSPORTATION_STORAGE_AND_COMMUNICATION">
+          <common:Name xml:lang="en">Transportation Storage And Communication</common:Name>
+        </structure:Code>
+        <structure:Code id="TRADE_AND_REPAIR_OF_MOTOR_VEHICLES_MOTORCYCLESPERSONAL_AND_HOUSEHOLD_GOODS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TRADE_AND_REPAIR_OF_MOTOR_VEHICLES_MOTORCYCLESPERSONAL_AND_HOUSEHOLD_GOODS">
+          <common:Name xml:lang="en">Trade And Repair Of Motor Vehicles Motorcyclespersonal And Household Goods</common:Name>
+        </structure:Code>
+        <structure:Code id="FINANCIAL_INTERMEDIATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FINANCIAL_INTERMEDIATION">
+          <common:Name xml:lang="en">Financial Intermediation</common:Name>
+        </structure:Code>
+        <structure:Code id="REAL_ESTATERENTING_AND_BUSINESS_ACTIVITIES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).REAL_ESTATERENTING_AND_BUSINESS_ACTIVITIES">
+          <common:Name xml:lang="en">Real Estaterenting And Business Activities</common:Name>
+        </structure:Code>
+        <structure:Code id="PUBLIC_ADMINISTRATION_AND_DEFENSECOMPULSORY_SOCIAL_SECURITY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).PUBLIC_ADMINISTRATION_AND_DEFENSECOMPULSORY_SOCIAL_SECURITY">
+          <common:Name xml:lang="en">Public Administration And Defensecompulsory Social Security</common:Name>
+        </structure:Code>
+        <structure:Code id="OTHER_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).OTHER_SERVICES">
+          <common:Name xml:lang="en">Other Services</common:Name>
+        </structure:Code>
+        <structure:Code id="MACHINERY_AND_TRANSPORT_EQUIPMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MACHINERY_AND_TRANSPORT_EQUIPMENT">
+          <common:Name xml:lang="en">Machinery And Transport Equipment</common:Name>
+        </structure:Code>
+        <structure:Code id="MINERAL_FUELS_AND_RELATED_MATERIALS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MINERAL_FUELS_AND_RELATED_MATERIALS">
+          <common:Name xml:lang="en">Mineral Fuels And Related Materials</common:Name>
+        </structure:Code>
+        <structure:Code id="CHEMICALS_AND_RELATED_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).CHEMICALS_AND_RELATED_PRODUCTS">
+          <common:Name xml:lang="en">Chemicals And Related Products</common:Name>
+        </structure:Code>
+        <structure:Code id="CONSTRUCTION_MATERIALS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).CONSTRUCTION_MATERIALS">
+          <common:Name xml:lang="en">Construction Materials</common:Name>
+        </structure:Code>
+        <structure:Code id="ELECTRICITY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).ELECTRICITY">
+          <common:Name xml:lang="en">Electricity</common:Name>
+        </structure:Code>
+        <structure:Code id="ELECTRONIC_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).ELECTRONIC_PRODUCTS">
+          <common:Name xml:lang="en">Electronic Products</common:Name>
+        </structure:Code>
+        <structure:Code id="FERITILIZERS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FERITILIZERS">
+          <common:Name xml:lang="en">Feritilizers</common:Name>
+        </structure:Code>
+        <structure:Code id="FUELS_LUBRICANTS_AND_RELATED_MATERIALS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FUELS_LUBRICANTS_AND_RELATED_MATERIALS">
+          <common:Name xml:lang="en">Fuels Lubricants And Related Materials</common:Name>
+        </structure:Code>
+        <structure:Code id="GAMENTS_MATERIALS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).GAMENTS_MATERIALS">
+          <common:Name xml:lang="en">Gaments Materials</common:Name>
+        </structure:Code>
+        <structure:Code id="NON_ALCOHOLIC_BEVERAGES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).NON_ALCOHOLIC_BEVERAGES">
+          <common:Name xml:lang="en">Non Alcoholic Beverages</common:Name>
+        </structure:Code>
+        <structure:Code id="FOOD_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FOOD_PRODUCTS">
+          <common:Name xml:lang="en">Food Products</common:Name>
+        </structure:Code>
+        <structure:Code id="BEVERAGES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).BEVERAGES">
+          <common:Name xml:lang="en">Beverages</common:Name>
+        </structure:Code>
+        <structure:Code id="TOBACCO_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TOBACCO_PRODUCTS">
+          <common:Name xml:lang="en">Tobacco Products</common:Name>
+        </structure:Code>
+        <structure:Code id="TEXTILES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).TEXTILES">
+          <common:Name xml:lang="en">Textiles</common:Name>
+        </structure:Code>
+        <structure:Code id="WEARING_APPARELS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).WEARING_APPARELS">
+          <common:Name xml:lang="en">Wearing Apparels</common:Name>
+        </structure:Code>
+        <structure:Code id="LEATHER_AND_RELATED_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).LEATHER_AND_RELATED_PRODUCTS">
+          <common:Name xml:lang="en">Leather And Related Products</common:Name>
+        </structure:Code>
+        <structure:Code id="WOOD_AND_OF_PRODUCTS_OF_WOOD_AND_CORK_EXCEPT_FURNITUREARTICLES_OF_STRAW_AND_PLAITING_MATERIALS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).WOOD_AND_OF_PRODUCTS_OF_WOOD_AND_CORK_EXCEPT_FURNITUREARTICLES_OF_STRAW_AND_PLAITING_MATERIALS">
+          <common:Name xml:lang="en">Wood And Of Products Of Wood And Cork Except Furniturearticles Of Straw And Plaiting Materials</common:Name>
+        </structure:Code>
+        <structure:Code id="PAPER_AND_PAPER_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).PAPER_AND_PAPER_PRODUCTS">
+          <common:Name xml:lang="en">Paper And Paper Products</common:Name>
+        </structure:Code>
+        <structure:Code id="PRINTING_AND_REPRODUCTION_OF_RECORDED_MEDIA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).PRINTING_AND_REPRODUCTION_OF_RECORDED_MEDIA">
+          <common:Name xml:lang="en">Printing And Reproduction Of Recorded Media</common:Name>
+        </structure:Code>
+        <structure:Code id="COKE_AND_REFINED_PETROLEUM_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).COKE_AND_REFINED_PETROLEUM_PRODUCTS">
+          <common:Name xml:lang="en">Coke And Refined Petroleum Products</common:Name>
+        </structure:Code>
+        <structure:Code id="CHEMICALS_AND_CHEMICAL_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).CHEMICALS_AND_CHEMICAL_PRODUCTS">
+          <common:Name xml:lang="en">Chemicals And Chemical Products</common:Name>
+        </structure:Code>
+        <structure:Code id="PHARMACEUTICALSMEDICINAL_CHEMICALS_AND_BOTANICAL_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).PHARMACEUTICALSMEDICINAL_CHEMICALS_AND_BOTANICAL_PRODUCTS">
+          <common:Name xml:lang="en">Pharmaceuticalsmedicinal Chemicals And Botanical Products</common:Name>
+        </structure:Code>
+        <structure:Code id="MANUFACTRUE_OF_RUBBER_AND_PLASTIC_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MANUFACTRUE_OF_RUBBER_AND_PLASTIC_PRODUCTS">
+          <common:Name xml:lang="en">Manufactrue Of Rubber And Plastic Products</common:Name>
+        </structure:Code>
+        <structure:Code id="OTHER_NON_METHALIC_MINERAL_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).OTHER_NON_METHALIC_MINERAL_PRODUCTS">
+          <common:Name xml:lang="en">Other Non Methalic Mineral Products</common:Name>
+        </structure:Code>
+        <structure:Code id="BASIC_METALS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).BASIC_METALS">
+          <common:Name xml:lang="en">Basic Metals</common:Name>
+        </structure:Code>
+        <structure:Code id="FABRICATED_METAL_PRODUCTSEXCEPT_MACHINERY_AND_EQUIPMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FABRICATED_METAL_PRODUCTSEXCEPT_MACHINERY_AND_EQUIPMENT">
+          <common:Name xml:lang="en">Fabricated Metal Productsexcept Machinery And Equipment</common:Name>
+        </structure:Code>
+        <structure:Code id="COMPUTERSELECTRONIC_AND_OPTICAL_PRODUCTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).COMPUTERSELECTRONIC_AND_OPTICAL_PRODUCTS">
+          <common:Name xml:lang="en">Computerselectronic And Optical Products</common:Name>
+        </structure:Code>
+        <structure:Code id="ELECTRICAL_EQUIPMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).ELECTRICAL_EQUIPMENT">
+          <common:Name xml:lang="en">Electrical Equipment</common:Name>
+        </structure:Code>
+        <structure:Code id="MACHINERY_AND_EQUIPMENT_N_E_C" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MACHINERY_AND_EQUIPMENT_N_E_C">
+          <common:Name xml:lang="en">Machinery And Equipment N E C</common:Name>
+        </structure:Code>
+        <structure:Code id="MOTOR_VEHICLETRAILERS_AND_SEMI_TRAILERS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MOTOR_VEHICLETRAILERS_AND_SEMI_TRAILERS">
+          <common:Name xml:lang="en">Motor Vehicletrailers And Semi Trailers</common:Name>
+        </structure:Code>
+        <structure:Code id="MANUFACTURE_OF_OTHER_TRANSPORT_EQUIPMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).MANUFACTURE_OF_OTHER_TRANSPORT_EQUIPMENT">
+          <common:Name xml:lang="en">Manufacture Of Other Transport Equipment</common:Name>
+        </structure:Code>
+        <structure:Code id="FURNITURE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).FURNITURE">
+          <common:Name xml:lang="en">Furniture</common:Name>
+        </structure:Code>
+        <structure:Code id="OTHER_MANUFACTURING" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).OTHER_MANUFACTURING">
+          <common:Name xml:lang="en">Other Manufacturing</common:Name>
+        </structure:Code>
+        <structure:Code id="REPAIR_AND_INSTALLATION_OF_MACHINERY_AND_EQUIPMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).REPAIR_AND_INSTALLATION_OF_MACHINERY_AND_EQUIPMENT">
+          <common:Name xml:lang="en">Repair And Installation Of Machinery And Equipment</common:Name>
+        </structure:Code>
+        <structure:Code id="NON_AGRICULTURE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECONOMIC_SECTOR(1.0).NON_AGRICULTURE">
+          <common:Name xml:lang="en">Non Agriculture</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_ECON_INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_ECON_INDICATOR(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Economy Indicators</common:Name>
+        <structure:Code id="ANNUAL_GDP_GROWTH_RATE_AT_CONSTANT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).ANNUAL_GDP_GROWTH_RATE_AT_CONSTANT_PRICES">
+          <common:Name xml:lang="en">Annual GDP Growth Rate at Constant Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="ANNUAL_GDP_GROWTH_RATE_AT_CURRENT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).ANNUAL_GDP_GROWTH_RATE_AT_CURRENT_PRICES">
+          <common:Name xml:lang="en">Annual GDP Growth Rate at Current Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="ANNUAL_GROWTH_GVA_IN_CONSTRUCTION_AT_CONSTANT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).ANNUAL_GROWTH_GVA_IN_CONSTRUCTION_AT_CONSTANT_PRICES">
+          <common:Name xml:lang="en">Annual Growth GVA in Construction at Constant Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="ANNUAL_GROWTH_RATE_IN_MANUFACTURING_AT_CONSTANT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).ANNUAL_GROWTH_RATE_IN_MANUFACTURING_AT_CONSTANT_PRICES">
+          <common:Name xml:lang="en">Annual Growth Rate in Manufacturing at Constant Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="ANNUAL_GROWTH_RATE_IN_MANUFACTURING_AT_CURRENT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).ANNUAL_GROWTH_RATE_IN_MANUFACTURING_AT_CURRENT_PRICES">
+          <common:Name xml:lang="en">Annual Growth Rate in Manufacturing at Current Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="ANNUAL_GROWTH_GVA_IN_CONSTRUCTION_AT_CURRENT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).ANNUAL_GROWTH_GVA_IN_CONSTRUCTION_AT_CURRENT_PRICES">
+          <common:Name xml:lang="en">Annual Growth GVA in Construction at Current Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="BALANCE_OF_PAYMENTS_RATIOS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BALANCE_OF_PAYMENTS_RATIOS">
+          <common:Name xml:lang="en">Balance of Payments Ratios</common:Name>
+        </structure:Code>
+        <structure:Code id="BALANCE_ON_CAPITAL_ACCOUNT_CREDITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BALANCE_ON_CAPITAL_ACCOUNT_CREDITS">
+          <common:Name xml:lang="en">Balance on Capital Account Credits</common:Name>
+        </structure:Code>
+        <structure:Code id="BALANCE_ON_CAPITAL_ACCOUNT_DEBITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BALANCE_ON_CAPITAL_ACCOUNT_DEBITS">
+          <common:Name xml:lang="en">Balance on Capital Account Debits</common:Name>
+        </structure:Code>
+        <structure:Code id="ANNUAL_GDP_GROWTH_RATE_BY_SECTOR_AT_CURRENT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).ANNUAL_GDP_GROWTH_RATE_BY_SECTOR_AT_CURRENT_PRICES">
+          <common:Name xml:lang="en">Annual GDP Growth Rate by Sector at Current Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="ANNUAL_GDP_GROWTH_RATE_BY_SECTOR_AT_CONSTANT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).ANNUAL_GDP_GROWTH_RATE_BY_SECTOR_AT_CONSTANT_PRICES">
+          <common:Name xml:lang="en">Annual GDP Growth Rate by Sector at Constant Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="CURRENT_BUDGET_DEFICIT_AND_SURPLUS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).CURRENT_BUDGET_DEFICIT_AND_SURPLUS">
+          <common:Name xml:lang="en">Current Budget Deficit and Surplus</common:Name>
+        </structure:Code>
+        <structure:Code id="BALANCE_ON_CURRENT_ACCOUNT_DEBITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BALANCE_ON_CURRENT_ACCOUNT_DEBITS">
+          <common:Name xml:lang="en">Balance on Current Account Debits</common:Name>
+        </structure:Code>
+        <structure:Code id="BALANCE_ON_CURRENT_ACCOUNT_CREDITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BALANCE_ON_CURRENT_ACCOUNT_CREDITS">
+          <common:Name xml:lang="en">Balance on Current Account Credits</common:Name>
+        </structure:Code>
+        <structure:Code id="BALANCE_ON_CAPITAL_ACCOUNT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BALANCE_ON_CAPITAL_ACCOUNT">
+          <common:Name xml:lang="en">Balance on Capital Account</common:Name>
+        </structure:Code>
+        <structure:Code id="BALANCE_ON_CURRENT_ACCOUNT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BALANCE_ON_CURRENT_ACCOUNT">
+          <common:Name xml:lang="en">Balance on Current Account</common:Name>
+        </structure:Code>
+        <structure:Code id="BANK_INTEREST_RATE_ON_DEPOSITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BANK_INTEREST_RATE_ON_DEPOSITS">
+          <common:Name xml:lang="en">Bank Interest Rate on Deposits</common:Name>
+        </structure:Code>
+        <structure:Code id="BROAD_MONEY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BROAD_MONEY">
+          <common:Name xml:lang="en">Broad Money</common:Name>
+        </structure:Code>
+        <structure:Code id="BANK_INTEREST_RATE_ON_LOANS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).BANK_INTEREST_RATE_ON_LOANS">
+          <common:Name xml:lang="en">Bank Interest Rate on Loans</common:Name>
+        </structure:Code>
+        <structure:Code id="CHILD_POVERTY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).CHILD_POVERTY">
+          <common:Name xml:lang="en">Child Poverty</common:Name>
+        </structure:Code>
+        <structure:Code id="COMPANY_NAME_REGISTRATION_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).COMPANY_NAME_REGISTRATION_SERVICES">
+          <common:Name xml:lang="en">Company Name Registration Services</common:Name>
+        </structure:Code>
+        <structure:Code id="COMPANY_REGISTRATION_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).COMPANY_REGISTRATION_SERVICES">
+          <common:Name xml:lang="en">Company Registration Services</common:Name>
+        </structure:Code>
+        <structure:Code id="CONSUMER_PRICE_INDICES_BY_INDUSTRY_DIVISION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).CONSUMER_PRICE_INDICES_BY_INDUSTRY_DIVISION">
+          <common:Name xml:lang="en">Consumer Price Indices by Industry Division</common:Name>
+        </structure:Code>
+        <structure:Code id="CONSUMER_PRICE_INDEX" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).CONSUMER_PRICE_INDEX">
+          <common:Name xml:lang="en">Consumer Price Index</common:Name>
+        </structure:Code>
+        <structure:Code id="CURRENT_ACCOUNT_BALANCE_AS_A_SHARE_OF_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).CURRENT_ACCOUNT_BALANCE_AS_A_SHARE_OF_GDP">
+          <common:Name xml:lang="en">Current Account Balance as a share of GDP</common:Name>
+        </structure:Code>
+        <structure:Code id="CURRENT_ACCOUNT_BALANCE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).CURRENT_ACCOUNT_BALANCE">
+          <common:Name xml:lang="en">Current Account Balance</common:Name>
+        </structure:Code>
+        <structure:Code id="DEPOSITS_WITH_DEPOSIT_MONEY_BANKS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).DEPOSITS_WITH_DEPOSIT_MONEY_BANKS">
+          <common:Name xml:lang="en">Deposits with Deposit Money Banks</common:Name>
+        </structure:Code>
+        <structure:Code id="GINI_COEFFICIENT_OF_CONSUMPTION_INEQUALITY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GINI_COEFFICIENT_OF_CONSUMPTION_INEQUALITY">
+          <common:Name xml:lang="en">GINI Coefficient of Consumption Inequality</common:Name>
+        </structure:Code>
+        <structure:Code id="GOVERNMENT_BUDGET_SURPLUS_DEFICIT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GOVERNMENT_BUDGET_SURPLUS_DEFICIT">
+          <common:Name xml:lang="en">Government Budget, Surplus/deficit</common:Name>
+        </structure:Code>
+        <structure:Code id="INTEREST_RATE_3_MONTHS_DEPOSIT_END_OF_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).INTEREST_RATE_3_MONTHS_DEPOSIT_END_OF_PERIOD">
+          <common:Name xml:lang="en">Interest Rate, 3 Months Deposit, End of Period</common:Name>
+        </structure:Code>
+        <structure:Code id="EXCHANGE_RATE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).EXCHANGE_RATE">
+          <common:Name xml:lang="en">Exchange Rate</common:Name>
+        </structure:Code>
+        <structure:Code id="EXCHANGE_RATES_AVERAGE_OF_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).EXCHANGE_RATES_AVERAGE_OF_PERIOD">
+          <common:Name xml:lang="en">Exchange Rates, Average of Period</common:Name>
+        </structure:Code>
+        <structure:Code id="GDP_AT_CONSTANT_PRICE_BY_EXPENDITURE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GDP_AT_CONSTANT_PRICE_BY_EXPENDITURE">
+          <common:Name xml:lang="en">GDP at Constant Price by Expenditure</common:Name>
+        </structure:Code>
+        <structure:Code id="EXCHANGE_RATES_END_OF_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).EXCHANGE_RATES_END_OF_PERIOD">
+          <common:Name xml:lang="en">Exchange Rates, End of Period</common:Name>
+        </structure:Code>
+        <structure:Code id="EXPORTS_BY_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).EXPORTS_BY_SECTOR">
+          <common:Name xml:lang="en">Exports by Sector</common:Name>
+        </structure:Code>
+        <structure:Code id="FDI_AS_A_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).FDI_AS_A_GDP">
+          <common:Name xml:lang="en">FDI as a GDP</common:Name>
+        </structure:Code>
+        <structure:Code id="EXPORT_OF_GOODS_AS_A_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).EXPORT_OF_GOODS_AS_A_GDP">
+          <common:Name xml:lang="en">Export of Goods as a GDP</common:Name>
+        </structure:Code>
+        <structure:Code id="FOREIGN_COMPANY_REPRESENTATIVE_AND_BRANCH_NAME_REGISTRATION_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).FOREIGN_COMPANY_REPRESENTATIVE_AND_BRANCH_NAME_REGISTRATION_SERVICES">
+          <common:Name xml:lang="en">Foreign Company Representative and Branch Name Registration Services</common:Name>
+        </structure:Code>
+        <structure:Code id="FOREIGN_EXCHANGE_RESERVES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).FOREIGN_EXCHANGE_RESERVES">
+          <common:Name xml:lang="en">Foreign Exchange Reserves</common:Name>
+        </structure:Code>
+        <structure:Code id="GDP_AT_CONSTANT_PRICE_STATISTICAL_DISCREPANCY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GDP_AT_CONSTANT_PRICE_STATISTICAL_DISCREPANCY">
+          <common:Name xml:lang="en">GDP at Constant Price, Statistical Discrepancy</common:Name>
+        </structure:Code>
+        <structure:Code id="GDP_AT_CONSTANT_PRICES_BY_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GDP_AT_CONSTANT_PRICES_BY_SECTOR">
+          <common:Name xml:lang="en">GDP at Constant Prices by Sector</common:Name>
+        </structure:Code>
+        <structure:Code id="GDP_AT_CURRENT_PRICE_BY_EXPENDITURE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GDP_AT_CURRENT_PRICE_BY_EXPENDITURE">
+          <common:Name xml:lang="en">GDP at Current Price by Expenditure</common:Name>
+        </structure:Code>
+        <structure:Code id="GDP_AT_CURRENT_PRICE_STATISTICAL_DISCREPANCY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GDP_AT_CURRENT_PRICE_STATISTICAL_DISCREPANCY">
+          <common:Name xml:lang="en">GDP at Current Price, Statistical Discrepancy</common:Name>
+        </structure:Code>
+        <structure:Code id="GDP_AT_CURRENT_PRICES_BY_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GDP_AT_CURRENT_PRICES_BY_SECTOR">
+          <common:Name xml:lang="en">GDP at Current Prices by Sector</common:Name>
+        </structure:Code>
+        <structure:Code id="GOVERNMENT_BUDGET_TOTAL_REVENUE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GOVERNMENT_BUDGET_TOTAL_REVENUE">
+          <common:Name xml:lang="en">Government Budget, Total Revenue</common:Name>
+        </structure:Code>
+        <structure:Code id="GOVERNMENT_DEBT_EXTERNAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GOVERNMENT_DEBT_EXTERNAL">
+          <common:Name xml:lang="en">Government Debt, External</common:Name>
+        </structure:Code>
+        <structure:Code id="GOVERNMENT_DEBT_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GOVERNMENT_DEBT_TOTAL">
+          <common:Name xml:lang="en">Government Debt, Total</common:Name>
+        </structure:Code>
+        <structure:Code id="GOVERNMENT_BUDGET_TOTAL_EXPENDITURE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GOVERNMENT_BUDGET_TOTAL_EXPENDITURE">
+          <common:Name xml:lang="en">Government Budget, Total Expenditure</common:Name>
+        </structure:Code>
+        <structure:Code id="INFLATION_RATE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).INFLATION_RATE">
+          <common:Name xml:lang="en">Inflation Rate</common:Name>
+        </structure:Code>
+        <structure:Code id="IMPORTS_BY_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).IMPORTS_BY_SECTOR">
+          <common:Name xml:lang="en">Imports by Sector</common:Name>
+        </structure:Code>
+        <structure:Code id="GROSS_FOREIGN_RESERVES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).GROSS_FOREIGN_RESERVES">
+          <common:Name xml:lang="en">Gross Foreign Reserves</common:Name>
+        </structure:Code>
+        <structure:Code id="IMPLICIT_PRICE_INDICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).IMPLICIT_PRICE_INDICES">
+          <common:Name xml:lang="en">Implicit Price Indices</common:Name>
+        </structure:Code>
+        <structure:Code id="IMPORT_OF_GOODS_AS_A_SHARE_OF_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).IMPORT_OF_GOODS_AS_A_SHARE_OF_GDP">
+          <common:Name xml:lang="en">Import of Goods as a share of GDP</common:Name>
+        </structure:Code>
+        <structure:Code id="INFLATION_RATE_IN_12_MONTHS_AVERAGE_OF_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).INFLATION_RATE_IN_12_MONTHS_AVERAGE_OF_PERIOD">
+          <common:Name xml:lang="en">Inflation Rate in 12 Months, Average of Period</common:Name>
+        </structure:Code>
+        <structure:Code id="INFLATION_RATE_IN_12_MONTHS_END_OF_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).INFLATION_RATE_IN_12_MONTHS_END_OF_PERIOD">
+          <common:Name xml:lang="en">Inflation Rate in 12 Months, End of Period</common:Name>
+        </structure:Code>
+        <structure:Code id="INTEREST_RATE_3_MONTHS_DEPOSIT_AVERAGE_OF_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).INTEREST_RATE_3_MONTHS_DEPOSIT_AVERAGE_OF_PERIOD">
+          <common:Name xml:lang="en">Interest Rate, 3 Months Deposit, Average of Period</common:Name>
+        </structure:Code>
+        <structure:Code id="INTEREST_RATE_3_MONTHS_LENDING_AVERAGE_OF_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).INTEREST_RATE_3_MONTHS_LENDING_AVERAGE_OF_PERIOD">
+          <common:Name xml:lang="en">Interest Rate, 3 Months Lending, Average of Period</common:Name>
+        </structure:Code>
+        <structure:Code id="INTEREST_RATE_3_MONTHS_LENDING_END_OF_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).INTEREST_RATE_3_MONTHS_LENDING_END_OF_PERIOD">
+          <common:Name xml:lang="en">Interest Rate, 3 Months Lending, End of Period</common:Name>
+        </structure:Code>
+        <structure:Code id="PER_CAPITA_GDP_AT_CURRENT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).PER_CAPITA_GDP_AT_CURRENT_PRICES">
+          <common:Name xml:lang="en">Per Capita GDP at Current Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="NARROW_MONEY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).NARROW_MONEY">
+          <common:Name xml:lang="en">Narrow Money</common:Name>
+        </structure:Code>
+        <structure:Code id="NOMINAL_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).NOMINAL_GDP">
+          <common:Name xml:lang="en">Nominal GDP</common:Name>
+        </structure:Code>
+        <structure:Code id="MANUFACTURING_ESTABLISHMENTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).MANUFACTURING_ESTABLISHMENTS">
+          <common:Name xml:lang="en">Manufacturing Establishments</common:Name>
+        </structure:Code>
+        <structure:Code id="PERSONS_ENGAGED_IN_ESTABLISHMENTS_BY_INDUSTRY_DIVISION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).PERSONS_ENGAGED_IN_ESTABLISHMENTS_BY_INDUSTRY_DIVISION">
+          <common:Name xml:lang="en">Persons Engaged in Establishments by Industry Division</common:Name>
+        </structure:Code>
+        <structure:Code id="PERSONS_ENGAGED_IN_MANUFACTURING_ESTABLISHMENTS_LARGE_100_EMPLOYEES_AND_OVER" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).PERSONS_ENGAGED_IN_MANUFACTURING_ESTABLISHMENTS_LARGE_100_EMPLOYEES_AND_OVER">
+          <common:Name xml:lang="en">Persons Engaged in Manufacturing Establishments, Large (100 Employees and Over)</common:Name>
+        </structure:Code>
+        <structure:Code id="PERSONS_ENGAGED_IN_MANUFACTURING_ESTABLISHMENTS_MEDIUM_20_99_EMPLOYEES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).PERSONS_ENGAGED_IN_MANUFACTURING_ESTABLISHMENTS_MEDIUM_20_99_EMPLOYEES">
+          <common:Name xml:lang="en">Persons Engaged in Manufacturing Establishments, Medium (20-99 Employees)</common:Name>
+        </structure:Code>
+        <structure:Code id="PERSONS_ENGAGED_IN_MANUFACTURING_ESTABLISHMENTS_SMALL_10_19_EMPLOYEES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).PERSONS_ENGAGED_IN_MANUFACTURING_ESTABLISHMENTS_SMALL_10_19_EMPLOYEES">
+          <common:Name xml:lang="en">Persons Engaged in Manufacturing Establishments, Small (10-19 Employees)</common:Name>
+        </structure:Code>
+        <structure:Code id="MANUFACTURING_EMPLOYMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).MANUFACTURING_EMPLOYMENT">
+          <common:Name xml:lang="en">Manufacturing Employment</common:Name>
+        </structure:Code>
+        <structure:Code id="MANUFACTURING_ESTABLISHMENTS_BY_INDUSTRY_DIVISION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).MANUFACTURING_ESTABLISHMENTS_BY_INDUSTRY_DIVISION">
+          <common:Name xml:lang="en">Manufacturing Establishments, by Industry Division</common:Name>
+        </structure:Code>
+        <structure:Code id="PER_CAPITA_GDP_AT_CONSTANT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).PER_CAPITA_GDP_AT_CONSTANT_PRICES">
+          <common:Name xml:lang="en">Per Capita GDP at Constant Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="MANUFACTURING_ESTABLISHMENTS_LARGE_100_EMPLOYEES_AND_OVER" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).MANUFACTURING_ESTABLISHMENTS_LARGE_100_EMPLOYEES_AND_OVER">
+          <common:Name xml:lang="en">Manufacturing Establishments, Large (100 Employees and Over)</common:Name>
+        </structure:Code>
+        <structure:Code id="MANUFACTURING_ESTABLISHMENTS_MEDIUM_20_99_EMPLOYEES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).MANUFACTURING_ESTABLISHMENTS_MEDIUM_20_99_EMPLOYEES">
+          <common:Name xml:lang="en">Manufacturing Establishments, Medium (20-99 Employees)</common:Name>
+        </structure:Code>
+        <structure:Code id="MANUFACTURING_ESTABLISHMENTS_SMALL_10_19_EMPLOYEES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).MANUFACTURING_ESTABLISHMENTS_SMALL_10_19_EMPLOYEES">
+          <common:Name xml:lang="en">Manufacturing Establishments, Small (10-19 Employees)</common:Name>
+        </structure:Code>
+        <structure:Code id="OVERALL_BUDGET_DEFICIT_AS_A_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).OVERALL_BUDGET_DEFICIT_AS_A_GDP">
+          <common:Name xml:lang="en">Overall Budget Deficit as a GDP</common:Name>
+        </structure:Code>
+        <structure:Code id="OUTPUT_OF_MANUFACTURING_INDUSTRY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).OUTPUT_OF_MANUFACTURING_INDUSTRY">
+          <common:Name xml:lang="en">Output of Manufacturing Industry</common:Name>
+        </structure:Code>
+        <structure:Code id="POVERTY_GAP_RATIO" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).POVERTY_GAP_RATIO">
+          <common:Name xml:lang="en">Poverty Gap Ratio</common:Name>
+        </structure:Code>
+        <structure:Code id="POPULATION_BELOW_FOOD_POVERTY_LINE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).POPULATION_BELOW_FOOD_POVERTY_LINE">
+          <common:Name xml:lang="en">Population Below Food Poverty Line</common:Name>
+        </structure:Code>
+        <structure:Code id="SI_POV_NAHC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).SI_POV_NAHC">
+          <common:Name xml:lang="en">Population Below National Poverty Line</common:Name>
+        </structure:Code>
+        <structure:Code id="REAL_GDP_AT_CONSTANT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).REAL_GDP_AT_CONSTANT_PRICES">
+          <common:Name xml:lang="en">Real GDP at Constant Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="SHARE_OF_POOREST_QUINTILE_IN_NATIONAL_CONSUMPTION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).SHARE_OF_POOREST_QUINTILE_IN_NATIONAL_CONSUMPTION">
+          <common:Name xml:lang="en">Share of Poorest Quintile in National Consumption</common:Name>
+        </structure:Code>
+        <structure:Code id="STRUCTURE_OF_GDP_BY_ECONOMIC_SECTOR_AT_CONSTANT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).STRUCTURE_OF_GDP_BY_ECONOMIC_SECTOR_AT_CONSTANT_PRICES">
+          <common:Name xml:lang="en">Structure of GDP by Economic Sector at Constant Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="STRUCTURE_OF_GDP_BY_ECONOMIC_SECTOR_AT_CURRENT_PRICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).STRUCTURE_OF_GDP_BY_ECONOMIC_SECTOR_AT_CURRENT_PRICES">
+          <common:Name xml:lang="en">Structure of GDP by Economic Sector at Current Prices</common:Name>
+        </structure:Code>
+        <structure:Code id="SAVINGS_AND_INVESTMENT_AS_A_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).SAVINGS_AND_INVESTMENT_AS_A_GDP">
+          <common:Name xml:lang="en">Savings and Investment as a GDP</common:Name>
+        </structure:Code>
+        <structure:Code id="SOLE_PROPRIETORSHIP_NAME_REGISTRATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).SOLE_PROPRIETORSHIP_NAME_REGISTRATION">
+          <common:Name xml:lang="en">Sole Proprietorship Name Registration</common:Name>
+        </structure:Code>
+        <structure:Code id="TOTAL_GOVERNMENT_BUDGET_EXPENDITURE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).TOTAL_GOVERNMENT_BUDGET_EXPENDITURE">
+          <common:Name xml:lang="en">Total Government Budget Expenditure</common:Name>
+        </structure:Code>
+        <structure:Code id="TOTAL_CREDIT_TO_PRIVATE_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).TOTAL_CREDIT_TO_PRIVATE_SECTOR">
+          <common:Name xml:lang="en">Total Credit to Private Sector</common:Name>
+        </structure:Code>
+        <structure:Code id="TOTAL_DEPOSITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).TOTAL_DEPOSITS">
+          <common:Name xml:lang="en">Total Deposits</common:Name>
+        </structure:Code>
+        <structure:Code id="TOTAL_GOVERNMENT_BUDGET_REVENUES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).TOTAL_GOVERNMENT_BUDGET_REVENUES">
+          <common:Name xml:lang="en">Total Government Budget Revenues</common:Name>
+        </structure:Code>
+        <structure:Code id="TRADE_BALANCE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).TRADE_BALANCE">
+          <common:Name xml:lang="en">Trade Balance</common:Name>
+        </structure:Code>
+        <structure:Code id="TRADE_IN_GOODS_BALANCE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).TRADE_IN_GOODS_BALANCE">
+          <common:Name xml:lang="en">Trade in Goods Balance</common:Name>
+        </structure:Code>
+        <structure:Code id="TRADE_IN_SERVICES_BALANCE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).TRADE_IN_SERVICES_BALANCE">
+          <common:Name xml:lang="en">Trade in Services Balance</common:Name>
+        </structure:Code>
+        <structure:Code id="TRENDS_IN_DEVELOPMENT_ASSISTANCE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).TRENDS_IN_DEVELOPMENT_ASSISTANCE">
+          <common:Name xml:lang="en">Trends in Development Assistance</common:Name>
+        </structure:Code>
+        <structure:Code id="TWO_WAY_TRADE_IN_GOODS_AS_A_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).TWO_WAY_TRADE_IN_GOODS_AS_A_GDP">
+          <common:Name xml:lang="en">Two-way Trade in Goods as a GDP</common:Name>
+        </structure:Code>
+        <structure:Code id="USE_OF_COUNTRY_PUBLIC_FINANCIAL_MANAGEMENT_SYSTEM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).USE_OF_COUNTRY_PUBLIC_FINANCIAL_MANAGEMENT_SYSTEM">
+          <common:Name xml:lang="en">Use of Country Public Financial Management System</common:Name>
+        </structure:Code>
+        <structure:Code id="USE_OF_COUNTRY_SYSTEM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).USE_OF_COUNTRY_SYSTEM">
+          <common:Name xml:lang="en">Use of Country System</common:Name>
+        </structure:Code>
+        <structure:Code id="USE_OF_PROGRAMME_BASED_APPROACH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_ECON_INDICATOR(1.0).USE_OF_PROGRAMME_BASED_APPROACH">
+          <common:Name xml:lang="en">Use of Programme-based Approach</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_EXPENDITURE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_EXPENDITURE(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Expenditure</common:Name>
+        <structure:Code id="_Z" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0)._Z">
+          <common:Name xml:lang="en">NA</common:Name>
+        </structure:Code>
+        <structure:Code id="_T" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0)._T">
+          <common:Name xml:lang="en">Total</common:Name>
+        </structure:Code>
+        <structure:Code id="PRIVATE_CONSUMPTION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).PRIVATE_CONSUMPTION">
+          <common:Name xml:lang="en">Private Consumption</common:Name>
+        </structure:Code>
+        <structure:Code id="PUBLIC_CONSUMPTION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).PUBLIC_CONSUMPTION">
+          <common:Name xml:lang="en">Public Consumption</common:Name>
+        </structure:Code>
+        <structure:Code id="TOTAL_INVESTMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).TOTAL_INVESTMENT">
+          <common:Name xml:lang="en">Total Investment</common:Name>
+        </structure:Code>
+        <structure:Code id="GROSS_FIXED_INVESTMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).GROSS_FIXED_INVESTMENT">
+          <common:Name xml:lang="en">Gross Fixed Investment</common:Name>
+        </structure:Code>
+        <structure:Code id="CONSUMPTION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).CONSUMPTION">
+          <common:Name xml:lang="en">Consumption</common:Name>
+        </structure:Code>
+        <structure:Code id="PRIVATE_GROSS_FIXED_INVESTMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).PRIVATE_GROSS_FIXED_INVESTMENT">
+          <common:Name xml:lang="en">Private Gross Fixed Investment</common:Name>
+        </structure:Code>
+        <structure:Code id="PUBLIC_GROSS_FIXED_INVESTMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).PUBLIC_GROSS_FIXED_INVESTMENT">
+          <common:Name xml:lang="en">Public Gross Fixed Investment</common:Name>
+        </structure:Code>
+        <structure:Code id="CHANGES_IN_STOCK" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).CHANGES_IN_STOCK">
+          <common:Name xml:lang="en">Changes In Stock</common:Name>
+        </structure:Code>
+        <structure:Code id="NET_EXPORTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).NET_EXPORTS">
+          <common:Name xml:lang="en">Net Exports</common:Name>
+        </structure:Code>
+        <structure:Code id="EXPORTS_OF_GOODS_NON-FACTOR_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).EXPORTS_OF_GOODS_NON-FACTOR_SERVICES">
+          <common:Name xml:lang="en">Exports Of Goods Non-Factor Services</common:Name>
+        </structure:Code>
+        <structure:Code id="IMPORTS_OF_GOODS_NON-FACTOR_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_EXPENDITURE(1.0).IMPORTS_OF_GOODS_NON-FACTOR_SERVICES">
+          <common:Name xml:lang="en">Imports Of Goods Non-Factor Services</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_FREQ" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_FREQ(1.1)" agencyID="KH_NIS" version="1.1" isFinal="true">
+        <common:Name xml:lang="en">Frequency</common:Name>
+        <structure:Code id="A" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_FREQ(1.1).A">
+          <common:Annotations>
+            <common:Annotation id="ANN_DEFAULTCODE1">
+              <common:AnnotationType>DEFAULT</common:AnnotationType>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Annual</common:Name>
+        </structure:Code>
+        <structure:Code id="M" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_FREQ(1.1).M">
+          <common:Name xml:lang="en">Monthly</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_LOCATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_LOCATION(1.1)" agencyID="KH_NIS" version="1.1" isFinal="true">
+        <common:Name xml:lang="en">Localization</common:Name>
+        <structure:Code id="_Z" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_LOCATION(1.1)._Z">
+          <common:Name xml:lang="en">NA</common:Name>
+        </structure:Code>
+        <structure:Code id="R" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_LOCATION(1.1).R">
+          <common:Name xml:lang="en">Rural</common:Name>
+        </structure:Code>
+        <structure:Code id="U" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_LOCATION(1.1).U">
+          <common:Name xml:lang="en">Urban</common:Name>
+        </structure:Code>
+        <structure:Code id="_T" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_LOCATION(1.1)._T">
+          <common:Name xml:lang="en">Total</common:Name>
+        </structure:Code>
+        <structure:Code id="RA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_LOCATION(1.1).RA">
+          <common:Name xml:lang="en">Remote Area</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_PAYMENT_RATIO_TYPE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Payment Ratio Type</common:Name>
+        <structure:Code id="_Z" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0)._Z">
+          <common:Name xml:lang="en">NA</common:Name>
+        </structure:Code>
+        <structure:Code id="CURRENT_ACCOUNT_BALANCE_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).CURRENT_ACCOUNT_BALANCE_GDP">
+          <common:Name xml:lang="en">Current Account Balance Gdp</common:Name>
+        </structure:Code>
+        <structure:Code id="DEBT_SERVICE_EXPORTS_OF_GOODS_AND_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).DEBT_SERVICE_EXPORTS_OF_GOODS_AND_SERVICES">
+          <common:Name xml:lang="en">Debt Service Exports Of Goods And Services</common:Name>
+        </structure:Code>
+        <structure:Code id="CURRENT_TRANSFERS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).CURRENT_TRANSFERS">
+          <common:Name xml:lang="en">Current Transfers</common:Name>
+        </structure:Code>
+        <structure:Code id="GOODS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).GOODS">
+          <common:Name xml:lang="en">Goods</common:Name>
+        </structure:Code>
+        <structure:Code id="INCOME" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).INCOME">
+          <common:Name xml:lang="en">Income</common:Name>
+        </structure:Code>
+        <structure:Code id="SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).SERVICES">
+          <common:Name xml:lang="en">Services</common:Name>
+        </structure:Code>
+        <structure:Code id="EXPORTS_FREIGHT_ON_BOAT_CURRENT_ACCOUNT_CREDITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).EXPORTS_FREIGHT_ON_BOAT_CURRENT_ACCOUNT_CREDITS">
+          <common:Name xml:lang="en">Exports Freight On Boat Current Account Credits</common:Name>
+        </structure:Code>
+        <structure:Code id="GOODS_AND_SERVICES_CREDITS_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).GOODS_AND_SERVICES_CREDITS_GDP">
+          <common:Name xml:lang="en">Goods And Services Credits Gdp</common:Name>
+        </structure:Code>
+        <structure:Code id="GOODS_AND_SERVICES_DEBITS_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).GOODS_AND_SERVICES_DEBITS_GDP">
+          <common:Name xml:lang="en">Goods And Services Debits Gdp</common:Name>
+        </structure:Code>
+        <structure:Code id="GROSS_EXTERNAL_DEBT_EXPORTS_OF_GOODS_AND_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).GROSS_EXTERNAL_DEBT_EXPORTS_OF_GOODS_AND_SERVICES">
+          <common:Name xml:lang="en">Gross External Debt Exports Of Goods And Services</common:Name>
+        </structure:Code>
+        <structure:Code id="GROSS_EXTERNAL_DEBT_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).GROSS_EXTERNAL_DEBT_GDP">
+          <common:Name xml:lang="en">Gross External Debt Gdp</common:Name>
+        </structure:Code>
+        <structure:Code id="IMPORTS_FREIGHT_ON_BOAT_CURRENT_ACCOUNT_DEBITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).IMPORTS_FREIGHT_ON_BOAT_CURRENT_ACCOUNT_DEBITS">
+          <common:Name xml:lang="en">Imports Freight On Boat Current Account Debits</common:Name>
+        </structure:Code>
+        <structure:Code id="INVESTMENT_INCOME_CREDITS_CURRENT_ACCOUNT_CREDITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).INVESTMENT_INCOME_CREDITS_CURRENT_ACCOUNT_CREDITS">
+          <common:Name xml:lang="en">Investment Income Credits Current Account Credits</common:Name>
+        </structure:Code>
+        <structure:Code id="INVESTMENT_INCOME_DEBITS_CURRENT_ACCOUNT_DEBITS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).INVESTMENT_INCOME_DEBITS_CURRENT_ACCOUNT_DEBITS">
+          <common:Name xml:lang="en">Investment Income Debits Current Account Debits</common:Name>
+        </structure:Code>
+        <structure:Code id="NET_EXTERNAL_DEBT_EXPORTS_OF_GOODS_AND_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).NET_EXTERNAL_DEBT_EXPORTS_OF_GOODS_AND_SERVICES">
+          <common:Name xml:lang="en">Net External Debt Exports Of Goods And Services</common:Name>
+        </structure:Code>
+        <structure:Code id="NET_EXTERNAL_DEBT_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).NET_EXTERNAL_DEBT_GDP">
+          <common:Name xml:lang="en">Net External Debt Gdp</common:Name>
+        </structure:Code>
+        <structure:Code id="NET_INTERNATIONAL_INVESTMENT_POSITION_GDP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).NET_INTERNATIONAL_INVESTMENT_POSITION_GDP">
+          <common:Name xml:lang="en">Net International Investment Position Gdp</common:Name>
+        </structure:Code>
+        <structure:Code id="RESERVES_AT_END_OF_PERIOD_IMPORTS_OF_GOODS_AND_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).RESERVES_AT_END_OF_PERIOD_IMPORTS_OF_GOODS_AND_SERVICES">
+          <common:Name xml:lang="en">Reserves At End Of Period Imports Of Goods And Services</common:Name>
+        </structure:Code>
+        <structure:Code id="OFFICIAL_RESERVE_IN_MONTHS_OF_IMPORTS_OF_GOODS_AND_SERVICES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_PAYMENT_RATIO_TYPE(1.0).OFFICIAL_RESERVE_IN_MONTHS_OF_IMPORTS_OF_GOODS_AND_SERVICES">
+          <common:Name xml:lang="en">Official Reserve In Months Of Imports Of Goods And Services</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_REF_AREA_LIMITED" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_REF_AREA_LIMITED(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Reference area</common:Name>
+        <structure:Code id="1" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).1">
+          <common:Name xml:lang="en">World</common:Name>
+        </structure:Code>
+        <structure:Code id="ASIKHM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM">
+          <common:Annotations>
+            <common:Annotation id="ANN_DEFAULTCODE3">
+              <common:AnnotationType>DEFAULT</common:AnnotationType>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Cambodia</common:Name>
+          <structure:Parent>
+            <Ref id="1" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM001" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM001">
+          <common:Name xml:lang="en">Banteay Meanchey</common:Name>
+          <common:Name xml:lang="km">បន្ទាយមានជ័យ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM002" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM002">
+          <common:Name xml:lang="en">Battambang</common:Name>
+          <common:Name xml:lang="km">បាត់ដំបង</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM003" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM003">
+          <common:Name xml:lang="en">Kampong Cham</common:Name>
+          <common:Name xml:lang="km">កំពង់ចាម</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM004" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM004">
+          <common:Name xml:lang="en">Kampong Chhnang</common:Name>
+          <common:Name xml:lang="km">កំពង់ឆ្នាំង</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM005" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM005">
+          <common:Name xml:lang="en">Kampong Speu</common:Name>
+          <common:Name xml:lang="km">កំពង់ស្ពឺ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM006" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM006">
+          <common:Name xml:lang="en">Kampong Thom</common:Name>
+          <common:Name xml:lang="km">កំពង់ធំ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM007" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM007">
+          <common:Name xml:lang="en">Kampot</common:Name>
+          <common:Name xml:lang="km">កំពត</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM008" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM008">
+          <common:Name xml:lang="en">Kandal</common:Name>
+          <common:Name xml:lang="km">កណ្តាល</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM009" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM009">
+          <common:Name xml:lang="en">Koh Kong</common:Name>
+          <common:Name xml:lang="km">កោះកុង</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM012" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM012">
+          <common:Name xml:lang="en">Phnom Penh</common:Name>
+          <common:Name xml:lang="km">ភ្នំពេញ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM014" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM014">
+          <common:Name xml:lang="en">Prey Veng</common:Name>
+          <common:Name xml:lang="km">ព្រៃវែង</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM015" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM015">
+          <common:Name xml:lang="en">Pursat</common:Name>
+          <common:Name xml:lang="km">ពោធិ៍សាត់</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM020" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM020">
+          <common:Name xml:lang="en">Svay Rieng</common:Name>
+          <common:Name xml:lang="km">ស្វាយរៀង</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM021" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM021">
+          <common:Name xml:lang="en">Takeo</common:Name>
+          <common:Name xml:lang="km">តាកែវ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM031" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM031">
+          <common:Name xml:lang="en">Battambang and Pailin</common:Name>
+          <common:Name xml:lang="km">បាត់ដំបងនឹងប៉ៃលិន</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM032" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM032">
+          <common:Name xml:lang="en">Kampot, Preah Sihanouk and Kep</common:Name>
+          <common:Name xml:lang="km">កំពត ព្រះសីហនុនិងកែប</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM033" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM033">
+          <common:Name xml:lang="en">Kratie, Preah Vihear and Stung Treng</common:Name>
+          <common:Name xml:lang="km">ក្រចេះ ព្រះវិហារនិងស្ទឹងត្រែង</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM034" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM034">
+          <common:Name xml:lang="en">Mondul Kiri and Ratanak Kiri</common:Name>
+          <common:Name xml:lang="km">មណ្ឌលគីរីនិងរតនគីរី</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM035" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM035">
+          <common:Name xml:lang="en">Otdar Meanchey and Siem Reap</common:Name>
+          <common:Name xml:lang="km">ឧត្តរមានជ័យនិងសៀមរាប</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM010" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM010">
+          <common:Name xml:lang="en">Kratie</common:Name>
+          <common:Name xml:lang="km">ក្រចេះ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM017" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM017">
+          <common:Name xml:lang="en">Siem Reap</common:Name>
+          <common:Name xml:lang="km">សៀមរាប</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM022" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM022">
+          <common:Name xml:lang="en">Otdar Meanchey</common:Name>
+          <common:Name xml:lang="km">ឧត្តរមានជ័យ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM113" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM113">
+          <common:Name xml:lang="en">Kampot and Kep</common:Name>
+          <common:Name xml:lang="km">កំពតនិងកែប</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM114" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM114">
+          <common:Name xml:lang="en">Koh Kong and Preah Sihanouk</common:Name>
+          <common:Name xml:lang="km">កោះកុងនិងព្រះសីហនុ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM116" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM116">
+          <common:Name xml:lang="en">Preah Vihear and Stung Treng</common:Name>
+          <common:Name xml:lang="km">ព្រះវិហារនិងស្ទឹងត្រែង</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM013" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM013">
+          <common:Name xml:lang="en">Preah Vihear</common:Name>
+          <common:Name xml:lang="km">ព្រះវិហារ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM016" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM016">
+          <common:Name xml:lang="en">Ratanak Kiri</common:Name>
+          <common:Name xml:lang="km">រតនគីរី</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM019" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM019">
+          <common:Name xml:lang="en">Stung Treng</common:Name>
+          <common:Name xml:lang="km">ស្ទឹងត្រែង</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM011" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM011">
+          <common:Name xml:lang="en">Mondul Kiri</common:Name>
+          <common:Name xml:lang="km">មណ្ឌលគីរី</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM018" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM018">
+          <common:Name xml:lang="en">Preah Sihanouk</common:Name>
+          <common:Name xml:lang="km">ព្រះសីហនុ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM023" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM023">
+          <common:Name xml:lang="en">Kep</common:Name>
+          <common:Name xml:lang="km">កែប</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM024" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM024">
+          <common:Name xml:lang="en">Pailin</common:Name>
+          <common:Name xml:lang="km">ប៉ៃលិន</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM025" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM025">
+          <common:Name xml:lang="en">Tboung Khmum</common:Name>
+          <common:Name xml:lang="km">ត្បូងឃ្មុំ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM093" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM093">
+          <common:Name xml:lang="en">Coastal Region</common:Name>
+          <common:Name xml:lang="km">តំបន់មាត់សមុទ្រ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM094" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM094">
+          <common:Name xml:lang="en">Plateau and Mountain Region</common:Name>
+          <common:Name xml:lang="km">តំបន់ខ្ពង់រាបនិងតំបន់ភ្នំ</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM091" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM091">
+          <common:Name xml:lang="en">Plains Region</common:Name>
+          <common:Name xml:lang="km">តំបន់ទំនាប</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ASIKHM092" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_REF_AREA_LIMITED(1.0).ASIKHM092">
+          <common:Name xml:lang="en">Tonle Sap Region</common:Name>
+          <common:Name xml:lang="km">តំបន់បឹងទន្លេសាប</common:Name>
+          <structure:Parent>
+            <Ref id="ASIKHM" />
+          </structure:Parent>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_RESPONSIBLE_AGENCY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2)" agencyID="KH_NIS" version="1.2" isFinal="true">
+        <common:Name xml:lang="en">Responsible Agency</common:Name>
+        <structure:Code id="MOSAVY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOSAVY">
+          <common:Name xml:lang="en">Ministry of Social Affairs, Veterans and Youth Rehabilitation</common:Name>
+          <common:Name xml:lang="km">ក្រសួងសង្គមកិច្ខ អតីតយុទ្ធជន និងយុវនិតិសម្បទា</common:Name>
+        </structure:Code>
+        <structure:Code id="MAFF" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MAFF">
+          <common:Name xml:lang="en">Ministry of Agriculture, Forestry and Fisheries</common:Name>
+          <common:Name xml:lang="km">ក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ</common:Name>
+        </structure:Code>
+        <structure:Code id="MRD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MRD">
+          <common:Name xml:lang="en">Ministry of Rural Development</common:Name>
+          <common:Name xml:lang="km">ក្រសួងអភិវឌ្ឍន៍ជនបទ</common:Name>
+        </structure:Code>
+        <structure:Code id="MOT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOT">
+          <common:Name xml:lang="en">Ministry of Tourism</common:Name>
+          <common:Name xml:lang="km">ក្រសួងទេសចរណ៌</common:Name>
+        </structure:Code>
+        <structure:Code id="EDC_MOME" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).EDC_MOME">
+          <common:Name xml:lang="en">Ministry of Industry Mines and Energy</common:Name>
+          <common:Name xml:lang="km">ក្រសួងឧស្សាហកម្ម រ៉ែ និងថាមពល</common:Name>
+        </structure:Code>
+        <structure:Code id="MOP_NIS_MOH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOP_NIS_MOH">
+          <common:Name xml:lang="en">Ministry of Planning and Ministry of Health</common:Name>
+          <common:Name xml:lang="km">ក្រសួងផែនការ និងក្រសួងសុខាភិបាល</common:Name>
+        </structure:Code>
+        <structure:Code id="SSCA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).SSCA">
+          <common:Name xml:lang="en">State Secretariat of Civil Aviation</common:Name>
+          <common:Name xml:lang="km">រដ្ឋលេខាធិការដ្ឋានអាកាសចរណ៌ស៊ីវិល</common:Name>
+        </structure:Code>
+        <structure:Code id="MOP_NIS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOP_NIS">
+          <common:Name xml:lang="en">Ministry of Planning</common:Name>
+          <common:Name xml:lang="km">ក្រសួងផែនការ</common:Name>
+        </structure:Code>
+        <structure:Code id="MWRM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MWRM">
+          <common:Name xml:lang="en">Ministry of Water Resource Management and Meteorology</common:Name>
+          <common:Name xml:lang="km">ក្រសួងធនធានទឹក និងឧត្តុនិយម</common:Name>
+        </structure:Code>
+        <structure:Code id="NBC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).NBC">
+          <common:Name xml:lang="en">National Bank of Cambodia</common:Name>
+          <common:Name xml:lang="km">ធនាគារជាតិនៃកម្ពុជា</common:Name>
+        </structure:Code>
+        <structure:Code id="MEF" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MEF">
+          <common:Name xml:lang="en">Ministry of Economy and Finance</common:Name>
+          <common:Name xml:lang="km">ក្រសួងសេដ្ឋកិច្ច និងហិរញ្ញវត្ថុ</common:Name>
+        </structure:Code>
+        <structure:Code id="MPTC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MPTC">
+          <common:Name xml:lang="en">Ministry of Post and Telecommunication</common:Name>
+        </structure:Code>
+        <structure:Code id="MOH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOH">
+          <common:Name xml:lang="en">Ministry of Health</common:Name>
+          <common:Name xml:lang="km">ក្រសួងសុខាភិបាល</common:Name>
+        </structure:Code>
+        <structure:Code id="CMN_MOH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).CMN_MOH">
+          <common:Name xml:lang="en">Ministry of Health</common:Name>
+          <common:Name xml:lang="km">ក្រសួងសុខាភិបាល</common:Name>
+        </structure:Code>
+        <structure:Code id="MOEYS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOEYS">
+          <common:Name xml:lang="en">Ministry of Education, Youth and Sport</common:Name>
+          <common:Name xml:lang="km">ក្រសួងអប់រំ យុវជន និងកីឡា</common:Name>
+        </structure:Code>
+        <structure:Code id="MLMUC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MLMUC">
+          <common:Name xml:lang="en">Ministry of Land Management, Urbanisation and Construction</common:Name>
+          <common:Name xml:lang="km">ក្រសួងដែនដីនគរូបនីយកម្ម និងសំណង់</common:Name>
+        </structure:Code>
+        <structure:Code id="MOE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOE">
+          <common:Name xml:lang="en">Ministry of Environment</common:Name>
+          <common:Name xml:lang="km">ក្រសួងបរិស្ថាន</common:Name>
+        </structure:Code>
+        <structure:Code id="MOC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOC">
+          <common:Name xml:lang="en">Ministry of Commerce</common:Name>
+          <common:Name xml:lang="km">ក្រសួងពាណិជ្ជកម្ម</common:Name>
+        </structure:Code>
+        <structure:Code id="EDC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).EDC">
+          <common:Name xml:lang="en">Ministry of Industry Mines and Energy</common:Name>
+          <common:Name xml:lang="km">ក្រសួងឧស្សាហកម្ម រ៉ែ និងថាមពល</common:Name>
+        </structure:Code>
+        <structure:Code id="NIS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).NIS">
+          <common:Name xml:lang="en">Ministry of Planning</common:Name>
+          <common:Name xml:lang="km">ក្រសួងផែនការ</common:Name>
+        </structure:Code>
+        <structure:Code id="MCFA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MCFA">
+          <common:Name xml:lang="en">Ministry of Culture Fine Arts</common:Name>
+          <common:Name xml:lang="km">ក្រសួងវប្បធម៌និងវិចិត្រសិល្បៈ</common:Name>
+        </structure:Code>
+        <structure:Code id="NCDD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).NCDD">
+          <common:Name xml:lang="en">Ministry of Planning</common:Name>
+          <common:Name xml:lang="km">ក្រសួងផែនការ</common:Name>
+        </structure:Code>
+        <structure:Code id="MOP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOP">
+          <common:Name xml:lang="en">Ministry of Planning</common:Name>
+          <common:Name xml:lang="km">ក្រសួងផែនការ</common:Name>
+        </structure:Code>
+        <structure:Code id="GLOBAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).GLOBAL">
+          <common:Name xml:lang="en">GLOBAL</common:Name>
+        </structure:Code>
+        <structure:Code id="MOWA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOWA">
+          <common:Name xml:lang="en">Ministry of Women Affairs</common:Name>
+          <common:Name xml:lang="km">ក្រសួងកិច្ចការនារី</common:Name>
+        </structure:Code>
+        <structure:Code id="CAMBODIA_RED_CROSS_CMAA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).CAMBODIA_RED_CROSS_CMAA">
+          <common:Name xml:lang="en">Cambodian Mine Action and Victim Assistance Authority</common:Name>
+          <common:Name xml:lang="km">អាជ្ញាធរមីនកម្ពុជា</common:Name>
+        </structure:Code>
+        <structure:Code id="MPWT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MPWT">
+          <common:Name xml:lang="en">Ministry of Public Works and Transport</common:Name>
+          <common:Name xml:lang="km">ក្រសួងសាធារណការ និងដឹកជញ្ជូន</common:Name>
+        </structure:Code>
+        <structure:Code id="CMAA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).CMAA">
+          <common:Name xml:lang="en">Cambodian Mine Action and Victim Assistance Authority</common:Name>
+          <common:Name xml:lang="km">អាជ្ញាធរមីនកម្ពុជា</common:Name>
+        </structure:Code>
+        <structure:Code id="MLVT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MLVT">
+          <common:Name xml:lang="en">Ministry of Labour and Vocational Training</common:Name>
+          <common:Name xml:lang="km">ក្រសួងការងារនិងបណ្តុះបណ្តាលវិជ្ជាជីវៈ</common:Name>
+        </structure:Code>
+        <structure:Code id="MOP_WB" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOP_WB">
+          <common:Name xml:lang="en">Ministry of Planning</common:Name>
+          <common:Name xml:lang="km">ក្រសួងផែនការ</common:Name>
+        </structure:Code>
+        <structure:Code id="MAFF_FORESTRY_ADMINISTRATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MAFF_FORESTRY_ADMINISTRATION">
+          <common:Name xml:lang="en">Ministry of Agriculture, Forestry and Fisheries</common:Name>
+          <common:Name xml:lang="km">ក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ</common:Name>
+        </structure:Code>
+        <structure:Code id="MOINFO" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).MOINFO">
+          <common:Name xml:lang="en">Ministry of Information</common:Name>
+          <common:Name xml:lang="km">ក្រសួងព័ត៌មាន</common:Name>
+        </structure:Code>
+        <structure:Code id="CDC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_RESPONSIBLE_AGENCY(1.2).CDC">
+          <common:Name xml:lang="en">Council for the Development of Cambodia</common:Name>
+          <common:Name xml:lang="km">ក្រុមប្រឹក្សាអភិវឌ្ឍន៌កម្ពុជា</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_UNIT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_UNIT(1.2)" agencyID="KH_NIS" version="1.2" isFinal="true">
+        <common:Name xml:lang="en">Unit</common:Name>
+        <structure:Code id="NUMBER" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).NUMBER">
+          <common:Name xml:lang="en">Number</common:Name>
+          <common:Name xml:lang="km">ចំនួន</common:Name>
+        </structure:Code>
+        <structure:Code id="PERCENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PERCENT">
+          <common:Name xml:lang="en">Percent</common:Name>
+          <common:Name xml:lang="km">ភាគរយ</common:Name>
+        </structure:Code>
+        <structure:Code id="ROOMS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).ROOMS">
+          <common:Name xml:lang="en">Rooms</common:Name>
+          <common:Name xml:lang="km">បន្ទប់</common:Name>
+        </structure:Code>
+        <structure:Code id="KWH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).KWH">
+          <common:Name xml:lang="en">Kilowatt hours</common:Name>
+          <common:Name xml:lang="km">លាន Kwh</common:Name>
+        </structure:Code>
+        <structure:Code id="PER_1_000_POPULATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PER_1_000_POPULATION">
+          <common:Name xml:lang="en">Per 1,000 population</common:Name>
+          <common:Name xml:lang="km">ក្នុង១០០០នាក់</common:Name>
+        </structure:Code>
+        <structure:Code id="PASSENGERS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PASSENGERS">
+          <common:Name xml:lang="en">Passengers</common:Name>
+          <common:Name xml:lang="km">អ្នកដំណើរ</common:Name>
+        </structure:Code>
+        <structure:Code id="KHR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).KHR">
+          <common:Name xml:lang="en">Cambodian Riels</common:Name>
+          <common:Name xml:lang="km">រៀល</common:Name>
+        </structure:Code>
+        <structure:Code id="LIVE_BIRTHS_PER_1_000_WOMEN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).LIVE_BIRTHS_PER_1_000_WOMEN">
+          <common:Name xml:lang="en">Live births per 1,000 women</common:Name>
+          <common:Name xml:lang="km">កំណើតរស់ក្នុងស្រ្តី ១០០០នាក់</common:Name>
+        </structure:Code>
+        <structure:Code id="HA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).HA">
+          <common:Name xml:lang="en">Hectares</common:Name>
+          <common:Name xml:lang="km">ហិកតា</common:Name>
+        </structure:Code>
+        <structure:Code id="TONS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).TONS">
+          <common:Name xml:lang="en">Tons</common:Name>
+          <common:Name xml:lang="km">តោន</common:Name>
+        </structure:Code>
+        <structure:Code id="HEADS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).HEADS">
+          <common:Name xml:lang="en">Heads</common:Name>
+          <common:Name xml:lang="km">លានក្បាល</common:Name>
+        </structure:Code>
+        <structure:Code id="USD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).USD">
+          <common:Name xml:lang="en">US Dollars</common:Name>
+          <common:Name xml:lang="km">លានដុល្លា</common:Name>
+        </structure:Code>
+        <structure:Code id="T" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).T">
+          <common:Name xml:lang="en">Tons</common:Name>
+          <common:Name xml:lang="km">តោន</common:Name>
+        </structure:Code>
+        <structure:Code id="PERSON" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PERSON">
+          <common:Name xml:lang="en">Persons</common:Name>
+          <common:Name xml:lang="km">នាក់</common:Name>
+        </structure:Code>
+        <structure:Code id="PERCENT_PERSONS_PER_100_POP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PERCENT_PERSONS_PER_100_POP">
+          <common:Name xml:lang="en">Percentage of Persons Per 100 Population</common:Name>
+          <common:Name xml:lang="km">ភាគរយ</common:Name>
+        </structure:Code>
+        <structure:Code id="DEATHS_PER_1_000_LIVE_BIRTHS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).DEATHS_PER_1_000_LIVE_BIRTHS">
+          <common:Name xml:lang="en">Deaths per 1,000 live births</common:Name>
+          <common:Name xml:lang="km">ស្លាប់ក្នុង ១​០០០កំណើតរស់</common:Name>
+        </structure:Code>
+        <structure:Code id="PER_100_000_POPULATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PER_100_000_POPULATION">
+          <common:Name xml:lang="en">Per 100,000 population</common:Name>
+          <common:Name xml:lang="km">ក្នុង១០០​ ០០០នាក់</common:Name>
+        </structure:Code>
+        <structure:Code id="SITES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).SITES">
+          <common:Name xml:lang="en">Sites</common:Name>
+          <common:Name xml:lang="km">កន្លែង</common:Name>
+        </structure:Code>
+        <structure:Code id="LIVE_BIRTHS_PER_1_000_POPULATION" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).LIVE_BIRTHS_PER_1_000_POPULATION">
+          <common:Name xml:lang="en">Live births per 1,000 population</common:Name>
+          <common:Name xml:lang="km">កំណើតរស់ក្នុងប្រជាជន១០០០នាក់</common:Name>
+        </structure:Code>
+        <structure:Code id="KM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).KM">
+          <common:Name xml:lang="en">Kilometers</common:Name>
+          <common:Name xml:lang="km">គម</common:Name>
+        </structure:Code>
+        <structure:Code id="KHR_PER_USD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).KHR_PER_USD">
+          <common:Name xml:lang="en">Cambodian Riels per US Dollars</common:Name>
+          <common:Name xml:lang="km">រៀល/ដុល្លា</common:Name>
+        </structure:Code>
+        <structure:Code id="RATIO" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).RATIO">
+          <common:Name xml:lang="en">Ratio</common:Name>
+          <common:Name xml:lang="km">សមាមាត្រ</common:Name>
+        </structure:Code>
+        <structure:Code id="MONTHS_OF_IMPORTS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).MONTHS_OF_IMPORTS">
+          <common:Name xml:lang="en">Months of Imports</common:Name>
+          <common:Name xml:lang="km">ខែនៃការនាំចូល</common:Name>
+        </structure:Code>
+        <structure:Code id="PERSONS_PER_100000_POP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PERSONS_PER_100000_POP">
+          <common:Name xml:lang="en">Persons Per 100,000 Population</common:Name>
+          <common:Name xml:lang="km">ករណី</common:Name>
+        </structure:Code>
+        <structure:Code id="CASES" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).CASES">
+          <common:Name xml:lang="en">Cases</common:Name>
+          <common:Name xml:lang="km">ករណី</common:Name>
+        </structure:Code>
+        <structure:Code id="PERCENTAGE_PERSONS_PER_100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PERCENTAGE_PERSONS_PER_100">
+          <common:Name xml:lang="en">Percentage of Persons Per 100 Population</common:Name>
+          <common:Name xml:lang="km">ភាគរយ</common:Name>
+        </structure:Code>
+        <structure:Code id="PERSONS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PERSONS">
+          <common:Name xml:lang="en">Persons</common:Name>
+          <common:Name xml:lang="km">ចំនួន</common:Name>
+        </structure:Code>
+        <structure:Code id="YEAR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).YEAR">
+          <common:Name xml:lang="en">Years</common:Name>
+          <common:Name xml:lang="km">ឆ្នាំ</common:Name>
+        </structure:Code>
+        <structure:Code id="DEATHS_PER_100_000_LIVE_BIRTHS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).DEATHS_PER_100_000_LIVE_BIRTHS">
+          <common:Name xml:lang="en">Deaths per 100,000 live births</common:Name>
+          <common:Name xml:lang="km">ស្លាប់ក្នុង ១​០០ ០០០កំណើតរស់</common:Name>
+        </structure:Code>
+        <structure:Code id="SQ_KM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).SQ_KM">
+          <common:Name xml:lang="en">Square kilometers</common:Name>
+          <common:Name xml:lang="km">sq. km</common:Name>
+        </structure:Code>
+        <structure:Code id="PERSON_PER_SQ_KM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PERSON_PER_SQ_KM">
+          <common:Name xml:lang="en">Persons per square kilometers</common:Name>
+          <common:Name xml:lang="km">នាក់ក្នុង ១គីឡូម៉ែត្រការេ</common:Name>
+        </structure:Code>
+        <structure:Code id="PERCENT_PERSONS_PER_100000_POP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PERCENT_PERSONS_PER_100000_POP">
+          <common:Name xml:lang="en">Percent Persons Per 100,000 Population</common:Name>
+          <common:Name xml:lang="km">ភាគរយ</common:Name>
+        </structure:Code>
+        <structure:Code id="PUPIL_PER_TEACHER" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).PUPIL_PER_TEACHER">
+          <common:Name xml:lang="en">Pupils per Teacher</common:Name>
+          <common:Name xml:lang="km">សិស្សសម្រាប់គ្រូម្នាក់</common:Name>
+        </structure:Code>
+        <structure:Code id="M_PER_100_F" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).M_PER_100_F">
+          <common:Name xml:lang="en">Males per 100 Females</common:Name>
+          <common:Name xml:lang="km">ប្រុសក្នុងស្រ្តី ១០០នាក់</common:Name>
+        </structure:Code>
+        <structure:Code id="LIVE_BIRTHS_PER_WOMAN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).LIVE_BIRTHS_PER_WOMAN">
+          <common:Name xml:lang="en">Live births per woman</common:Name>
+          <common:Name xml:lang="km">កំណើតរស់ក្នុងស្រ្តី១នាក់</common:Name>
+        </structure:Code>
+        <structure:Code id="KHR_PER_DAY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT(1.2).KHR_PER_DAY">
+          <common:Name xml:lang="en">Cambodian Riels per day</common:Name>
+          <common:Name xml:lang="km">រៀល/ថ្ងៃ</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_UNIT_MULTIPLIER" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=KH_NIS:CL_UNIT_MULTIPLIER(1.1)" agencyID="KH_NIS" version="1.1" isFinal="true">
+        <common:Name xml:lang="en">Unit Multiplier</common:Name>
+        <structure:Code id="0" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).0">
+          <common:Name xml:lang="en">Units</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of zero (10^0)</common:Description>
+        </structure:Code>
+        <structure:Code id="1" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).1">
+          <common:Name xml:lang="en">Tens</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of one (10^1)</common:Description>
+        </structure:Code>
+        <structure:Code id="2" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).2">
+          <common:Name xml:lang="en">Hundreds</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of two (10^2)</common:Description>
+        </structure:Code>
+        <structure:Code id="3" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).3">
+          <common:Name xml:lang="en">Thousands</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of three (10^3)</common:Description>
+        </structure:Code>
+        <structure:Code id="4" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).4">
+          <common:Name xml:lang="en">Tens of thousands</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of four (10^4)</common:Description>
+        </structure:Code>
+        <structure:Code id="5" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).5">
+          <common:Name xml:lang="en">Hundreds of thousands</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of five(10^5)</common:Description>
+        </structure:Code>
+        <structure:Code id="6" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).6">
+          <common:Name xml:lang="en">Millions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of six (10^6)</common:Description>
+        </structure:Code>
+        <structure:Code id="7" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).7">
+          <common:Name xml:lang="en">Tens of millions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of seven (10^7)</common:Description>
+        </structure:Code>
+        <structure:Code id="8" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).8">
+          <common:Name xml:lang="en">Hundreds of millions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of eight (10^8)</common:Description>
+        </structure:Code>
+        <structure:Code id="9" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).9">
+          <common:Name xml:lang="en">Billions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of nine (10^9)</common:Description>
+        </structure:Code>
+        <structure:Code id="10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).10">
+          <common:Name xml:lang="en">Tens of billions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of ten (10^10)</common:Description>
+        </structure:Code>
+        <structure:Code id="11" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).11">
+          <common:Name xml:lang="en">Hundreds of billions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of eleven (10^11)</common:Description>
+        </structure:Code>
+        <structure:Code id="12" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).12">
+          <common:Name xml:lang="en">Trillions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of twelve (10^12)</common:Description>
+        </structure:Code>
+        <structure:Code id="13" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).13">
+          <common:Name xml:lang="en">Tens of trillions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of thirteen (10^13)</common:Description>
+        </structure:Code>
+        <structure:Code id="14" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).14">
+          <common:Name xml:lang="en">Hundreds of trillions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of fourteen (10^14)</common:Description>
+        </structure:Code>
+        <structure:Code id="15" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).15">
+          <common:Name xml:lang="en">Quadrillions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of fifteen (10^15)</common:Description>
+        </structure:Code>
+        <structure:Code id="-1" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-1">
+          <common:Name xml:lang="en">Tenths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus one (10^-1)</common:Description>
+        </structure:Code>
+        <structure:Code id="-2" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-2">
+          <common:Name xml:lang="en">Hundredths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus two (10^-2)</common:Description>
+        </structure:Code>
+        <structure:Code id="-3" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-3">
+          <common:Name xml:lang="en">Thousandths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus three (10^-3)</common:Description>
+        </structure:Code>
+        <structure:Code id="-4" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-4">
+          <common:Name xml:lang="en">Ten-thousandths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus four (10^-4)</common:Description>
+        </structure:Code>
+        <structure:Code id="-5" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-5">
+          <common:Name xml:lang="en">Hundred-thousandths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus five (10^-5)</common:Description>
+        </structure:Code>
+        <structure:Code id="-6" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-6">
+          <common:Name xml:lang="en">Millionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus six (10^-6)</common:Description>
+        </structure:Code>
+        <structure:Code id="-7" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-7">
+          <common:Name xml:lang="en">Ten-millionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus seven (10^-7)</common:Description>
+        </structure:Code>
+        <structure:Code id="-8" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-8">
+          <common:Name xml:lang="en">Hundred-millionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus eight (10^-8)</common:Description>
+        </structure:Code>
+        <structure:Code id="-9" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-9">
+          <common:Name xml:lang="en">Billionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus nine (10^-9)</common:Description>
+        </structure:Code>
+        <structure:Code id="-10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-10">
+          <common:Name xml:lang="en">Ten-billionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus ten (10^-10)</common:Description>
+        </structure:Code>
+        <structure:Code id="-11" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-11">
+          <common:Name xml:lang="en">Hundred-billionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus eleven (10^-11)</common:Description>
+        </structure:Code>
+        <structure:Code id="-12" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-12">
+          <common:Name xml:lang="en">Trillionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus twelve (10^-12)</common:Description>
+        </structure:Code>
+        <structure:Code id="-13" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-13">
+          <common:Name xml:lang="en">Ten-trillionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus thirteen (10^-13)</common:Description>
+        </structure:Code>
+        <structure:Code id="-14" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-14">
+          <common:Name xml:lang="en">Hundred-trillionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus fourteen (10^-14)</common:Description>
+        </structure:Code>
+        <structure:Code id="-15" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=KH_NIS:CL_UNIT_MULTIPLIER(1.1).-15">
+          <common:Name xml:lang="en">Quadrillionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus fifteen (10^-15)</common:Description>
+        </structure:Code>
+      </structure:Codelist>
+    </structure:Codelists>
+    <structure:Concepts>
+      <structure:ConceptScheme id="CS_ECO" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=KH_NIS:CS_ECO(1.0)" agencyID="KH_NIS" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Concept scheme for Economy</common:Name>
+        <structure:Concept id="INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).INDICATOR">
+          <common:Name xml:lang="en">Indicator</common:Name>
+        </structure:Concept>
+        <structure:Concept id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).REF_AREA">
+          <common:Name xml:lang="en">Reference area</common:Name>
+        </structure:Concept>
+        <structure:Concept id="SEX" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).SEX">
+          <common:Name xml:lang="en">Sex</common:Name>
+        </structure:Concept>
+        <structure:Concept id="LOCATION" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).LOCATION">
+          <common:Name xml:lang="en">Degree of Urbanisation</common:Name>
+        </structure:Concept>
+        <structure:Concept id="DEPOSIT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).DEPOSIT">
+          <common:Name xml:lang="en">Deposit</common:Name>
+        </structure:Concept>
+        <structure:Concept id="ECONOMIC_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).ECONOMIC_SECTOR">
+          <common:Name xml:lang="en">Economic Sector</common:Name>
+        </structure:Concept>
+        <structure:Concept id="PAYMENT_RATIO_TYPE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).PAYMENT_RATIO_TYPE">
+          <common:Name xml:lang="en">Payment Ratio Type</common:Name>
+        </structure:Concept>
+        <structure:Concept id="EXPENDITURE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).EXPENDITURE">
+          <common:Name xml:lang="en">Expenditure</common:Name>
+        </structure:Concept>
+        <structure:Concept id="UNIT_MEASURE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).UNIT_MEASURE">
+          <common:Name xml:lang="en">Unit of measure</common:Name>
+        </structure:Concept>
+        <structure:Concept id="UNIT_MULTIPLIER" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).UNIT_MULTIPLIER">
+          <common:Name xml:lang="en">Unit multiplier</common:Name>
+        </structure:Concept>
+        <structure:Concept id="RESPONSIBLE_AGENCY" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).RESPONSIBLE_AGENCY">
+          <common:Name xml:lang="en">Responsible agency</common:Name>
+        </structure:Concept>
+        <structure:Concept id="DATA_SOURCE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).DATA_SOURCE">
+          <common:Name xml:lang="en">Data source</common:Name>
+        </structure:Concept>
+        <structure:Concept id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).FREQ">
+          <common:Name xml:lang="en">Frequency</common:Name>
+        </structure:Concept>
+        <structure:Concept id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).TIME_PERIOD">
+          <common:Name xml:lang="en">Time period</common:Name>
+        </structure:Concept>
+        <structure:Concept id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=KH_NIS:CS_ECO(1.0).OBS_VALUE">
+          <common:Name xml:lang="en">Observation value</common:Name>
+        </structure:Concept>
+      </structure:ConceptScheme>
+    </structure:Concepts>
+    <structure:DataStructures>
+      <structure:DataStructure id="DSD_NIS_ECO" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=KH_NIS:DSD_NIS_ECO(1.1)" agencyID="KH_NIS" version="1.1" isFinal="true">
+        <common:Name xml:lang="en">DSD for Economy</common:Name>
+        <structure:DataStructureComponents>
+          <structure:DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=KH_NIS:DSD_NIS_ECO(1.1).DimensionDescriptor">
+            <structure:Dimension id="INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=KH_NIS:DSD_NIS_ECO(1.1).INDICATOR" position="1">
+              <structure:ConceptIdentity>
+                <Ref id="INDICATOR" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_ECON_INDICATOR" version="1.0" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=KH_NIS:DSD_NIS_ECO(1.1).REF_AREA" position="2">
+              <structure:ConceptIdentity>
+                <Ref id="REF_AREA" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_REF_AREA_LIMITED" version="1.0" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="LOCATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=KH_NIS:DSD_NIS_ECO(1.1).LOCATION" position="3">
+              <structure:ConceptIdentity>
+                <Ref id="LOCATION" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_LOCATION" version="1.1" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="DEPOSIT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=KH_NIS:DSD_NIS_ECO(1.1).DEPOSIT" position="4">
+              <structure:ConceptIdentity>
+                <Ref id="DEPOSIT" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_DEPOSIT" version="1.0" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="ECONOMIC_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=KH_NIS:DSD_NIS_ECO(1.1).ECONOMIC_SECTOR" position="5">
+              <structure:ConceptIdentity>
+                <Ref id="ECONOMIC_SECTOR" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_ECONOMIC_SECTOR" version="1.0" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="PAYMENT_RATIO_TYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=KH_NIS:DSD_NIS_ECO(1.1).PAYMENT_RATIO_TYPE" position="6">
+              <structure:ConceptIdentity>
+                <Ref id="PAYMENT_RATIO_TYPE" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_PAYMENT_RATIO_TYPE" version="1.0" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="EXPENDITURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=KH_NIS:DSD_NIS_ECO(1.1).EXPENDITURE" position="7">
+              <structure:ConceptIdentity>
+                <Ref id="EXPENDITURE" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_EXPENDITURE" version="1.0" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="UNIT_MEASURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=KH_NIS:DSD_NIS_ECO(1.1).UNIT_MEASURE" position="8">
+              <structure:ConceptIdentity>
+                <Ref id="UNIT_MEASURE" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_UNIT" version="1.2" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=KH_NIS:DSD_NIS_ECO(1.1).FREQ" position="9">
+              <structure:ConceptIdentity>
+                <Ref id="FREQ" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_FREQ" version="1.1" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=KH_NIS:DSD_NIS_ECO(1.1).TIME_PERIOD" position="10">
+              <structure:ConceptIdentity>
+                <Ref id="TIME_PERIOD" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="ObservationalTimePeriod" />
+              </structure:LocalRepresentation>
+            </structure:TimeDimension>
+          </structure:DimensionList>
+          <structure:AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=KH_NIS:DSD_NIS_ECO(1.1).AttributeDescriptor">
+            <structure:Attribute id="UNIT_MULTIPLIER" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=KH_NIS:DSD_NIS_ECO(1.1).UNIT_MULTIPLIER" assignmentStatus="Mandatory">
+              <structure:ConceptIdentity>
+                <Ref id="UNIT_MULTIPLIER" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_UNIT_MULTIPLIER" version="1.1" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="RESPONSIBLE_AGENCY" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=KH_NIS:DSD_NIS_ECO(1.1).RESPONSIBLE_AGENCY" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="RESPONSIBLE_AGENCY" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_RESPONSIBLE_AGENCY" version="1.2" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="DATA_SOURCE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=KH_NIS:DSD_NIS_ECO(1.1).DATA_SOURCE" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="DATA_SOURCE" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_DATASOURCE_ECON" version="1.0" agencyID="KH_NIS" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+          </structure:AttributeList>
+          <structure:MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=KH_NIS:DSD_NIS_ECO(1.1).MeasureDescriptor">
+            <structure:PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=KH_NIS:DSD_NIS_ECO(1.1).OBS_VALUE">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="CS_ECO" maintainableParentVersion="1.0" agencyID="KH_NIS" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+            </structure:PrimaryMeasure>
+          </structure:MeasureList>
+        </structure:DataStructureComponents>
+      </structure:DataStructure>
+    </structure:DataStructures>
+    <structure:Constraints>
+      <structure:ContentConstraint id="CN_CPI" urn="urn:sdmx:org.sdmx.infomodel.registry.ContentConstraint=KH_NIS:CN_CPI(1.1)" agencyID="KH_NIS" version="1.1" isFinal="false" type="Allowed">
+        <common:Name xml:lang="en">Content constraint for DF_CPI</common:Name>
+        <structure:ConstraintAttachment>
+          <structure:Dataflow>
+            <Ref id="DF_CPI" version="1.1" agencyID="KH_NIS" package="datastructure" class="Dataflow" />
+          </structure:Dataflow>
+        </structure:ConstraintAttachment>
+        <structure:CubeRegion include="true">
+          <common:KeyValue id="INDICATOR">
+            <common:Value>CONSUMER_PRICE_INDEX</common:Value>
+            <common:Value>CONSUMER_PRICE_INDICES_BY_INDUSTRY_DIVISION</common:Value>
+            <common:Value>IMPLICIT_PRICE_INDICES</common:Value>
+            <common:Value>PER_CAPITA_GDP_AT_CONSTANT_PRICES</common:Value>
+            <common:Value>PER_CAPITA_GDP_AT_CURRENT_PRICES</common:Value>
+            <common:Value>REAL_GDP_AT_CONSTANT_PRICES</common:Value>
+            <common:Value>STRUCTURE_OF_GDP_BY_ECONOMIC_SECTOR_AT_CONSTANT_PR</common:Value>
+            <common:Value>STRUCTURE_OF_GDP_BY_ECONOMIC_SECTOR_AT_CURRENT_PRI</common:Value>
+          </common:KeyValue>
+        </structure:CubeRegion>
+      </structure:ContentConstraint>
+    </structure:Constraints>
+  </message:Structures>
+</message:Structure>
