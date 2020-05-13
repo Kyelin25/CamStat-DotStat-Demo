@@ -57,7 +57,7 @@ services:
   config: 
     container_name: config
     build:
-      context: ./config
+      context: .././config
       dockerfile: Dockerfile.dev
     ports:
       - "${CONFIG_PORT}:80"
