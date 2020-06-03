@@ -11,8 +11,9 @@
         "dataExplorerUrl": "http://localhost:7001"
       },
       "CamStat-original": {
+        "isExternal": true,
         "color": "white",
-        "backgroundColor": "#606A80",
+        "backgroundColor": "#006A80",
         "dataExplorerUrl": "http://camstat.nis.gov.kh/#/"
       }
     },

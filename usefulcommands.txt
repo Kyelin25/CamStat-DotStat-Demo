@@ -6,7 +6,7 @@ yarn
 yarn dist
 
 // Spin up
-docker-compose up --build
+docker-compose -f docker-compose-backend.yml up --build
 
 curl -X POST http://localhost:3004/admin/dataflows?api-key=secret
 
