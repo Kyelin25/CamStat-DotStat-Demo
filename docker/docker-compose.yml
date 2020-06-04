@@ -54,9 +54,10 @@ services:
 
   config: 
     container_name: config
-    build:
-      context: .././config
-      dockerfile: Dockerfile.dev
+    image: siscc/dotstatsuite-config-prod:master
+    volumes:
+      - ../configFiles/dev/configs:/opt/configs
+      - ../configFiles/dev/assets:/opt/assets
     ports:
       - "${CONFIG_PORT}:80"
 
