@@ -5,6 +5,13 @@ volumes:
   wait-tool:
   
 services:
+  mailhog:
+    image: mailhog/mailhog
+    container_name: mailhog
+    ports:
+      - ${SMTP_PORT}:1025
+      - 8025:8025
+
   nsiws-stable:
     image: siscc/dotstatsuite-core-sdmxri-nsi:master
     container_name: nsiws-stable
