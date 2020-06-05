@@ -56,8 +56,8 @@ services:
     container_name: config
     image: siscc/dotstatsuite-config-prod:master
     volumes:
-      - ../configFiles/dev/configs:/opt/configs
-      - ../configFiles/dev/assets:/opt/assets
+      - ../configFiles/configs:/opt/configs
+      - ../configFiles/assets:/opt/assets
     ports:
       - "${CONFIG_PORT}:80"
 
