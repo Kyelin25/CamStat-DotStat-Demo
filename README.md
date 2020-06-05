@@ -1,5 +1,6 @@
 # DotStat Docker demo
-Demonstration of using docker-compose to stand up a full DotStat environment. Not to be used in production.
+
+Demonstration of using docker-compose to stand up a full DotStat environment. Not to be used in production or as an example of best practice, especially as pertains to security.
 
 ## Prerequisites
 
