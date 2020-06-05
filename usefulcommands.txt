@@ -1,9 +1,6 @@
-// Don't forget to CLONE config
-git clone https://gitlab.com/sis-cc/.stat-suite/dotstatsuite-config.git config
-
-// Get config ready
-yarn
-yarn dist
+// Prune containers and volumes for a restart
+docker ps prune
+docker volumes prune
 
 // Spin up
 docker-compose -f docker-compose-backend.yml up --build
@@ -15,6 +12,9 @@ http://localhost:7001
 
 // DLM page
 http://localhost:7000
+
+// Mailhog page
+http://localhost:8025/
 
 // Keycloak
 http://localhost:8080 - admin - password
