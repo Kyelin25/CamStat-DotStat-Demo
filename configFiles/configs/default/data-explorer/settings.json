@@ -26,7 +26,7 @@
   },
   "viewer": {
     "owner": "OECD",
-    "logo": "http://localhost:5007/assets/default/webapp/images/sis-cc-icon.png",
+    "logo": "http://localhost:5007/assets/siscc/data-explorer/images/sis-cc-logo.png",
     "terms": {
       "label": "Terms & Conditions",
       "link": "http://www.oecd.org/termsandconditions/"
@@ -38,13 +38,13 @@
   },
   "app": {
     "title": "Example Data Explorer",
-    "favicon": "/assets/siscc/data-explorer/images/favicon.ico"
+    "favicon": "http://localhost:5007/assets/siscc/data-explorer/images/favicon.ico"
   },
   "assets": {
-    "header": "http://localhost:5007/assets/default/webapp/images/nis-logo-header.jpg",
-    "subheader": "http://localhost:5007/assets/default/webapp/images/nis-logo-sub-header.png",
-    "footer": "http://localhost:5007/assets/default/webapp/images/sis-cc-icon.png",
-    "splash": "http://localhost:5007/assets/default/webapp/images/cambodia-data-explorer-logo.png"
+    "header": "http://localhost:5007/assets/siscc/data-explorer/images/sis-cc-logo.png",
+    "subheader": "http://localhost:5007/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png",
+    "footer": "http://localhost:5007/assets/siscc/data-explorer/images/sis-cc-icon.png",
+    "splash": "http://localhost:5007/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png"
   },
   "chart": {
     "url": "",
