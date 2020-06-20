@@ -2,7 +2,7 @@
   "sdmx": {
     "datasourceIds": [
       "CamStat-stable",
-      "CamStat-origina"
+      "CamStat-original"
     ],
     "datasources": {
       "CamStat-stable": {
