@@ -20,7 +20,7 @@ services:
     environment:
         auth__Enabled: "true"
         auth__authority: http://${LOCALHOST_STANDIN}:${KEYCLOAK_PORT}/auth/realms/OECD
-        auth__clientId: camstat_nsi
+        auth__clientId: ${NSI_STABLE_CLIENT}
         auth__requireHttps: "false"
         auth__validateIssuer: "false" 
         auth__claimsMapping__email: email
@@ -63,7 +63,7 @@ services:
     environment:
         auth__Enabled: "true"
         auth__authority: http://${LOCALHOST_STANDIN}:${KEYCLOAK_PORT}/auth/realms/OECD
-        auth__clientId: default_nsi
+        auth__clientId: ${NSI_DEFAULT_CLIENT}
         auth__requireHttps: "false"
         auth__validateIssuer: "false" 
         auth__claimsMapping__email: email
@@ -104,7 +104,7 @@ services:
       environment:
           auth__Enabled: "true"
           auth__authority: http://${LOCALHOST_STANDIN}:${KEYCLOAK_PORT}/auth/realms/OECD
-          auth__clientId: transfer-client
+          auth__clientId: ${TRANSFER_CLIENT}
           auth__authorizationUrl: http://${LOCALHOST_STANDIN}:${KEYCLOAK_HTTP_PORT}/auth/realms/OECD/protocol/openid-connect/auth
           auth__scopes__0: openid
           auth__scopes__1: profile
@@ -154,7 +154,7 @@ services:
       environment:
           auth__enabled: "true"
           auth__authority: http://${LOCALHOST_STANDIN}:${KEYCLOAK_PORT}/auth/realms/OECD
-          auth__clientId: auth-management-client
+          auth__clientId: ${AUTH_MANAGEMENT_CLIENT}
           auth__authorizationUrl: http://${LOCALHOST_STANDIN}:${KEYCLOAK_HTTP_PORT}/auth/realms/OECD/protocol/openid-connect/auth
           auth__scopes__0: openid
           auth__scopes__1: profile

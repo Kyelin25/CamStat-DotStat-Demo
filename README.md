@@ -13,7 +13,7 @@ Must have Docker installed.
 - Run `docker-compose -f docker-compose.yml up` to start the DLM and DE services and Keycloak
 - Navigate to http://localhost:8080 and enter the admin console (or go directly to http://localhost:8080/auth/admin/master/console). The username is `admin` and the password is `password`
 - Create a new Realm called `OECD`
-- Within that realm, create a new client called `app`
+- Within that realm, create a new client called `default_app`
 - Enable implicit flow for the client
 - Add http://localhost:7000*, http://localhost:7001*, http://localhost:93* and http://localhost:94* to the Valid Redirect Uris for the client
 - Add http://localhost:7000, http://localhost:7001, http://localhost:93 and http://localhost:94 to the Web Origins
