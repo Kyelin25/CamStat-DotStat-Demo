@@ -1,12 +1,18 @@
 {
   "sdmx": {
     "datasourceIds": [
+      "CamStat-stable",
       "Default-stable"
     ],
     "datasources": {
-      "Default-stable": {
+      "CamStat-stable": {
         "color": "white",
         "backgroundColor": "#606A80",
+        "dataExplorerUrl": "http://de-camstat"
+      },
+      "Default-stable": {
+        "color": "white",
+        "backgroundColor": "#006A80",
         "dataExplorerUrl": "http://localhost:7001"
       }
     },

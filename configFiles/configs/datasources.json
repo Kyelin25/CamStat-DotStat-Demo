@@ -10,6 +10,17 @@
       { "version": "1.0", "categorySchemeId": "CAM_CAT", "agencyId": "KH_NIS" }
     ]
   },
+  "Default-stable":{
+    "label": "Default-stable",
+    "url": "http://localhost:82/rest",
+    "hasRangeHeader": true,
+    "supportsReferencePartial": true,
+    "hasLastNObservations": false,
+    "indexed": true,
+    "queries": [
+      { "version": "1.0", "categorySchemeId": "OECDCS1", "agencyId": "OECD" }
+    ]
+  },
   "CamStat-original":{
     "label": "Original CamStat",
     "url": "http://cambodgia-statvm1.eastasia.cloudapp.azure.com/SeptemberDisseminateNSIService/rest",

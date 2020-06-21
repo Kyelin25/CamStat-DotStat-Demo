@@ -1,13 +1,20 @@
 {
   "sdmx": {
     "datasourceIds": [
-      "Default-stable"
+      "CamStat-stable",
+      "CamStat-original"
     ],
     "datasources": {
-      "Default-stable": {
+      "CamStat-stable": {
         "color": "white",
         "backgroundColor": "#606A80",
-        "dataExplorerUrl": "http://localhost:7001"
+        "dataExplorerUrl": "http://de-camstat"
+      },
+      "CamStat-original": {
+        "isExternal": true,
+        "color": "white",
+        "backgroundColor": "#006A80",
+        "dataExplorerUrl": "http://camstat.nis.gov.kh/#/"
       }
     },
     "typeIds": [

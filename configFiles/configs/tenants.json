@@ -2,6 +2,16 @@
   "default": {
     "id": "default",
     "name": "default",
-    "keycloak": { "realm": "OECD", "clientId": "app" }
+    "keycloak": { "realm": "OECD", "clientId": "default_app" }
+  },
+  "camstat":{
+    "id": "camstat",
+    "name": "CamStat Tenant",
+    "keycloak": {"realm": "OECD", "clientId": "camstat_app"}
+  },
+  "admin": {
+    "id": "admin",
+    "name": "admin",
+    "keycloak": { "realm": "OECD", "clientId": "admin_app" }
   }
 }

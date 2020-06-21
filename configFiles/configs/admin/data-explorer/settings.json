@@ -1,7 +1,7 @@
 {
   "sdmx": {
     "datasourceIds": [
-      "Default-stable"
+      "CamStat-stable"
     ],
     "range": [0, 2500],
     "attributes": {
@@ -41,14 +41,23 @@
     "favicon": "http://localhost:5007/assets/siscc/data-explorer/images/favicon.ico"
   },
   "assets": {
-    "header": "http://localhost:5007/assets/siscc/data-explorer/images/sis-cc-logo.png",
-    "subheader": "http://localhost:5007/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png",
-    "footer": "http://localhost:5007/assets/siscc/data-explorer/images/sis-cc-icon.png",
-    "splash": "http://localhost:5007/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png"
+    "header": "http://localhost:5007/assets/default/webapp/images/nis-logo-header.jpg",
+    "subheader": "http://localhost:5007/assets/default/webapp/images/nis-logo-sub-header.png",
+    "footer": "http://localhost:5007/assets/default/webapp/images/sis-cc-icon.png",
+    "splash": "http://localhost:5007/assets/default/webapp/images/cambodia-data-explorer-logo.png"
   },
   "chart": {
     "url": "",
     "source": "http://dotstat.oecd.org/",
+    "maps": {
+      "fra-poc": {
+        "id": "fra-poc",
+        "projection": "mercator",
+        "path": "/assets/siscc/data-explorer/maps/fra-poc.json",
+        "levels": ["dep"],
+        "scale": 2000
+      }
+    },
     "options": {
       "base": {
         "height": 700
@@ -97,14 +106,14 @@
         "hover": "rgba(14, 144, 224, 0.13)"
       },
       "primary": {
-        "main": "#0965c1",
-        "light": "#0e90e0",
-        "dark": "#0549ab"
+        "main": "#407774",
+        "light": "#c5e0dc",
+        "dark": "#152827"
       },
       "secondary": {
-        "main": "#e3e9ed",
-        "light": "#f5f8fa",
-        "dark": "#ebf1f5"
+        "main": "#A7A2A9",
+        "light": "#CDCACE",
+        "dark": "#726C75"
       },
       "tertiary": {
         "light": "#e2f2fb",
@@ -114,7 +123,7 @@
         "mainOpacity": "rgba(0, 0, 0, 0.2)"
       },
       "highlight": {
-        "hl1": "#f7a42c",
+        "hl1": "#A7A2A9",
         "hl2": "#8CC841"
       },
       "grey": {
