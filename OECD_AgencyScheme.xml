@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v7.12.1.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF138</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2020-06-21T04:23:18.2654379+00:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:OrganisationSchemes>
+      <structure:AgencyScheme id="AGENCIES" agencyID="SDMX" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">List of agencies</common:Name>
+        <common:Name xml:lang="fr">Liste des agences</common:Name>
+        <common:Name xml:lang="ar">قائمة الوكالات</common:Name>
+        <structure:Agency id="SDMX">
+          <common:Name xml:lang="en">SDMX</common:Name>
+          <common:Name xml:lang="fr">SDMX</common:Name>
+          <common:Name xml:lang="ar">SDMX</common:Name>
+          <common:Description xml:lang="en">SDMX</common:Description>
+        </structure:Agency>
+        <structure:Agency id="ESTAT">
+          <common:Name xml:lang="en">Eurostat</common:Name>
+          <common:Name xml:lang="fr">Eurostat</common:Name>
+          <common:Name xml:lang="ar">يوروستات</common:Name>
+          <common:Description xml:lang="en">Statistical office of the European Union</common:Description>
+        </structure:Agency>
+        <structure:Agency id="ECB">
+          <common:Name xml:lang="en">European Central Bank</common:Name>
+          <common:Name xml:lang="fr">Banque Centrale Européenne</common:Name>
+          <common:Name xml:lang="ar">البنك المركزي الأوروبي</common:Name>
+          <common:Description xml:lang="en">The European Central Bank is the central bank for Europe's single currency, the euro.</common:Description>
+        </structure:Agency>
+        <structure:Agency id="FAO">
+          <common:Name xml:lang="en">Food and Agriculture Organisation</common:Name>
+          <common:Name xml:lang="fr">Organisation pour l'alimentation et l'agriculture</common:Name>
+          <common:Name xml:lang="ar">منظمة الأغذية والزراعة</common:Name>
+          <common:Description xml:lang="en">Food and Agriculture Organisation of the United Nations.</common:Description>
+        </structure:Agency>
+        <structure:Agency id="WB">
+          <common:Name xml:lang="en">World Bank</common:Name>
+          <common:Name xml:lang="fr">Banque mondiale</common:Name>
+          <common:Name xml:lang="ar">بنك عالمي</common:Name>
+          <common:Description xml:lang="en">The World Bank</common:Description>
+        </structure:Agency>
+        <structure:Agency id="OECD">
+          <common:Name xml:lang="en">Organisation for Economic Co-operation and Development</common:Name>
+          <common:Name xml:lang="fr">Organisation de coopération et de développement économiques</common:Name>
+          <common:Name xml:lang="ar">منظمة التعاون والتنمية في الميدانالاقتصادي</common:Name>
+          <common:Description xml:lang="en">The Organisation for Economic Co-operation and Development (OECD).</common:Description>
+        </structure:Agency>
+        <structure:Agency id="BIS">
+          <common:Name xml:lang="en">Bank for International Settlements</common:Name>
+          <common:Name xml:lang="fr">Banque des règlements internationaux</common:Name>
+          <common:Name xml:lang="ar">بنك التسويات الدولية</common:Name>
+          <common:Description xml:lang="en">Bank for International Settlements.</common:Description>
+        </structure:Agency>
+        <structure:Agency id="IMF">
+          <common:Name xml:lang="en">International Monetary Fund</common:Name>
+          <common:Name xml:lang="fr">Fond monétaire international</common:Name>
+          <common:Name xml:lang="ar">صندوق النقد الدولي</common:Name>
+          <common:Description xml:lang="en">International Monetary Fund</common:Description>
+        </structure:Agency>
+        <structure:Agency id="UNSD">
+          <common:Name xml:lang="en">United Nations</common:Name>
+          <common:Name xml:lang="fr">Les Nations Unies</common:Name>
+          <common:Name xml:lang="ar">الأمم المتحدة</common:Name>
+        </structure:Agency>
+        <structure:Agency id="UNICEF">
+          <common:Name xml:lang="en">United Nations Children's Fund</common:Name>
+          <common:Name xml:lang="fr">Fonds des Nations Unies pour l'enfance</common:Name>
+          <common:Name xml:lang="de">Kinderhilfswerk der Vereinten Nationen</common:Name>
+          <common:Name xml:lang="es">Fondo de las Naciones Unidas para la Infancia</common:Name>
+          <common:Name xml:lang="it">Fondo delle Nazioni Unite per l’infanzia</common:Name>
+          <common:Name xml:lang="pt">Fundo das Nações Unidas para a Infância</common:Name>
+        </structure:Agency>
+        <structure:Agency id="TN1">
+          <common:Name xml:lang="en">INS Tunisia</common:Name>
+          <common:Name xml:lang="ar">إحصائيات تونس</common:Name>
+          <common:Name xml:lang="fr">INS Tunisie</common:Name>
+        </structure:Agency>
+        <structure:Agency id="AU1">
+          <common:Name xml:lang="en">Australian Bureau of Statistics</common:Name>
+        </structure:Agency>
+        <structure:Agency id="BE2">
+          <common:Name xml:lang="nl">Nationale Bank van België</common:Name>
+          <common:Name xml:lang="fr">Banque Nationale de Belgique</common:Name>
+          <common:Name xml:lang="en">National Bank of Belgium</common:Name>
+        </structure:Agency>
+        <structure:Agency id="AE1">
+          <common:Name xml:lang="en">Federal Competitiveness and Statistics Authority of United Arab Emirates</common:Name>
+          <common:Name xml:lang="ar">الهيئة الاتحادية للتنافسية والإحصاء</common:Name>
+          <common:Name xml:lang="fr">Autorité Fédérale de la Compétitivité et des Statistiques des Émirates Arabes Unis</common:Name>
+        </structure:Agency>
+        <structure:Agency id="ILO">
+          <common:Name xml:lang="en">International Labour Organization (ILO)</common:Name>
+          <common:Name xml:lang="fr">Organisation Internationale du Travail (BIT)</common:Name>
+          <common:Name xml:lang="es">Organización Internacional del Trabajo (OIT)</common:Name>
+        </structure:Agency>
+        <structure:Agency id="IT1">
+          <common:Name xml:lang="en">Italian National Institute of Statistics</common:Name>
+          <common:Name xml:lang="it">Instituto Nazionale di Statistica</common:Name>
+        </structure:Agency>
+        <structure:Agency id="ITH1">
+          <common:Name xml:lang="it">Isituto provinciale di statistica (ASTAT)</common:Name>
+          <common:Name xml:lang="de">Landesinstitut für Statistik (ASTAT)</common:Name>
+          <common:Name xml:lang="en">Provincial Statistics Institute (ASTAT)</common:Name>
+        </structure:Agency>
+        <structure:Agency id="LU1">
+          <common:Name xml:lang="en">STATEC - National Institute of Statistics and Economic Studies of the Grand Duchy of Luxembourg</common:Name>
+          <common:Name xml:lang="fr">STATEC - Institut national de la statistique et des études économiques du Grand-Duché de Luxembourg</common:Name>
+        </structure:Agency>
+        <structure:Agency id="UKDS">
+          <common:Name xml:lang="en">UK Data Service</common:Name>
+        </structure:Agency>
+        <structure:Agency id="NZ1">
+          <common:Name xml:lang="en">Stats NZ</common:Name>
+          <common:Name xml:lang="mi">Tatauranga Aotearoa</common:Name>
+        </structure:Agency>
+        <structure:Agency id="SPC">
+          <common:Name xml:lang="en">Pacific Community (SPC)</common:Name>
+          <common:Name xml:lang="fr">Communauté du Pacifique (CPS)</common:Name>
+        </structure:Agency>
+        <structure:Agency id="MA_3">
+          <common:Name xml:lang="en">Statistics Rwanda</common:Name>
+          <common:Name xml:lang="fr">Statistiques Rwanda</common:Name>
+        </structure:Agency>
+      </structure:AgencyScheme>
+    </structure:OrganisationSchemes>
+  </message:Structures>
+</message:Structure>

@@ -1,0 +1,3135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v7.12.1.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF371</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2020-06-21T04:27:56.1923648+00:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:Dataflows>
+      <structure:Dataflow id="DF_GOV_CORE_RESULTS" agencyID="OECD" version="2.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>NonProductionDataflow</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">true</common:AnnotationText>
+          </common:Annotation>
+          <common:Annotation>
+            <common:AnnotationTitle>MEASURE,UNIT_MEASURE,SEX,AGE,EDUCATION_LEV</common:AnnotationTitle>
+            <common:AnnotationType>LAYOUT_ROW</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation>
+            <common:AnnotationTitle>TIME_PERIOD</common:AnnotationTitle>
+            <common:AnnotationType>LAYOUT_COLUMN</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation>
+            <common:AnnotationTitle>REF_AREA=FR,TIME_PERIOD_START=2015,TIME_PERIOD_END=2019</common:AnnotationTitle>
+            <common:AnnotationType>DEFAULT</common:AnnotationType>
+          </common:Annotation>
+          <common:Annotation>
+            <common:AnnotationTitle>FREQ,UNIT_MULT=0</common:AnnotationTitle>
+            <common:AnnotationType>NOT_DISPLAYED</common:AnnotationType>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">Core government results</common:Name>
+        <structure:Structure>
+          <Ref id="DSD_GOV_8_9" version="2.0" agencyID="OECD" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+    </structure:Dataflows>
+    <structure:CategorySchemes>
+      <structure:CategoryScheme id="OECDCS1" agencyID="OECD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Topic</common:Name>
+        <common:Name xml:lang="fr">Thème</common:Name>
+        <common:Description xml:lang="en">The main OECD category scheme. First cut.</common:Description>
+        <common:Description xml:lang="fr">Le schema principal des thèmes de l'OCDE. Première coupe.</common:Description>
+        <structure:Category id="ECO">
+          <common:Name xml:lang="en">Economy</common:Name>
+          <common:Name xml:lang="fr">Economie</common:Name>
+        </structure:Category>
+        <structure:Category id="EDU">
+          <common:Name xml:lang="en">Education</common:Name>
+          <common:Name xml:lang="fr">Education</common:Name>
+        </structure:Category>
+        <structure:Category id="NRG">
+          <common:Name xml:lang="en">Energy</common:Name>
+          <common:Name xml:lang="fr">Energie</common:Name>
+        </structure:Category>
+        <structure:Category id="ENV">
+          <common:Name xml:lang="en">Environment</common:Name>
+          <common:Name xml:lang="fr">Environnement</common:Name>
+          <structure:Category id="ENV_AC">
+            <common:Name xml:lang="en">Air and Climate</common:Name>
+            <common:Name xml:lang="fr">Air et Climat</common:Name>
+          </structure:Category>
+          <structure:Category id="ENV_FO">
+            <common:Name xml:lang="en">Forest</common:Name>
+            <common:Name xml:lang="fr">Forêts</common:Name>
+          </structure:Category>
+          <structure:Category id="ENV_WAS">
+            <common:Name xml:lang="en">Waste</common:Name>
+            <common:Name xml:lang="fr">Déchets</common:Name>
+          </structure:Category>
+          <structure:Category id="ENV_WAT">
+            <common:Name xml:lang="en">Water</common:Name>
+            <common:Name xml:lang="fr">Eau</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="GOV">
+          <common:Name xml:lang="en">Government</common:Name>
+          <common:Name xml:lang="fr">Gouvernement</common:Name>
+          <structure:Category id="GOV_GG">
+            <common:Name xml:lang="en">General government</common:Name>
+            <common:Name xml:lang="fr">Administration publique</common:Name>
+          </structure:Category>
+          <structure:Category id="GOV_TAX">
+            <common:Name xml:lang="en">Taxation</common:Name>
+            <common:Name xml:lang="fr">Fiscalité</common:Name>
+          </structure:Category>
+        </structure:Category>
+        <structure:Category id="HEA">
+          <common:Name xml:lang="en">Health</common:Name>
+          <common:Name xml:lang="fr">Santé</common:Name>
+        </structure:Category>
+        <structure:Category id="INT">
+          <common:Name xml:lang="en">Innovation and Technology</common:Name>
+          <common:Name xml:lang="fr">Innovation et Technologies</common:Name>
+        </structure:Category>
+        <structure:Category id="EMP">
+          <common:Name xml:lang="en">Employment</common:Name>
+          <common:Name xml:lang="fr">Emploi</common:Name>
+        </structure:Category>
+        <structure:Category id="SOC">
+          <common:Name xml:lang="en">Society</common:Name>
+          <common:Name xml:lang="fr">Société</common:Name>
+        </structure:Category>
+        <structure:Category id="IND">
+          <common:Name xml:lang="en">Industry</common:Name>
+          <common:Name xml:lang="fr">Industrie</common:Name>
+          <structure:Category id="IND_TOUR">
+            <common:Name xml:lang="en">Tourism</common:Name>
+            <common:Name xml:lang="fr">Tourisme</common:Name>
+          </structure:Category>
+        </structure:Category>
+      </structure:CategoryScheme>
+    </structure:CategorySchemes>
+    <structure:Categorisations>
+      <structure:Categorisation id="GOV_DF_GOV_CORE_RESULTS" agencyID="OECD" version="2.0" isFinal="false">
+        <common:Name xml:lang="en">Core government results for GOV</common:Name>
+        <structure:Source>
+          <Ref id="DF_GOV_CORE_RESULTS" version="2.0" agencyID="OECD" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="GOV.GOV_GG" maintainableParentID="OECDCS1" maintainableParentVersion="1.0" agencyID="OECD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+    </structure:Categorisations>
+    <structure:Codelists>
+      <structure:Codelist id="CL_AGE" agencyID="OECD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Codelist for age</common:Name>
+        <structure:Code id="D0">
+          <common:Name xml:lang="en">0 days</common:Name>
+        </structure:Code>
+        <structure:Code id="Y3">
+          <common:Name xml:lang="en">3 years</common:Name>
+        </structure:Code>
+        <structure:Code id="Y4">
+          <common:Name xml:lang="en">4 years</common:Name>
+        </structure:Code>
+        <structure:Code id="Y_GE15">
+          <common:Name xml:lang="en">15 years and older</common:Name>
+        </structure:Code>
+        <structure:Code id="Y15T29">
+          <common:Name xml:lang="en">From 15 to 29 years</common:Name>
+        </structure:Code>
+        <structure:Code id="Y18T24">
+          <common:Name xml:lang="en">From 18 to 24 years</common:Name>
+        </structure:Code>
+        <structure:Code id="Y_LT25">
+          <common:Name xml:lang="en">Less than 25 years</common:Name>
+        </structure:Code>
+        <structure:Code id="Y30T49">
+          <common:Name xml:lang="en">From 30 to 49 years</common:Name>
+        </structure:Code>
+        <structure:Code id="Y_GE45">
+          <common:Name xml:lang="en">45 years and older</common:Name>
+        </structure:Code>
+        <structure:Code id="Y_GE50">
+          <common:Name xml:lang="en">50 years and older</common:Name>
+        </structure:Code>
+        <structure:Code id="Y_GE65">
+          <common:Name xml:lang="en">65 years and older</common:Name>
+        </structure:Code>
+        <structure:Code id="_T">
+          <common:Name xml:lang="en">Total</common:Name>
+        </structure:Code>
+        <structure:Code id="_Z">
+          <common:Name xml:lang="en">Not applicable</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_AREA" agencyID="OECD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Code list for area codes</common:Name>
+        <structure:Code id="AD">
+          <common:Name xml:lang="en">Andorra</common:Name>
+        </structure:Code>
+        <structure:Code id="AE">
+          <common:Name xml:lang="en">United Arab Emirates</common:Name>
+        </structure:Code>
+        <structure:Code id="AF">
+          <common:Name xml:lang="en">Afghanistan</common:Name>
+        </structure:Code>
+        <structure:Code id="AG">
+          <common:Name xml:lang="en">Antigua and Barbuda</common:Name>
+        </structure:Code>
+        <structure:Code id="AI">
+          <common:Name xml:lang="en">Anguilla</common:Name>
+        </structure:Code>
+        <structure:Code id="AL">
+          <common:Name xml:lang="en">Albania</common:Name>
+        </structure:Code>
+        <structure:Code id="AM">
+          <common:Name xml:lang="en">Armenia</common:Name>
+        </structure:Code>
+        <structure:Code id="AO">
+          <common:Name xml:lang="en">Angola</common:Name>
+        </structure:Code>
+        <structure:Code id="AQ">
+          <common:Name xml:lang="en">Antarctica</common:Name>
+        </structure:Code>
+        <structure:Code id="AR">
+          <common:Name xml:lang="en">Argentina</common:Name>
+        </structure:Code>
+        <structure:Code id="AS">
+          <common:Name xml:lang="en">American Samoa</common:Name>
+        </structure:Code>
+        <structure:Code id="AT">
+          <common:Name xml:lang="en">Austria</common:Name>
+        </structure:Code>
+        <structure:Code id="AU">
+          <common:Name xml:lang="en">Australia</common:Name>
+        </structure:Code>
+        <structure:Code id="AW">
+          <common:Name xml:lang="en">Aruba</common:Name>
+        </structure:Code>
+        <structure:Code id="AX">
+          <common:Name xml:lang="en">Åland Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="AZ">
+          <common:Name xml:lang="en">Azerbaijan</common:Name>
+        </structure:Code>
+        <structure:Code id="BA">
+          <common:Name xml:lang="en">Bosnia and Herzegovina</common:Name>
+        </structure:Code>
+        <structure:Code id="BB">
+          <common:Name xml:lang="en">Barbados</common:Name>
+        </structure:Code>
+        <structure:Code id="BD">
+          <common:Name xml:lang="en">Bangladesh</common:Name>
+        </structure:Code>
+        <structure:Code id="BE">
+          <common:Name xml:lang="en">Belgium</common:Name>
+        </structure:Code>
+        <structure:Code id="BF">
+          <common:Name xml:lang="en">Burkina Faso</common:Name>
+        </structure:Code>
+        <structure:Code id="BG">
+          <common:Name xml:lang="en">Bulgaria</common:Name>
+        </structure:Code>
+        <structure:Code id="BH">
+          <common:Name xml:lang="en">Bahrain</common:Name>
+        </structure:Code>
+        <structure:Code id="BI">
+          <common:Name xml:lang="en">Burundi</common:Name>
+        </structure:Code>
+        <structure:Code id="BJ">
+          <common:Name xml:lang="en">Benin</common:Name>
+        </structure:Code>
+        <structure:Code id="BL">
+          <common:Name xml:lang="en">Saint Barthélemy</common:Name>
+        </structure:Code>
+        <structure:Code id="BM">
+          <common:Name xml:lang="en">Bermuda</common:Name>
+        </structure:Code>
+        <structure:Code id="BN">
+          <common:Name xml:lang="en">Brunei Darussalam</common:Name>
+        </structure:Code>
+        <structure:Code id="BO">
+          <common:Name xml:lang="en">Bolivia (Plurinational State of)</common:Name>
+        </structure:Code>
+        <structure:Code id="BQ">
+          <common:Name xml:lang="en">Bonaire, Sint Eustatius and Saba</common:Name>
+        </structure:Code>
+        <structure:Code id="BR">
+          <common:Name xml:lang="en">Brazil</common:Name>
+        </structure:Code>
+        <structure:Code id="BS">
+          <common:Name xml:lang="en">Bahamas</common:Name>
+        </structure:Code>
+        <structure:Code id="BT">
+          <common:Name xml:lang="en">Bhutan</common:Name>
+        </structure:Code>
+        <structure:Code id="BV">
+          <common:Name xml:lang="en">Bouvet Island</common:Name>
+        </structure:Code>
+        <structure:Code id="BW">
+          <common:Name xml:lang="en">Botswana</common:Name>
+        </structure:Code>
+        <structure:Code id="BY">
+          <common:Name xml:lang="en">Belarus</common:Name>
+        </structure:Code>
+        <structure:Code id="BZ">
+          <common:Name xml:lang="en">Belize</common:Name>
+        </structure:Code>
+        <structure:Code id="CA">
+          <common:Name xml:lang="en">Canada</common:Name>
+        </structure:Code>
+        <structure:Code id="CC">
+          <common:Name xml:lang="en">Cocos (Keeling) Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="CD">
+          <common:Name xml:lang="en">Congo, Democratic Republic of the</common:Name>
+        </structure:Code>
+        <structure:Code id="CF">
+          <common:Name xml:lang="en">Central African Republic</common:Name>
+        </structure:Code>
+        <structure:Code id="CG">
+          <common:Name xml:lang="en">Congo</common:Name>
+        </structure:Code>
+        <structure:Code id="CH">
+          <common:Name xml:lang="en">Switzerland</common:Name>
+        </structure:Code>
+        <structure:Code id="CI">
+          <common:Name xml:lang="en">Côte d'Ivoire</common:Name>
+        </structure:Code>
+        <structure:Code id="CK">
+          <common:Name xml:lang="en">Cook Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="CL">
+          <common:Name xml:lang="en">Chile</common:Name>
+        </structure:Code>
+        <structure:Code id="CM">
+          <common:Name xml:lang="en">Cameroon</common:Name>
+        </structure:Code>
+        <structure:Code id="CN">
+          <common:Name xml:lang="en">China</common:Name>
+        </structure:Code>
+        <structure:Code id="CO">
+          <common:Name xml:lang="en">Colombia</common:Name>
+        </structure:Code>
+        <structure:Code id="CR">
+          <common:Name xml:lang="en">Costa Rica</common:Name>
+        </structure:Code>
+        <structure:Code id="CU">
+          <common:Name xml:lang="en">Cuba</common:Name>
+        </structure:Code>
+        <structure:Code id="CV">
+          <common:Name xml:lang="en">Cabo Verde</common:Name>
+        </structure:Code>
+        <structure:Code id="CW">
+          <common:Name xml:lang="en">Curaçao</common:Name>
+        </structure:Code>
+        <structure:Code id="CX">
+          <common:Name xml:lang="en">Christmas Island</common:Name>
+        </structure:Code>
+        <structure:Code id="CY">
+          <common:Name xml:lang="en">Cyprus</common:Name>
+        </structure:Code>
+        <structure:Code id="CZ">
+          <common:Name xml:lang="en">Czech Republic</common:Name>
+        </structure:Code>
+        <structure:Code id="DE">
+          <common:Name xml:lang="en">Germany</common:Name>
+        </structure:Code>
+        <structure:Code id="DJ">
+          <common:Name xml:lang="en">Djibouti</common:Name>
+        </structure:Code>
+        <structure:Code id="DK">
+          <common:Name xml:lang="en">Denmark</common:Name>
+        </structure:Code>
+        <structure:Code id="DM">
+          <common:Name xml:lang="en">Dominica</common:Name>
+        </structure:Code>
+        <structure:Code id="DO">
+          <common:Name xml:lang="en">Dominican Republic</common:Name>
+        </structure:Code>
+        <structure:Code id="DZ">
+          <common:Name xml:lang="en">Algeria</common:Name>
+        </structure:Code>
+        <structure:Code id="EC">
+          <common:Name xml:lang="en">Ecuador</common:Name>
+        </structure:Code>
+        <structure:Code id="EE">
+          <common:Name xml:lang="en">Estonia</common:Name>
+        </structure:Code>
+        <structure:Code id="EG">
+          <common:Name xml:lang="en">Egypt</common:Name>
+        </structure:Code>
+        <structure:Code id="EH">
+          <common:Name xml:lang="en">Western Sahara</common:Name>
+        </structure:Code>
+        <structure:Code id="ER">
+          <common:Name xml:lang="en">Eritrea</common:Name>
+        </structure:Code>
+        <structure:Code id="ES">
+          <common:Name xml:lang="en">Spain</common:Name>
+        </structure:Code>
+        <structure:Code id="ET">
+          <common:Name xml:lang="en">Ethiopia</common:Name>
+        </structure:Code>
+        <structure:Code id="FI">
+          <common:Name xml:lang="en">Finland</common:Name>
+        </structure:Code>
+        <structure:Code id="FJ">
+          <common:Name xml:lang="en">Fiji</common:Name>
+        </structure:Code>
+        <structure:Code id="FK">
+          <common:Name xml:lang="en">Falkland Islands (Malvinas)</common:Name>
+        </structure:Code>
+        <structure:Code id="FM">
+          <common:Name xml:lang="en">Micronesia (Federated States of)</common:Name>
+        </structure:Code>
+        <structure:Code id="FO">
+          <common:Name xml:lang="en">Faroe Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="FR">
+          <common:Name xml:lang="en">France</common:Name>
+        </structure:Code>
+        <structure:Code id="GA">
+          <common:Name xml:lang="en">Gabon</common:Name>
+        </structure:Code>
+        <structure:Code id="GB">
+          <common:Name xml:lang="en">United Kingdom of Great Britain and Northern Ireland</common:Name>
+        </structure:Code>
+        <structure:Code id="GD">
+          <common:Name xml:lang="en">Grenada</common:Name>
+        </structure:Code>
+        <structure:Code id="GE">
+          <common:Name xml:lang="en">Georgia</common:Name>
+        </structure:Code>
+        <structure:Code id="GF">
+          <common:Name xml:lang="en">French Guiana</common:Name>
+        </structure:Code>
+        <structure:Code id="GG">
+          <common:Name xml:lang="en">Guernsey</common:Name>
+        </structure:Code>
+        <structure:Code id="GH">
+          <common:Name xml:lang="en">Ghana</common:Name>
+        </structure:Code>
+        <structure:Code id="GI">
+          <common:Name xml:lang="en">Gibraltar</common:Name>
+        </structure:Code>
+        <structure:Code id="GL">
+          <common:Name xml:lang="en">Greenland</common:Name>
+        </structure:Code>
+        <structure:Code id="GM">
+          <common:Name xml:lang="en">Gambia</common:Name>
+        </structure:Code>
+        <structure:Code id="GN">
+          <common:Name xml:lang="en">Guinea</common:Name>
+        </structure:Code>
+        <structure:Code id="GP">
+          <common:Name xml:lang="en">Guadeloupe</common:Name>
+        </structure:Code>
+        <structure:Code id="GQ">
+          <common:Name xml:lang="en">Equatorial Guinea</common:Name>
+        </structure:Code>
+        <structure:Code id="GR">
+          <common:Name xml:lang="en">Greece</common:Name>
+        </structure:Code>
+        <structure:Code id="GS">
+          <common:Name xml:lang="en">South Georgia and the South Sandwich Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="GT">
+          <common:Name xml:lang="en">Guatemala</common:Name>
+        </structure:Code>
+        <structure:Code id="GU">
+          <common:Name xml:lang="en">Guam</common:Name>
+        </structure:Code>
+        <structure:Code id="GW">
+          <common:Name xml:lang="en">Guinea-Bissau</common:Name>
+        </structure:Code>
+        <structure:Code id="GY">
+          <common:Name xml:lang="en">Guyana</common:Name>
+        </structure:Code>
+        <structure:Code id="HK">
+          <common:Name xml:lang="en">Hong Kong</common:Name>
+        </structure:Code>
+        <structure:Code id="HM">
+          <common:Name xml:lang="en">Heard Island and McDonald Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="HN">
+          <common:Name xml:lang="en">Honduras</common:Name>
+        </structure:Code>
+        <structure:Code id="HR">
+          <common:Name xml:lang="en">Croatia</common:Name>
+        </structure:Code>
+        <structure:Code id="HT">
+          <common:Name xml:lang="en">Haiti</common:Name>
+        </structure:Code>
+        <structure:Code id="HU">
+          <common:Name xml:lang="en">Hungary</common:Name>
+        </structure:Code>
+        <structure:Code id="ID">
+          <common:Name xml:lang="en">Indonesia</common:Name>
+        </structure:Code>
+        <structure:Code id="IE">
+          <common:Name xml:lang="en">Ireland</common:Name>
+        </structure:Code>
+        <structure:Code id="IL">
+          <common:Name xml:lang="en">Israel</common:Name>
+        </structure:Code>
+        <structure:Code id="IM">
+          <common:Name xml:lang="en">Isle of Man</common:Name>
+        </structure:Code>
+        <structure:Code id="IN">
+          <common:Name xml:lang="en">India</common:Name>
+        </structure:Code>
+        <structure:Code id="IO">
+          <common:Name xml:lang="en">British Indian Ocean Territory</common:Name>
+        </structure:Code>
+        <structure:Code id="IQ">
+          <common:Name xml:lang="en">Iraq</common:Name>
+        </structure:Code>
+        <structure:Code id="IR">
+          <common:Name xml:lang="en">Iran (Islamic Republic of)</common:Name>
+        </structure:Code>
+        <structure:Code id="IS">
+          <common:Name xml:lang="en">Iceland</common:Name>
+        </structure:Code>
+        <structure:Code id="IT">
+          <common:Name xml:lang="en">Italy</common:Name>
+        </structure:Code>
+        <structure:Code id="JE">
+          <common:Name xml:lang="en">Jersey</common:Name>
+        </structure:Code>
+        <structure:Code id="JM">
+          <common:Name xml:lang="en">Jamaica</common:Name>
+        </structure:Code>
+        <structure:Code id="JO">
+          <common:Name xml:lang="en">Jordan</common:Name>
+        </structure:Code>
+        <structure:Code id="JP">
+          <common:Name xml:lang="en">Japan</common:Name>
+        </structure:Code>
+        <structure:Code id="KE">
+          <common:Name xml:lang="en">Kenya</common:Name>
+        </structure:Code>
+        <structure:Code id="KG">
+          <common:Name xml:lang="en">Kyrgyzstan</common:Name>
+        </structure:Code>
+        <structure:Code id="KH">
+          <common:Name xml:lang="en">Cambodia</common:Name>
+        </structure:Code>
+        <structure:Code id="KI">
+          <common:Name xml:lang="en">Kiribati</common:Name>
+        </structure:Code>
+        <structure:Code id="KM">
+          <common:Name xml:lang="en">Comoros</common:Name>
+        </structure:Code>
+        <structure:Code id="KN">
+          <common:Name xml:lang="en">Saint Kitts and Nevis</common:Name>
+        </structure:Code>
+        <structure:Code id="KP">
+          <common:Name xml:lang="en">Korea (Democratic People's Republic of)</common:Name>
+        </structure:Code>
+        <structure:Code id="KR">
+          <common:Name xml:lang="en">Korea, Republic of</common:Name>
+        </structure:Code>
+        <structure:Code id="KW">
+          <common:Name xml:lang="en">Kuwait</common:Name>
+        </structure:Code>
+        <structure:Code id="KY">
+          <common:Name xml:lang="en">Cayman Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="KZ">
+          <common:Name xml:lang="en">Kazakhstan</common:Name>
+        </structure:Code>
+        <structure:Code id="LA">
+          <common:Name xml:lang="en">Lao People's Democratic Republic</common:Name>
+        </structure:Code>
+        <structure:Code id="LB">
+          <common:Name xml:lang="en">Lebanon</common:Name>
+        </structure:Code>
+        <structure:Code id="LC">
+          <common:Name xml:lang="en">Saint Lucia</common:Name>
+        </structure:Code>
+        <structure:Code id="LI">
+          <common:Name xml:lang="en">Liechtenstein</common:Name>
+        </structure:Code>
+        <structure:Code id="LK">
+          <common:Name xml:lang="en">Sri Lanka</common:Name>
+        </structure:Code>
+        <structure:Code id="LR">
+          <common:Name xml:lang="en">Liberia</common:Name>
+        </structure:Code>
+        <structure:Code id="LS">
+          <common:Name xml:lang="en">Lesotho</common:Name>
+        </structure:Code>
+        <structure:Code id="LT">
+          <common:Name xml:lang="en">Lithuania</common:Name>
+        </structure:Code>
+        <structure:Code id="LU">
+          <common:Name xml:lang="en">Luxembourg</common:Name>
+        </structure:Code>
+        <structure:Code id="LV">
+          <common:Name xml:lang="en">Latvia</common:Name>
+        </structure:Code>
+        <structure:Code id="LY">
+          <common:Name xml:lang="en">Libya</common:Name>
+        </structure:Code>
+        <structure:Code id="MA">
+          <common:Name xml:lang="en">Morocco</common:Name>
+        </structure:Code>
+        <structure:Code id="MC">
+          <common:Name xml:lang="en">Monaco</common:Name>
+        </structure:Code>
+        <structure:Code id="MD">
+          <common:Name xml:lang="en">Moldova, Republic of</common:Name>
+        </structure:Code>
+        <structure:Code id="ME">
+          <common:Name xml:lang="en">Montenegro</common:Name>
+        </structure:Code>
+        <structure:Code id="MF">
+          <common:Name xml:lang="en">Saint Martin (French part)</common:Name>
+        </structure:Code>
+        <structure:Code id="MG">
+          <common:Name xml:lang="en">Madagascar</common:Name>
+        </structure:Code>
+        <structure:Code id="MH">
+          <common:Name xml:lang="en">Marshall Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="MK">
+          <common:Name xml:lang="en">Macedonia, the former Yugoslav Republic of</common:Name>
+        </structure:Code>
+        <structure:Code id="ML">
+          <common:Name xml:lang="en">Mali</common:Name>
+        </structure:Code>
+        <structure:Code id="MM">
+          <common:Name xml:lang="en">Myanmar</common:Name>
+        </structure:Code>
+        <structure:Code id="MN">
+          <common:Name xml:lang="en">Mongolia</common:Name>
+        </structure:Code>
+        <structure:Code id="MO">
+          <common:Name xml:lang="en">Macao</common:Name>
+        </structure:Code>
+        <structure:Code id="MP">
+          <common:Name xml:lang="en">Northern Mariana Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="MQ">
+          <common:Name xml:lang="en">Martinique</common:Name>
+        </structure:Code>
+        <structure:Code id="MR">
+          <common:Name xml:lang="en">Mauritania</common:Name>
+        </structure:Code>
+        <structure:Code id="MS">
+          <common:Name xml:lang="en">Montserrat</common:Name>
+        </structure:Code>
+        <structure:Code id="MT">
+          <common:Name xml:lang="en">Malta</common:Name>
+        </structure:Code>
+        <structure:Code id="MU">
+          <common:Name xml:lang="en">Mauritius</common:Name>
+        </structure:Code>
+        <structure:Code id="MV">
+          <common:Name xml:lang="en">Maldives</common:Name>
+        </structure:Code>
+        <structure:Code id="MW">
+          <common:Name xml:lang="en">Malawi</common:Name>
+        </structure:Code>
+        <structure:Code id="MX">
+          <common:Name xml:lang="en">Mexico</common:Name>
+        </structure:Code>
+        <structure:Code id="MY">
+          <common:Name xml:lang="en">Malaysia</common:Name>
+        </structure:Code>
+        <structure:Code id="MZ">
+          <common:Name xml:lang="en">Mozambique</common:Name>
+        </structure:Code>
+        <structure:Code id="NA">
+          <common:Name xml:lang="en">Namibia</common:Name>
+        </structure:Code>
+        <structure:Code id="NC">
+          <common:Name xml:lang="en">New Caledonia</common:Name>
+        </structure:Code>
+        <structure:Code id="NE">
+          <common:Name xml:lang="en">Niger</common:Name>
+        </structure:Code>
+        <structure:Code id="NF">
+          <common:Name xml:lang="en">Norfolk Island</common:Name>
+        </structure:Code>
+        <structure:Code id="NG">
+          <common:Name xml:lang="en">Nigeria</common:Name>
+        </structure:Code>
+        <structure:Code id="NI">
+          <common:Name xml:lang="en">Nicaragua</common:Name>
+        </structure:Code>
+        <structure:Code id="NL">
+          <common:Name xml:lang="en">Netherlands</common:Name>
+        </structure:Code>
+        <structure:Code id="NO">
+          <common:Name xml:lang="en">Norway</common:Name>
+        </structure:Code>
+        <structure:Code id="NP">
+          <common:Name xml:lang="en">Nepal</common:Name>
+        </structure:Code>
+        <structure:Code id="NR">
+          <common:Name xml:lang="en">Nauru</common:Name>
+        </structure:Code>
+        <structure:Code id="NU">
+          <common:Name xml:lang="en">Niue</common:Name>
+        </structure:Code>
+        <structure:Code id="NZ">
+          <common:Name xml:lang="en">New Zealand</common:Name>
+        </structure:Code>
+        <structure:Code id="OM">
+          <common:Name xml:lang="en">Oman</common:Name>
+        </structure:Code>
+        <structure:Code id="PA">
+          <common:Name xml:lang="en">Panama</common:Name>
+        </structure:Code>
+        <structure:Code id="PE">
+          <common:Name xml:lang="en">Peru</common:Name>
+        </structure:Code>
+        <structure:Code id="PF">
+          <common:Name xml:lang="en">French Polynesia</common:Name>
+        </structure:Code>
+        <structure:Code id="PG">
+          <common:Name xml:lang="en">Papua New Guinea</common:Name>
+        </structure:Code>
+        <structure:Code id="PH">
+          <common:Name xml:lang="en">Philippines</common:Name>
+        </structure:Code>
+        <structure:Code id="PK">
+          <common:Name xml:lang="en">Pakistan</common:Name>
+        </structure:Code>
+        <structure:Code id="PL">
+          <common:Name xml:lang="en">Poland</common:Name>
+        </structure:Code>
+        <structure:Code id="PM">
+          <common:Name xml:lang="en">Saint Pierre and Miquelon</common:Name>
+        </structure:Code>
+        <structure:Code id="PN">
+          <common:Name xml:lang="en">Pitcairn</common:Name>
+        </structure:Code>
+        <structure:Code id="PR">
+          <common:Name xml:lang="en">Puerto Rico</common:Name>
+        </structure:Code>
+        <structure:Code id="PS">
+          <common:Name xml:lang="en">Palestine, State of</common:Name>
+        </structure:Code>
+        <structure:Code id="PT">
+          <common:Name xml:lang="en">Portugal</common:Name>
+        </structure:Code>
+        <structure:Code id="PW">
+          <common:Name xml:lang="en">Palau</common:Name>
+        </structure:Code>
+        <structure:Code id="PY">
+          <common:Name xml:lang="en">Paraguay</common:Name>
+        </structure:Code>
+        <structure:Code id="QA">
+          <common:Name xml:lang="en">Qatar</common:Name>
+        </structure:Code>
+        <structure:Code id="RE">
+          <common:Name xml:lang="en">Réunion</common:Name>
+        </structure:Code>
+        <structure:Code id="RO">
+          <common:Name xml:lang="en">Romania</common:Name>
+        </structure:Code>
+        <structure:Code id="RS">
+          <common:Name xml:lang="en">Serbia</common:Name>
+        </structure:Code>
+        <structure:Code id="RU">
+          <common:Name xml:lang="en">Russian Federation</common:Name>
+        </structure:Code>
+        <structure:Code id="RW">
+          <common:Name xml:lang="en">Rwanda</common:Name>
+        </structure:Code>
+        <structure:Code id="SA">
+          <common:Name xml:lang="en">Saudi Arabia</common:Name>
+        </structure:Code>
+        <structure:Code id="SB">
+          <common:Name xml:lang="en">Solomon Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="SC">
+          <common:Name xml:lang="en">Seychelles</common:Name>
+        </structure:Code>
+        <structure:Code id="SD">
+          <common:Name xml:lang="en">Sudan</common:Name>
+        </structure:Code>
+        <structure:Code id="SE">
+          <common:Name xml:lang="en">Sweden</common:Name>
+        </structure:Code>
+        <structure:Code id="SG">
+          <common:Name xml:lang="en">Singapore</common:Name>
+        </structure:Code>
+        <structure:Code id="SH">
+          <common:Name xml:lang="en">Saint Helena, Ascension and Tristan da Cunha</common:Name>
+        </structure:Code>
+        <structure:Code id="SI">
+          <common:Name xml:lang="en">Slovenia</common:Name>
+        </structure:Code>
+        <structure:Code id="SJ">
+          <common:Name xml:lang="en">Svalbard and Jan Mayen</common:Name>
+        </structure:Code>
+        <structure:Code id="SK">
+          <common:Name xml:lang="en">Slovakia</common:Name>
+        </structure:Code>
+        <structure:Code id="SL">
+          <common:Name xml:lang="en">Sierra Leone</common:Name>
+        </structure:Code>
+        <structure:Code id="SM">
+          <common:Name xml:lang="en">San Marino</common:Name>
+        </structure:Code>
+        <structure:Code id="SN">
+          <common:Name xml:lang="en">Senegal</common:Name>
+        </structure:Code>
+        <structure:Code id="SO">
+          <common:Name xml:lang="en">Somalia</common:Name>
+        </structure:Code>
+        <structure:Code id="SR">
+          <common:Name xml:lang="en">Suriname</common:Name>
+        </structure:Code>
+        <structure:Code id="SS">
+          <common:Name xml:lang="en">South Sudan</common:Name>
+        </structure:Code>
+        <structure:Code id="ST">
+          <common:Name xml:lang="en">Sao Tome and Principe</common:Name>
+        </structure:Code>
+        <structure:Code id="SV">
+          <common:Name xml:lang="en">El Salvador</common:Name>
+        </structure:Code>
+        <structure:Code id="SX">
+          <common:Name xml:lang="en">Sint Maarten (Dutch part)</common:Name>
+        </structure:Code>
+        <structure:Code id="SY">
+          <common:Name xml:lang="en">Syrian Arab Republic</common:Name>
+        </structure:Code>
+        <structure:Code id="SZ">
+          <common:Name xml:lang="en">Eswatini</common:Name>
+        </structure:Code>
+        <structure:Code id="TC">
+          <common:Name xml:lang="en">Turks and Caicos Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="TD">
+          <common:Name xml:lang="en">Chad</common:Name>
+        </structure:Code>
+        <structure:Code id="TF">
+          <common:Name xml:lang="en">French Southern Territories</common:Name>
+        </structure:Code>
+        <structure:Code id="TG">
+          <common:Name xml:lang="en">Togo</common:Name>
+        </structure:Code>
+        <structure:Code id="TH">
+          <common:Name xml:lang="en">Thailand</common:Name>
+        </structure:Code>
+        <structure:Code id="TJ">
+          <common:Name xml:lang="en">Tajikistan</common:Name>
+        </structure:Code>
+        <structure:Code id="TK">
+          <common:Name xml:lang="en">Tokelau</common:Name>
+        </structure:Code>
+        <structure:Code id="TL">
+          <common:Name xml:lang="en">Timor-Leste</common:Name>
+        </structure:Code>
+        <structure:Code id="TM">
+          <common:Name xml:lang="en">Turkmenistan</common:Name>
+        </structure:Code>
+        <structure:Code id="TN">
+          <common:Name xml:lang="en">Tunisia</common:Name>
+        </structure:Code>
+        <structure:Code id="TO">
+          <common:Name xml:lang="en">Tonga</common:Name>
+        </structure:Code>
+        <structure:Code id="TR">
+          <common:Name xml:lang="en">Turkey</common:Name>
+        </structure:Code>
+        <structure:Code id="TT">
+          <common:Name xml:lang="en">Trinidad and Tobago</common:Name>
+        </structure:Code>
+        <structure:Code id="TV">
+          <common:Name xml:lang="en">Tuvalu</common:Name>
+        </structure:Code>
+        <structure:Code id="TW">
+          <common:Name xml:lang="en">Taiwan, Province of China</common:Name>
+        </structure:Code>
+        <structure:Code id="TZ">
+          <common:Name xml:lang="en">Tanzania, United Republic of</common:Name>
+        </structure:Code>
+        <structure:Code id="UA">
+          <common:Name xml:lang="en">Ukraine</common:Name>
+        </structure:Code>
+        <structure:Code id="UG">
+          <common:Name xml:lang="en">Uganda</common:Name>
+        </structure:Code>
+        <structure:Code id="UM">
+          <common:Name xml:lang="en">United States Minor Outlying Islands</common:Name>
+        </structure:Code>
+        <structure:Code id="US">
+          <common:Name xml:lang="en">United States of America</common:Name>
+        </structure:Code>
+        <structure:Code id="UY">
+          <common:Name xml:lang="en">Uruguay</common:Name>
+        </structure:Code>
+        <structure:Code id="UZ">
+          <common:Name xml:lang="en">Uzbekistan</common:Name>
+        </structure:Code>
+        <structure:Code id="VA">
+          <common:Name xml:lang="en">Holy See</common:Name>
+        </structure:Code>
+        <structure:Code id="VC">
+          <common:Name xml:lang="en">Saint Vincent and the Grenadines</common:Name>
+        </structure:Code>
+        <structure:Code id="VE">
+          <common:Name xml:lang="en">Venezuela (Bolivarian Republic of)</common:Name>
+        </structure:Code>
+        <structure:Code id="VG">
+          <common:Name xml:lang="en">Virgin Islands (British)</common:Name>
+        </structure:Code>
+        <structure:Code id="VI">
+          <common:Name xml:lang="en">Virgin Islands (U.S.)</common:Name>
+        </structure:Code>
+        <structure:Code id="VN">
+          <common:Name xml:lang="en">Viet Nam</common:Name>
+        </structure:Code>
+        <structure:Code id="VU">
+          <common:Name xml:lang="en">Vanuatu</common:Name>
+        </structure:Code>
+        <structure:Code id="WF">
+          <common:Name xml:lang="en">Wallis and Futuna</common:Name>
+        </structure:Code>
+        <structure:Code id="WS">
+          <common:Name xml:lang="en">Samoa</common:Name>
+        </structure:Code>
+        <structure:Code id="YE">
+          <common:Name xml:lang="en">Yemen</common:Name>
+        </structure:Code>
+        <structure:Code id="YT">
+          <common:Name xml:lang="en">Mayotte</common:Name>
+        </structure:Code>
+        <structure:Code id="ZA">
+          <common:Name xml:lang="en">South Africa</common:Name>
+        </structure:Code>
+        <structure:Code id="ZM">
+          <common:Name xml:lang="en">Zambia</common:Name>
+        </structure:Code>
+        <structure:Code id="ZW">
+          <common:Name xml:lang="en">Zimbabwe</common:Name>
+        </structure:Code>
+        <structure:Code id="OECDAVG">
+          <common:Name xml:lang="en">OECD - Average</common:Name>
+        </structure:Code>
+        <structure:Code id="OECDEU">
+          <common:Name xml:lang="en">OECD - Europe</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_CATEGORY" agencyID="OECD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Codelist for government functions</common:Name>
+        <structure:Code id="_T">
+          <common:Name xml:lang="en">Total</common:Name>
+        </structure:Code>
+        <structure:Code id="_Z">
+          <common:Name xml:lang="en">Not applicable</common:Name>
+        </structure:Code>
+        <structure:Code id="PF">
+          <common:Name xml:lang="en">Public finance</common:Name>
+        </structure:Code>
+        <structure:Code id="OG">
+          <common:Name xml:lang="en">Open government</common:Name>
+        </structure:Code>
+        <structure:Code id="TG">
+          <common:Name xml:lang="en">Trust in government</common:Name>
+          <structure:Parent>
+            <Ref id="OG" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PGR">
+          <common:Name xml:lang="en">Perception of government responsiveness: external political efficacy</common:Name>
+          <structure:Parent>
+            <Ref id="OG" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RIW">
+          <common:Name xml:lang="en">Redistribution of income and wealth</common:Name>
+          <structure:Parent>
+            <Ref id="OG" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ROL">
+          <common:Name xml:lang="en">Rule of law</common:Name>
+          <structure:Parent>
+            <Ref id="OG" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PSE">
+          <common:Name xml:lang="en">Public sector efficiency</common:Name>
+          <structure:Parent>
+            <Ref id="OG" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="CEP">
+          <common:Name xml:lang="en">Cost-effectiveness of public policies</common:Name>
+          <structure:Parent>
+            <Ref id="OG" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="SC">
+          <common:Name xml:lang="en">Serving citizens</common:Name>
+        </structure:Code>
+        <structure:Code id="ACC">
+          <common:Name xml:lang="en">Access</common:Name>
+          <structure:Parent>
+            <Ref id="SC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AFF">
+          <common:Name xml:lang="en">Affordability</common:Name>
+          <structure:Parent>
+            <Ref id="ACC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="GEO">
+          <common:Name xml:lang="en">Geographic proximity</common:Name>
+          <structure:Parent>
+            <Ref id="ACC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="INF">
+          <common:Name xml:lang="en">Access to information</common:Name>
+          <structure:Parent>
+            <Ref id="ACC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RES">
+          <common:Name xml:lang="en">Responsiveness</common:Name>
+          <structure:Parent>
+            <Ref id="SC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="COU">
+          <common:Name xml:lang="en">Courtesy and treatment</common:Name>
+          <structure:Parent>
+            <Ref id="RES" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="MOS">
+          <common:Name xml:lang="en">Match of services to special needs</common:Name>
+          <structure:Parent>
+            <Ref id="RES" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="TIM">
+          <common:Name xml:lang="en">Timeliness</common:Name>
+          <structure:Parent>
+            <Ref id="RES" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="QUA">
+          <common:Name xml:lang="en">Quality</common:Name>
+          <structure:Parent>
+            <Ref id="SC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="EDS">
+          <common:Name xml:lang="en">Effective delivery of services and outcomes</common:Name>
+          <structure:Parent>
+            <Ref id="QUA" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="CSD">
+          <common:Name xml:lang="en">Consistensy in service delivery and outcomes</common:Name>
+          <structure:Parent>
+            <Ref id="QUA" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="SEC">
+          <common:Name xml:lang="en">Security/Safety</common:Name>
+          <structure:Parent>
+            <Ref id="QUA" />
+          </structure:Parent>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_EDUCATION_LEV" agencyID="OECD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Codelist for education level</common:Name>
+        <structure:Code id="ISCED11_0">
+          <common:Name xml:lang="en">Early childhood education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_01">
+          <common:Name xml:lang="en">Early childhood educational development</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_0" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_010">
+          <common:Name xml:lang="en">Early childhood educational development</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_01" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_02">
+          <common:Name xml:lang="en">Pre-primary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_0" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_020">
+          <common:Name xml:lang="en">Pre-primary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_02" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_1">
+          <common:Name xml:lang="en">Primary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_10">
+          <common:Name xml:lang="en">Primary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_1" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_100">
+          <common:Name xml:lang="en">Primary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_10" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_2">
+          <common:Name xml:lang="en">Lower secondary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_24">
+          <common:Name xml:lang="en">Lower secondary general education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_2" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_241">
+          <common:Name xml:lang="en">Lower secondary general education, insufficient for level completion or partial level completion, without direct access to upper secondary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_24" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_242">
+          <common:Name xml:lang="en">Lower secondary general education, sufficient for partial level completion, without direct access to upper secondary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_24" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_243">
+          <common:Name xml:lang="en">Lower secondary general education, sufficient for level completion, without direct access to upper secondary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_24" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_244">
+          <common:Name xml:lang="en">Lower secondary general education, sufficient for level completion, with direct access to upper secondary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_24" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_243_244_253_254">
+          <common:Name xml:lang="en">Lower secondary education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_24" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_25">
+          <common:Name xml:lang="en">Lower secondary vocational education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_2" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_251">
+          <common:Name xml:lang="en">Lower secondary vocational education, insufficient for level completion or partial level completion, without direct access to upper secondary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_25" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_252">
+          <common:Name xml:lang="en">Lower secondary vocational education, sufficient for partial level completion, without direct access to upper secondary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_25" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_253">
+          <common:Name xml:lang="en">Lower secondary vocational education, sufficient for level completion, without direct access to upper secondary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_25" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_254">
+          <common:Name xml:lang="en">Lower secondary vocational education, sufficient for level completion, with direct access to upper secondary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_25" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_2_3">
+          <common:Name xml:lang="en">Secondary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_25_35_45">
+          <common:Name xml:lang="en">Non-tertiary vocational programmes</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_25" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_25_35_45_55">
+          <common:Name xml:lang="en">Vocational education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_25" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_3">
+          <common:Name xml:lang="en">Upper secondary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_34">
+          <common:Name xml:lang="en">Upper secondary general education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_341">
+          <common:Name xml:lang="en">Upper secondary general education, insufficient for level completion or partial level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_34" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_342">
+          <common:Name xml:lang="en">Upper secondary general education, sufficient for partial level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_34" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_343">
+          <common:Name xml:lang="en">Upper secondary general education, sufficient for level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_34" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_344">
+          <common:Name xml:lang="en">Upper secondary general education, sufficient for level completion, with direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_34" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_34X341">
+          <common:Name xml:lang="en">Upper secondary general education, full or partial level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_34" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_343_344_353_354">
+          <common:Name xml:lang="en">Upper secondary education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_34" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_35">
+          <common:Name xml:lang="en">Upper secondary vocational education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_351">
+          <common:Name xml:lang="en">Upper secondary vocational education, insufficient for level completion or partial level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_35" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_352">
+          <common:Name xml:lang="en">Upper secondary vocational education, sufficient for partial level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_35" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_353">
+          <common:Name xml:lang="en">Upper secondary vocational education, sufficient for level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_35" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_354">
+          <common:Name xml:lang="en">Upper secondary vocational education, sufficient for level completion, with direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_35" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_35X351">
+          <common:Name xml:lang="en">Upper secondary vocational education, full or partial level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_35" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_3X341_351">
+          <common:Name xml:lang="en">Upper secondary education, full or partial level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_35" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_342_352">
+          <common:Name xml:lang="en">Upper secondary education, partial level completion without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_343_353">
+          <common:Name xml:lang="en">Upper secondary education, level completion without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_344_354">
+          <common:Name xml:lang="en">Upper secondary education, level completion with direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_343_344">
+          <common:Name xml:lang="en">Upper secondary general education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_353_354">
+          <common:Name xml:lang="en">Upper secondary vocational education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_34_44">
+          <common:Name xml:lang="en">Upper secondary and post-secondary non-tertiary general programmes</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_35_45">
+          <common:Name xml:lang="en">Upper secondary and post-secondary non-tertiary vocational programmes</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_35SW">
+          <common:Name xml:lang="en">Upper secondary vocational education, school and work-based programmes</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_3_4">
+          <common:Name xml:lang="en">Upper secondary and post-secondary non-tertiary all programmes</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_4">
+          <common:Name xml:lang="en">Post-secondary non-tertiary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_44">
+          <common:Name xml:lang="en">Post-secondary non-tertiary general education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_4" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_441">
+          <common:Name xml:lang="en">Post-secondary non-tertiary general education, insufficient for level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_44" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_443">
+          <common:Name xml:lang="en">Post-secondary non-tertiary general education, sufficient for level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_44" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_444">
+          <common:Name xml:lang="en">Post-secondary non-tertiary general education, sufficient for level completion, with direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_44" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_44X441">
+          <common:Name xml:lang="en">Post-secondary non-tertiary general education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_44" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_45">
+          <common:Name xml:lang="en">Post-secondary non-tertiary vocational education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_4" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_45SW">
+          <common:Name xml:lang="en">Post-secondary non-tertiary vocational education, school and work-based programmes</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_45" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_451">
+          <common:Name xml:lang="en">Post-secondary non-tertiary vocational education, insufficient for level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_45" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_453">
+          <common:Name xml:lang="en">Post-secondary non-tertiary vocational education, sufficient for level completion, without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_45" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_454">
+          <common:Name xml:lang="en">Post-secondary non-tertiary vocational education, sufficient for level completion, with direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_45" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_45X451">
+          <common:Name xml:lang="en">Post-secondary non-tertiary vocational education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_45" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_443_453">
+          <common:Name xml:lang="en">Post-secondary non-tertiary education, level completion without direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_4" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_444_454">
+          <common:Name xml:lang="en">Post-secondary non-tertiary education, level completion with direct access to tertiary education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_4" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_4X441_451">
+          <common:Name xml:lang="en">Post-secondary non-tertiary education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_4" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_5">
+          <common:Name xml:lang="en">Short-cycle tertiary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_54">
+          <common:Name xml:lang="en">Short-cycle tertiary general education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_5" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_541">
+          <common:Name xml:lang="en">Short-cycle tertiary general education, insufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_54" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_544">
+          <common:Name xml:lang="en">Short-cycle tertiary general education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_54" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_55">
+          <common:Name xml:lang="en">Short-cycle tertiary vocational education</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_5" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_55SW">
+          <common:Name xml:lang="en">Short-cycle tertiary vocational education, school and work-based programmes</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_55" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_551">
+          <common:Name xml:lang="en">Short-cycle tertiary vocational education, insufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_55" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_554">
+          <common:Name xml:lang="en">Short-cycle tertiary vocational education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_55" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_544_554">
+          <common:Name xml:lang="en">Short-cycle tertiary education, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_55" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_6">
+          <common:Name xml:lang="en">Bachelor’s or equivalent level</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_64">
+          <common:Name xml:lang="en">Bachelor’s or equivalent academic level</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_641">
+          <common:Name xml:lang="en">Bachelor’s or equivalent academic level, insufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_64" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_645">
+          <common:Name xml:lang="en">Bachelor’s or equivalent academic level, first degree (3-4 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_64" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_646">
+          <common:Name xml:lang="en">Bachelor’s or equivalent academic level, long first degree (more than 4 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_64" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_647">
+          <common:Name xml:lang="en">Bachelor’s or equivalent academic level, second or further degree (following a Bachelor’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_64" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_65">
+          <common:Name xml:lang="en">Bachelor’s or equivalent professional level</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_651">
+          <common:Name xml:lang="en">Bachelor’s or equivalent professional level, insufficient for  completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_65" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_655">
+          <common:Name xml:lang="en">Bachelor’s or equivalent professional level, first degree (3-4 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_65" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_656">
+          <common:Name xml:lang="en">Bachelor’s or equivalent professional level, long first degree (more than 4 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_65" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_657">
+          <common:Name xml:lang="en">Bachelor’s or equivalent professional level, second or further degree (following a Bachelor’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_65" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_66">
+          <common:Name xml:lang="en">Bachelor’s or equivalent level, orientation unspecified</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_661">
+          <common:Name xml:lang="en">Bachelor’s or equivalent level, orientation unspecified, insufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_66" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_665">
+          <common:Name xml:lang="en">Bachelor’s or equivalent level, orientation unspecified, first degree (3-4 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_66" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_666">
+          <common:Name xml:lang="en">Bachelor’s or equivalent level, orientation unspecified, long first degree (more than 4 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_66" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_667">
+          <common:Name xml:lang="en">Bachelor’s or equivalent level, orientation unspecified, second or further degree (following a Bachelor’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_66" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_645_655_665">
+          <common:Name xml:lang="en">Bachelor's or equivalent level, first degree (3-4 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_646_656_666">
+          <common:Name xml:lang="en">Bachelor's or equivalent level, first long degree (more than 4 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_645_646_655_656_665_666">
+          <common:Name xml:lang="en">Bachelor's or equivalent level, first degrees (more than 3 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_647_657_667">
+          <common:Name xml:lang="en">Second or further degree following successful completion of a Bachelor's or equivalent programme</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_6X641_651_661">
+          <common:Name xml:lang="en">Bachelor's or equivalent level, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_645T647">
+          <common:Name xml:lang="en">Bachelor’s or equivalent academic level, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_655T657">
+          <common:Name xml:lang="en">Bachelor’s or equivalent professional level, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_641_651_661">
+          <common:Name xml:lang="en">Bachelor’s or equivalent level, insufficient for  completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_645_655_665_646_656_666">
+          <common:Name xml:lang="en">Bachelor’s or equivalent level, sufficient for level completion and first degrees</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_6X647_657_667">
+          <common:Name xml:lang="en">Bachelor’s or equivalent level,  insufficient for level completion and first degrees (3-4 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_64X647">
+          <common:Name xml:lang="en">Bachelor’s or equivalent academic level,  excluding second or further degree (following a Bachelor's or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_65X657">
+          <common:Name xml:lang="en">Bachelor’s or equivalent professional level, excluding second or further degree (following a Bachelor's or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_665_666_766">
+          <common:Name xml:lang="en">Tertiary education first degrees</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_6" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_7">
+          <common:Name xml:lang="en">Master’s or equivalent level</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_74">
+          <common:Name xml:lang="en">Master’s or equivalent academic level</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_741">
+          <common:Name xml:lang="en">Master’s or equivalent academic level, insufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_74" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_746">
+          <common:Name xml:lang="en">Master’s or equivalent academic level, long first degree (at least 5 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_74" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_747">
+          <common:Name xml:lang="en">Master’s or equivalent academic level, second or further degree (following a Bachelor’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_74" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_748">
+          <common:Name xml:lang="en">Master’s or equivalent academic level, second or further degree (following a Master’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_74" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_75">
+          <common:Name xml:lang="en">Master’s or equivalent professional level</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_751">
+          <common:Name xml:lang="en">Master’s or equivalent professional level, insufficient for  completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_75" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_756">
+          <common:Name xml:lang="en">Master’s or equivalent professional level, long first degree (at least 5 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_75" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_757">
+          <common:Name xml:lang="en">Master’s or equivalent professional level, second or further degree (following a Bachelor’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_75" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_758">
+          <common:Name xml:lang="en">Master’s or equivalent professional level, second or further degree (following a Master’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_75" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_76">
+          <common:Name xml:lang="en">Master’s or equivalent level, orientation unspecified</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_761">
+          <common:Name xml:lang="en">Master’s or equivalent level, orientation unspecified, insufficient for  completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_76" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_766">
+          <common:Name xml:lang="en">Master’s or equivalent level, orientation unspecified, long first degree (at least 5 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_76" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_767">
+          <common:Name xml:lang="en">Master’s or equivalent level, orientation unspecified, second or further degree (following a Bachelor’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_76" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_768">
+          <common:Name xml:lang="en">Master’s or equivalent level, orientation unspecified, second or further degree (following a Master’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_76" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_746_756_766">
+          <common:Name xml:lang="en">Master’s or equivalent level, long first degree (at least 5 years)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_747_757_767">
+          <common:Name xml:lang="en">Master’s or equivalent level, second or further degree (following a Bachelor's or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_746_747_756_757_766_767">
+          <common:Name xml:lang="en">Master’s or equivalent level, first and second or further degree (following a Bachelor's or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_748_758_768">
+          <common:Name xml:lang="en">Master’s or equivalent level, second or further degree (following a Master’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_7X741_751_761">
+          <common:Name xml:lang="en">Master’s or equivalent level, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_746T748">
+          <common:Name xml:lang="en">Master’s or equivalent academic level, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_756T758">
+          <common:Name xml:lang="en">Master’s or equivalent professional level, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_741_751_761">
+          <common:Name xml:lang="en">Master’s or equivalent level, all programmes, insufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_741_746_751_756_761_766">
+          <common:Name xml:lang="en">Master's or equivalent level, insufficient for level completion or first degrees</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_7X748_758_768">
+          <common:Name xml:lang="en">Master’s or equivalent level,  excluding second or further degree (following a Master’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_74X747">
+          <common:Name xml:lang="en">Master’s or equivalent  academic level, excluding second or further degree (following a Master’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_75X757">
+          <common:Name xml:lang="en">Master’s or equivalent  professional level, excluding second or further degree (following a Master’s or equivalent programme)</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_7" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_8">
+          <common:Name xml:lang="en">Doctoral or equivalent level</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_84">
+          <common:Name xml:lang="en">Doctoral or equivalent academic level</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_8" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_841">
+          <common:Name xml:lang="en">Doctoral or equivalent academic level, insufficient for  completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_84" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_844">
+          <common:Name xml:lang="en">Doctoral or equivalent academic level, sufficient for completion of level</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_84" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_85">
+          <common:Name xml:lang="en">Doctoral or equivalent professional level</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_8" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_851">
+          <common:Name xml:lang="en">Doctoral or equivalent professional level, insufficient for  completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_85" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_854">
+          <common:Name xml:lang="en">Doctoral or equivalent professional level, sufficient for completion of level</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_85" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_86">
+          <common:Name xml:lang="en">Doctoral or equivalent level, orientation unspecified</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_8" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_861">
+          <common:Name xml:lang="en">Doctoral or equivalent level, orientation unspecified, insufficient for  completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_86" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_864">
+          <common:Name xml:lang="en">Doctoral or equivalent level, orientation unspecified, sufficient for completion of level</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_86" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_844_854_864">
+          <common:Name xml:lang="en">Doctoral or equivalent level, sufficient for level completion</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_8" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_9">
+          <common:Name xml:lang="en">Not elsewhere classified</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_99">
+          <common:Name xml:lang="en">Not elsewhere classified</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_9" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_999">
+          <common:Name xml:lang="en">Not elsewhere classified</common:Name>
+          <structure:Parent>
+            <Ref id="ISCED11_99" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="ISCED11_5T7">
+          <common:Name xml:lang="en">Short-cycle tertiary, Bachelor's, Master's or equivalent level</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_5T8">
+          <common:Name xml:lang="en">Tertiary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_54T84">
+          <common:Name xml:lang="en">Tertiary general/academic education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_55T85">
+          <common:Name xml:lang="en">Tertiary vocational education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_6T8">
+          <common:Name xml:lang="en">Bachelor's, Master's and Doctoral or equivalent level</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_0_1">
+          <common:Name xml:lang="en">Early childhood and primary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_0T2">
+          <common:Name xml:lang="en">Pre-primary, primary and lower secondary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_0T4">
+          <common:Name xml:lang="en">Pre-primary, primary, secondary and post-secondary non-tertiary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_02T8">
+          <common:Name xml:lang="en">Pre-primary to tertiary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_1_2">
+          <common:Name xml:lang="en">Primary and lower secondary education (Basic education)</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_1T3">
+          <common:Name xml:lang="en">Primary and secondary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_1T4">
+          <common:Name xml:lang="en">Primary to post-secondary non-tertiary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_1T8">
+          <common:Name xml:lang="en">Primary to tertiary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_2T4">
+          <common:Name xml:lang="en">Lower secondary, upper secondary and post-secondary non-tertiary education</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_2T8">
+          <common:Name xml:lang="en">Total lower secondary to tertiary education levels</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_3T8">
+          <common:Name xml:lang="en">Total upper secondary to tertiary education levels</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_5_6">
+          <common:Name xml:lang="en">Short-cycle tertiary education and Bachelor's or equivalent level</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_6_7">
+          <common:Name xml:lang="en">Bachelor's and Master's or equivalent levels</common:Name>
+        </structure:Code>
+        <structure:Code id="ISCED11_7_8">
+          <common:Name xml:lang="en">Master's and Doctoral or equivalent level</common:Name>
+        </structure:Code>
+        <structure:Code id="_T">
+          <common:Name xml:lang="en">Total</common:Name>
+        </structure:Code>
+        <structure:Code id="_Z">
+          <common:Name xml:lang="en">Not applicable</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_MEASURE" agencyID="OECD" version="1.1" isFinal="false">
+        <common:Name xml:lang="en">Code list for measure</common:Name>
+        <structure:Code id="CGR">
+          <common:Name xml:lang="en">Part VIII: Core government results</common:Name>
+        </structure:Code>
+        <structure:Code id="CONFNG">
+          <common:Name xml:lang="en">Citizens having confidence in national government</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PGC">
+          <common:Name xml:lang="en">Citizens who percept government corruption</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PE_SWGD">
+          <common:Name xml:lang="en">Political eficacy: Citizens having a say in what government does</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="SAD">
+          <common:Name xml:lang="en">Citizens satisfied with democracy</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="TRP">
+          <common:Name xml:lang="en">Citizens who have trust in parliament</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="INEQ_G_BTAXTR">
+          <common:Name xml:lang="en">Income inequality: Primary income (before tax and government transfers)</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="INEQ_G_ATAXTR">
+          <common:Name xml:lang="en">Income inequality: Disposable income (after tax and government transfers)</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="HI_TOP10">
+          <common:Name xml:lang="en">Household income held by units in the top 10 of the distribution</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="HW_TOP10">
+          <common:Name xml:lang="en">Household wealth held by units in the top 10 of the distribution</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PI_IA">
+          <common:Name xml:lang="en">Individuals experiencing income- and asset-based poverty</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PI_I">
+          <common:Name xml:lang="en">Individuals experiencing income-based poverty</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PIEV">
+          <common:Name xml:lang="en">Individuals economically vulnerable</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RL_LGP">
+          <common:Name xml:lang="en">Rule of law, Limited government powers</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RL_FR">
+          <common:Name xml:lang="en">Rule of law, Fundamental rights</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="H_ALSH">
+          <common:Name xml:lang="en">Average length of stay that patients spend in hospital, for all conditions</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="FR_PIT">
+          <common:Name xml:lang="en">Individuals who fill income tax on time</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="FR_CT">
+          <common:Name xml:lang="en">Corporations that fill income tax on time</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="LEB_Y">
+          <common:Name xml:lang="en">Life expectancy</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="THE_POP">
+          <common:Name xml:lang="en">Total health expenditure per capita</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PCE">
+          <common:Name xml:lang="en">Public costs of education</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PBE">
+          <common:Name xml:lang="en">Public benefits of education</common:Name>
+          <structure:Parent>
+            <Ref id="CGR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="GSC">
+          <common:Name xml:lang="en">Part IX: Serving citizens</common:Name>
+        </structure:Code>
+        <structure:Code id="CS_HC">
+          <common:Name xml:lang="en">Citizens satisfied with the healthcare system</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="CS_ES">
+          <common:Name xml:lang="en">Citizens satisfied with the education system</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="CONF_JS">
+          <common:Name xml:lang="en">Citizens having confidence in the judicial system</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="CONF_LPS">
+          <common:Name xml:lang="en">Citizens having confidence in the local police</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AH_UNMETN_NA">
+          <common:Name xml:lang="en">Unmet care needs for medical examination by income level, national average</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AH_UNMETN_LI">
+          <common:Name xml:lang="en">Unmet care needs for medical examination by income level, low income</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AH_UNMETN_HI">
+          <common:Name xml:lang="en">Unmet care needs for medical examination by income level, high income</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AH_OOPME">
+          <common:Name xml:lang="en">Out-of-pocket (OOP) medical expenditure</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AE_PE">
+          <common:Name xml:lang="en">Private expenditures on education after transfers</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AE_ENR">
+          <common:Name xml:lang="en">Enrolment rate</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AE_ER_T">
+          <common:Name xml:lang="en">First-time tertiary entry rates</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AE_ER_EXIS">
+          <common:Name xml:lang="en">First-time tertiary entry rates, excluding international students</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AJ_I_AD">
+          <common:Name xml:lang="en">Individuals who took action to resolve their disputes over the past 2 years</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AJ_I_LA">
+          <common:Name xml:lang="en">Individuals who received legal assistance over the past 2 years</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AJ_TNALA_NIP">
+          <common:Name xml:lang="en">Individuals who did not attempt to obtain legal assistance because they thought the problem was not difficult</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AJ_TNALA_AB">
+          <common:Name xml:lang="en">Individuals who did not attempt to obtain legal assistance because of the access barrier</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AJ_TNALA_OT">
+          <common:Name xml:lang="en">Individuals who did not attempt to obtain legal assistance for other reasons</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AJ_RNA_SS">
+          <common:Name xml:lang="en">Individuals who did not take any action to resolve a dispute as they sought to find a solution on their own</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AJ_RNA_NI">
+          <common:Name xml:lang="en">Individuals who did not take any action to resolve a dispute as it was not important or not easy to solve</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="AJ_RNA_LP">
+          <common:Name xml:lang="en">Individuals who did not take any action to resolve a dispute as it was a lenghty process</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RH_PINVT_RD">
+          <common:Name xml:lang="en">Individuals who felt that regular doctor involved them as much as they wanted in decisions about treatment or care</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RH_DS_2M">
+          <common:Name xml:lang="en">Individuals who waited for a doctor specialist appointment two months or longer</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RH_HF_AH">
+          <common:Name xml:lang="en">Individuals who had hip structure surgery initiated after admission to hospital</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RE_EL">
+          <common:Name xml:lang="en">Early leavers from education and training who are not currently working</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RE_SQTSN_LSE_SD">
+          <common:Name xml:lang="en">Shortage of qualified teachers in teaching students with specific needs (socioeconomic disadvantage)</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RE_SQTSN_LSE_MS">
+          <common:Name xml:lang="en">Shortage of qualified teachers in teaching students with specific needs (multicultural setting)</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RE_SQTSN_LSE_SN">
+          <common:Name xml:lang="en">Shortage of qualified teachers in teaching students with specific needs (special needs)</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RE_DSL_FA_LSE">
+          <common:Name xml:lang="en">Decisions taken at the school levels in public education fully autonomously</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RE_DSL_AC_LSE">
+          <common:Name xml:lang="en">Decisions taken at the school levels in public education after consultation with other bodies</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RE_DSL_FHA_LSE">
+          <common:Name xml:lang="en">Decisions taken at the school levels in public education within framework set by a higher authority</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RE_DSL_OTL_LSE">
+          <common:Name xml:lang="en">Decisions taken at other levels in public education after consulting the school</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RE_DSL_OT_LSE">
+          <common:Name xml:lang="en">Decisions taken at the school levels in public education, other</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RJ_T_CCA">
+          <common:Name xml:lang="en">Time needed to resolve civil, commercial, administrative and other cases</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RJ_T_CC">
+          <common:Name xml:lang="en">Time needed to resolve litigious civil and commercial cases</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="RJ_T_A">
+          <common:Name xml:lang="en">Time needed to resolve administrative cases</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="QH_30M_AMI">
+          <common:Name xml:lang="en">Thirty-day mortality after admission to hospital for AMI</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="QH_ADMRASTH">
+          <common:Name xml:lang="en">Asthma hospital admission in adults</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="QH_ADMRCOPD">
+          <common:Name xml:lang="en">COPD hospital admission in adults</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="QH_CHF">
+          <common:Name xml:lang="en">Congestive heart failure (CHF) hospital admission in adults</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PEE_PIRLS">
+          <common:Name xml:lang="en">Average Progress in International Reading Literacy Study (PIRLS) score</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PEE_PIRLS_SASHSP">
+          <common:Name xml:lang="en">Students who attend schools where over 75% of the students enter with some reading and writing skills</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PEE_PIRLS_SSHSP">
+          <common:Name xml:lang="en">PIRLS score for highly skilled students who attend a school where over 75% of the students enter with some reading and writing skills</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PEE_PIRLS_HB">
+          <common:Name xml:lang="en">PIRLS score for students with high sense of belonging in school</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PEE_PIRLS_SB">
+          <common:Name xml:lang="en">PIRLS score for students with some sense of belonging in school</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PEE_PIRLS_LB">
+          <common:Name xml:lang="en">PIRLS score for students with little sense of belonging in school</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="PEE_PIRLS_PERHB">
+          <common:Name xml:lang="en">Students with high sense of belonging in school</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="EFJ_RLCJ_EE">
+          <common:Name xml:lang="en">Rule of law in Civil justice: Civil justice is effectively enforced</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="EFJ_RLCJ_FGI">
+          <common:Name xml:lang="en">Rule of law in Civil justice: Civil justice is free of improper government influence</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="EFJ_RLCJ_CATE">
+          <common:Name xml:lang="en">Rule of law in Civil justice: Criminal adjudication system is timely and effective</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="EFJ_RLOS_PNRV">
+          <common:Name xml:lang="en">Rule of law in Order and security: People do not resort to violence to redress personal grievances</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="EFJ_RLOS_CEC">
+          <common:Name xml:lang="en">Rule of law in Order and security: Crime is effectively controlled</common:Name>
+          <structure:Parent>
+            <Ref id="GSC" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OG">
+          <common:Name xml:lang="en">Part VII: Digital Government and Open government data</common:Name>
+        </structure:Code>
+        <structure:Code id="OUR">
+          <common:Name xml:lang="en">OURdata Index: Open, Useful, Reusable government data</common:Name>
+          <structure:Parent>
+            <Ref id="OG" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_DAV">
+          <common:Name xml:lang="en">Data availability</common:Name>
+          <structure:Parent>
+            <Ref id="OUR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_DAC">
+          <common:Name xml:lang="en">Data accessibility</common:Name>
+          <structure:Parent>
+            <Ref id="OUR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_GSR">
+          <common:Name xml:lang="en">Government support for data reuse</common:Name>
+          <structure:Parent>
+            <Ref id="OUR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_1">
+          <common:Name xml:lang="en">Data availability (Pillar 1)</common:Name>
+          <structure:Parent>
+            <Ref id="OUR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_1_CODP">
+          <common:Name xml:lang="en">Content of the open by default policy</common:Name>
+          <structure:Parent>
+            <Ref id="OUR_1" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_1_SEDR">
+          <common:Name xml:lang="en">Stakeholder engagement for data release</common:Name>
+          <structure:Parent>
+            <Ref id="OUR_1" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_1_I">
+          <common:Name xml:lang="en">Implementation</common:Name>
+          <structure:Parent>
+            <Ref id="OUR_1" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_2">
+          <common:Name xml:lang="en">Data accessibility (Pillar 2)</common:Name>
+          <structure:Parent>
+            <Ref id="OUR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_2_CUADP">
+          <common:Name xml:lang="en">Content of the unrestricted access to data policy</common:Name>
+          <structure:Parent>
+            <Ref id="OUR_2" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_2_SEDQC">
+          <common:Name xml:lang="en">Stakeholder engagement for data quality and completeness</common:Name>
+          <structure:Parent>
+            <Ref id="OUR_2" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_2_I">
+          <common:Name xml:lang="en">Implementation</common:Name>
+          <structure:Parent>
+            <Ref id="OUR_2" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_3">
+          <common:Name xml:lang="en">Government support for data reuse (Pillar 3)</common:Name>
+          <structure:Parent>
+            <Ref id="OUR" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_3_DPIP">
+          <common:Name xml:lang="en">Data promotion initiatives and partnerships</common:Name>
+          <structure:Parent>
+            <Ref id="OUR_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_3_DLP">
+          <common:Name xml:lang="en">Data literacy programmes in government</common:Name>
+          <structure:Parent>
+            <Ref id="OUR_3" />
+          </structure:Parent>
+        </structure:Code>
+        <structure:Code id="OUR_3_MI">
+          <common:Name xml:lang="en">Monitoring impact</common:Name>
+          <structure:Parent>
+            <Ref id="OUR_3" />
+          </structure:Parent>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_SEX" agencyID="OECD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Codelist for sex</common:Name>
+        <structure:Code id="F">
+          <common:Name xml:lang="en">Female</common:Name>
+        </structure:Code>
+        <structure:Code id="M">
+          <common:Name xml:lang="en">Male</common:Name>
+        </structure:Code>
+        <structure:Code id="_T">
+          <common:Name xml:lang="en">Total</common:Name>
+        </structure:Code>
+        <structure:Code id="_Z">
+          <common:Name xml:lang="en">Not applicable</common:Name>
+        </structure:Code>
+        <structure:Code id="_O">
+          <common:Name xml:lang="en">Other</common:Name>
+        </structure:Code>
+        <structure:Code id="_N">
+          <common:Name xml:lang="en">Non response</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_UNIT_MEASURE" agencyID="OECD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Code list for unit of measure</common:Name>
+        <structure:Code id="PCT_POP">
+          <common:Name xml:lang="en">Percentage of population</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_POP_SUB">
+          <common:Name xml:lang="en">Percentage of population in the same subgroup</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_HH_WEALTH">
+          <common:Name xml:lang="en">Percentage of total household wealth</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_HH_INCOME">
+          <common:Name xml:lang="en">Percentage of total household income</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_HH_F_CONS">
+          <common:Name xml:lang="en">Percentage of final household consumption</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_EDU_EXP">
+          <common:Name xml:lang="en">Percentage of total education expenditures</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_PAT">
+          <common:Name xml:lang="en">Percentage of all patients</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_SCH">
+          <common:Name xml:lang="en">Percentage of all schools</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_STUD">
+          <common:Name xml:lang="en">Percentage of all students</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_DEC">
+          <common:Name xml:lang="en">Percentage of all decisions</common:Name>
+        </structure:Code>
+        <structure:Code id="PCT_ADM">
+          <common:Name xml:lang="en">Percentage of all admissions</common:Name>
+        </structure:Code>
+        <structure:Code id="NUMBER_100000_POP">
+          <common:Name xml:lang="en">Number per 100 000 population</common:Name>
+        </structure:Code>
+        <structure:Code id="POINTS">
+          <common:Name xml:lang="en">Points</common:Name>
+        </structure:Code>
+        <structure:Code id="USD">
+          <common:Name xml:lang="en">US Dollars</common:Name>
+        </structure:Code>
+        <structure:Code id="GINI">
+          <common:Name xml:lang="en">GINI coefficient</common:Name>
+        </structure:Code>
+        <structure:Code id="INDEX">
+          <common:Name xml:lang="en">Index</common:Name>
+        </structure:Code>
+        <structure:Code id="DAYS">
+          <common:Name xml:lang="en">Days</common:Name>
+        </structure:Code>
+        <structure:Code id="YEARS">
+          <common:Name xml:lang="en">Years</common:Name>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_FREQ" agencyID="SDMX" version="2.0" isFinal="true">
+        <common:Name xml:lang="en">Frequency</common:Name>
+        <common:Description xml:lang="en">This code list provides a set of values indicating the "frequency" of the data (e.g. weekly, monthly, quarterly). The concept “frequency” may refer to various stages in the production process, e.g. data collection or data dissemination. For example, a time series could be disseminated at annual frequency but the underlying data are compiled monthly. The code list is applicable for all different uses of "frequency". This code list was formally adopted on 4 December 2013. More information about and supporting material for this code list and SDMX code lists in general (e.g. list of generic codes for expressing general concepts like "Total", "Unknown", etc.; syntaxes for the creation of further codes; general guidelines for the creation of SDMX code lists) can be found at this address: https://sdmx.org/?page_id=4345.</common:Description>
+        <structure:Code id="A">
+          <common:Name xml:lang="en">Annual</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every year.</common:Description>
+        </structure:Code>
+        <structure:Code id="S">
+          <common:Name xml:lang="en">Half-yearly, semester</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every semester.</common:Description>
+        </structure:Code>
+        <structure:Code id="Q">
+          <common:Name xml:lang="en">Quarterly</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every quarter.</common:Description>
+        </structure:Code>
+        <structure:Code id="M">
+          <common:Name xml:lang="en">Monthly</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every month.</common:Description>
+        </structure:Code>
+        <structure:Code id="W">
+          <common:Name xml:lang="en">Weekly</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every week.</common:Description>
+        </structure:Code>
+        <structure:Code id="D">
+          <common:Name xml:lang="en">Daily</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every day.</common:Description>
+        </structure:Code>
+        <structure:Code id="H">
+          <common:Name xml:lang="en">Hourly</common:Name>
+          <common:Description xml:lang="en">To be used for data collected or disseminated every hour.</common:Description>
+        </structure:Code>
+        <structure:Code id="B">
+          <common:Name xml:lang="en">Daily – businessweek</common:Name>
+          <common:Description xml:lang="en">Similar to "daily", however there are no observations for Saturdays and Sundays (so, neither "missing values" nor "numeric values" should be provided for Saturday and Sunday). This treatment  ("business") is one way to deal with such cases, but it is not the only option. Such a time series could alternatively be considered daily ("D"), thus, with missing values in the weekend.</common:Description>
+        </structure:Code>
+        <structure:Code id="N">
+          <common:Name xml:lang="en">Minutely</common:Name>
+          <common:Description xml:lang="en">While N denotes "minutely", usually, there may be no observations every minute (for several series the frequency is usually "irregular" within a day/days). And though observations may be sparse (not collected or disseminated every minute), missing values do not need to be given for the minutes when no observations exist: in any case the time stamp determines when an observation is observed.</common:Description>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_OBS_STATUS" agencyID="SDMX" version="2.1" isFinal="true">
+        <common:Name xml:lang="en">Observation Status</common:Name>
+        <common:Description xml:lang="en">This code list provides coded information on 1) the quality of a value or 2) unusual or missing values. It was formally adopted on 15 September 2016. More information about this code list and SDMX code lists in general (e.g. list of generic codes for expressing general concepts like "Total", "Unknown", etc.; syntaxes for the creation of further codes; general guidelines for the creation of SDMX code lists) can be found at this address: https://sdmx.org/?page_id=4345.</common:Description>
+        <structure:Code id="A">
+          <common:Name xml:lang="en">Normal value</common:Name>
+          <common:Description xml:lang="en">To be used as default value if no value is provided or when no special coded qualification is assumed. Usually, it can be assumed that the source agency assigns sufficient confidence to the provided observation and/or the value is not expected to be drama</common:Description>
+        </structure:Code>
+        <structure:Code id="B">
+          <common:Name xml:lang="en">Time series break</common:Name>
+          <common:Description xml:lang="en">Observations are characterised as such when different content exists or a different methodology has been applied to this observation as compared with the preceding one (the one given for the previous period).</common:Description>
+        </structure:Code>
+        <structure:Code id="D">
+          <common:Name xml:lang="en">Definition differs</common:Name>
+          <common:Description xml:lang="en">Used to indicate slight deviations from the established methodology (footnote-type information); these divergences do not imply a break in time series.</common:Description>
+        </structure:Code>
+        <structure:Code id="E">
+          <common:Name xml:lang="en">Estimated value</common:Name>
+          <common:Description xml:lang="en">Observation obtained through an estimation methodology (e.g. to produce back-casts) or based on the use of a limited amount of data or ad hoc sampling and through additional calculations (e.g. to produce a value at an early stage of the production stage w</common:Description>
+        </structure:Code>
+        <structure:Code id="F">
+          <common:Name xml:lang="en">Forecast value</common:Name>
+          <common:Description xml:lang="en">Value deemed to assess the magnitude which a quantity will assume at some future point of time (as distinct from "estimated value" which attempts to assess the magnitude of an already existent quantity).</common:Description>
+        </structure:Code>
+        <structure:Code id="G">
+          <common:Name xml:lang="en">Experimental value</common:Name>
+          <common:Description xml:lang="en">Data collected on the basis of definitions or (alternative) collection methods under development. Data not of guaranteed quality as normally expected from provider.</common:Description>
+        </structure:Code>
+        <structure:Code id="I">
+          <common:Name xml:lang="en">Imputed value (CCSA definition)</common:Name>
+          <common:Description xml:lang="en">Observation imputed by international organisations to replace or fill gaps in national data series, in line with the recommendations of the United Nations Committee for the Coordination of Statistical Activities (CCSA).</common:Description>
+        </structure:Code>
+        <structure:Code id="K">
+          <common:Name xml:lang="en">Data included in another category</common:Name>
+          <common:Description xml:lang="en">This code is used when data for a given category are missing and are included in another category, sub-total or total. Generally where code �K� is used there should be a corresponding code "W - Includes data from another category" assigned to the over-cov</common:Description>
+        </structure:Code>
+        <structure:Code id="W">
+          <common:Name xml:lang="en">Includes data from another category</common:Name>
+          <common:Description xml:lang="en">This code is used when data include another category, or go beyond the scope of the data collection and are therefore over-covered. Generally, where code "W" is used there should be a corresponding code "K - Data included in another category" assigned to</common:Description>
+        </structure:Code>
+        <structure:Code id="O">
+          <common:Name xml:lang="en">Missing value</common:Name>
+          <common:Description xml:lang="en">This code is to be used when no breakdown is made between the reasons why data are missing. Data can be missing due to many reasons: data cannot exist, data exist but are not collected (e.g. because they are below a certain threshold or subject to a derog</common:Description>
+        </structure:Code>
+        <structure:Code id="M">
+          <common:Name xml:lang="en">Missing value; data cannot exist</common:Name>
+          <common:Description xml:lang="en">Used to denote empty cells resulting from the impossibility to collect a statistical value (e.g. a particular education level or type of institution may be not applicable to a given country's education system).</common:Description>
+        </structure:Code>
+        <structure:Code id="P">
+          <common:Name xml:lang="en">Provisional value</common:Name>
+          <common:Description xml:lang="en">An observation is characterised as "provisional" when the source agency � while it bases its calculations on its standard production methodology � considers that the data, almost certainly, are expected to be revised.</common:Description>
+        </structure:Code>
+        <structure:Code id="S">
+          <common:Name xml:lang="en">Strike and other special events</common:Name>
+          <common:Description xml:lang="en">Special circumstances (e.g. strike) affecting the observation or causing a missing value.</common:Description>
+        </structure:Code>
+        <structure:Code id="L">
+          <common:Name xml:lang="en">Missing value; data exist but were not collected</common:Name>
+          <common:Description xml:lang="en">Used, for example, when some data are not reported/disseminated because they are below a certain threshold.</common:Description>
+        </structure:Code>
+        <structure:Code id="H">
+          <common:Name xml:lang="en">Missing value; holiday or weekend</common:Name>
+          <common:Description xml:lang="en">Used in some daily data flows.</common:Description>
+        </structure:Code>
+        <structure:Code id="Q">
+          <common:Name xml:lang="en">Missing value; suppressed</common:Name>
+          <common:Description xml:lang="en">Used, for example, when data are suppressed due to statistical confidentiality considerations.</common:Description>
+        </structure:Code>
+        <structure:Code id="J">
+          <common:Name xml:lang="en">Derogation</common:Name>
+          <common:Description xml:lang="en">Clause in an agreement (e.g. legal act, gentlemen�s agreement) stating that some provisions in the agreement are not to be implemented by designated parties; these derogations may affect the observation or cause a missing value. In general, derogations ar</common:Description>
+        </structure:Code>
+        <structure:Code id="N">
+          <common:Name xml:lang="en">Not significant</common:Name>
+          <common:Description xml:lang="en">Used to indicate a value which is not a "real" zero (e.g. a result of 0.0004 rounded to zero).</common:Description>
+        </structure:Code>
+        <structure:Code id="U">
+          <common:Name xml:lang="en">Low reliability</common:Name>
+          <common:Description xml:lang="en">This indicates existing observations, but for which the user should also be aware of the low quality assigned.</common:Description>
+        </structure:Code>
+        <structure:Code id="V">
+          <common:Name xml:lang="en">Unvalidated value</common:Name>
+          <common:Description xml:lang="en">Observation as received from the respondent without further evaluation of data quality.</common:Description>
+        </structure:Code>
+        <structure:Code id="Z">
+          <common:Name xml:lang="en">Not applicable</common:Name>
+          <common:Description xml:lang="en">Not applicable</common:Description>
+        </structure:Code>
+      </structure:Codelist>
+      <structure:Codelist id="CL_UNIT_MULT" agencyID="SDMX" version="1.1" isFinal="true">
+        <common:Name xml:lang="en">Unit Multiplier</common:Name>
+        <common:Description xml:lang="en">This code list provides code values for indicating the magnitude in the units of measurement. More information about this code list and SDMX code lists in general (e.g. list of generic codes for expressing general concepts like "Total", "Unknown", etc.; syntaxes for the creation of further codes; general guidelines for the creation of SDMX code lists) can be found at this address: https://sdmx.org/?page_id=4345.</common:Description>
+        <structure:Code id="0">
+          <common:Name xml:lang="en">Units</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of zero (100)</common:Description>
+        </structure:Code>
+        <structure:Code id="1">
+          <common:Name xml:lang="en">Tens</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of one (101)</common:Description>
+        </structure:Code>
+        <structure:Code id="2">
+          <common:Name xml:lang="en">Hundreds</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of two (10²)</common:Description>
+        </structure:Code>
+        <structure:Code id="3">
+          <common:Name xml:lang="en">Thousands</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of three (10³)</common:Description>
+        </structure:Code>
+        <structure:Code id="4">
+          <common:Name xml:lang="en">Tens of thousands</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of four (104)</common:Description>
+        </structure:Code>
+        <structure:Code id="5">
+          <common:Name xml:lang="en">Hundreds of thousands</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of five(105)</common:Description>
+        </structure:Code>
+        <structure:Code id="6">
+          <common:Name xml:lang="en">Millions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of six (106)</common:Description>
+        </structure:Code>
+        <structure:Code id="7">
+          <common:Name xml:lang="en">Tens of millions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of seven (107)</common:Description>
+        </structure:Code>
+        <structure:Code id="8">
+          <common:Name xml:lang="en">Hundreds of millions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of eight (108)</common:Description>
+        </structure:Code>
+        <structure:Code id="9">
+          <common:Name xml:lang="en">Billions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of nine (109)</common:Description>
+        </structure:Code>
+        <structure:Code id="10">
+          <common:Name xml:lang="en">Tens of billions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of ten (1010)</common:Description>
+        </structure:Code>
+        <structure:Code id="11">
+          <common:Name xml:lang="en">Hundreds of billions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of eleven (1011)</common:Description>
+        </structure:Code>
+        <structure:Code id="12">
+          <common:Name xml:lang="en">Trillions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of twelve (1012)</common:Description>
+        </structure:Code>
+        <structure:Code id="13">
+          <common:Name xml:lang="en">Tens of trillions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of thirteen (1013)</common:Description>
+        </structure:Code>
+        <structure:Code id="14">
+          <common:Name xml:lang="en">Hundreds of trillions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of fourteen (1014)</common:Description>
+        </structure:Code>
+        <structure:Code id="15">
+          <common:Name xml:lang="en">Quadrillions</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of fifteen (1015)</common:Description>
+        </structure:Code>
+        <structure:Code id="-1">
+          <common:Name xml:lang="en">Tenths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus one (10-1)</common:Description>
+        </structure:Code>
+        <structure:Code id="-2">
+          <common:Name xml:lang="en">Hundredths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus two (10-2)</common:Description>
+        </structure:Code>
+        <structure:Code id="-3">
+          <common:Name xml:lang="en">Thousandths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus three (10-3)</common:Description>
+        </structure:Code>
+        <structure:Code id="-4">
+          <common:Name xml:lang="en">Ten-thousandths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus four (10-4)</common:Description>
+        </structure:Code>
+        <structure:Code id="-5">
+          <common:Name xml:lang="en">Hundred-thousandths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus five (10-5)</common:Description>
+        </structure:Code>
+        <structure:Code id="-6">
+          <common:Name xml:lang="en">Millionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus six (10-6)</common:Description>
+        </structure:Code>
+        <structure:Code id="-7">
+          <common:Name xml:lang="en">Ten-millionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus seven (10-7)</common:Description>
+        </structure:Code>
+        <structure:Code id="-8">
+          <common:Name xml:lang="en">Hundred-millionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus eight (10-8)</common:Description>
+        </structure:Code>
+        <structure:Code id="-9">
+          <common:Name xml:lang="en">Billionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus nine (10-9)</common:Description>
+        </structure:Code>
+        <structure:Code id="-10">
+          <common:Name xml:lang="en">Ten-billionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus ten (10-10)</common:Description>
+        </structure:Code>
+        <structure:Code id="-11">
+          <common:Name xml:lang="en">Hundred-billionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus eleven (10-11)</common:Description>
+        </structure:Code>
+        <structure:Code id="-12">
+          <common:Name xml:lang="en">Trillionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus twelve (10-12)</common:Description>
+        </structure:Code>
+        <structure:Code id="-13">
+          <common:Name xml:lang="en">Ten-trillionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus thirteen (10-13)</common:Description>
+        </structure:Code>
+        <structure:Code id="-14">
+          <common:Name xml:lang="en">Hundred-trillionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus fourteen (10-14)</common:Description>
+        </structure:Code>
+        <structure:Code id="-15">
+          <common:Name xml:lang="en">Quadrillionths</common:Name>
+          <common:Description xml:lang="en">In scientific notation, expressed as ten raised to the power of minus fifteen (10-15)</common:Description>
+        </structure:Code>
+      </structure:Codelist>
+    </structure:Codelists>
+    <structure:Concepts>
+      <structure:ConceptScheme id="CS_GOV_TEST" agencyID="OECD" version="1.1" isFinal="false">
+        <common:Name xml:lang="en">GOV Concept Scheme</common:Name>
+        <structure:Concept id="FREQ">
+          <common:Name xml:lang="en">Frequency</common:Name>
+          <common:Description xml:lang="en">Time interval at which observations occur over a given time period</common:Description>
+        </structure:Concept>
+        <structure:Concept id="MEASURE">
+          <common:Name xml:lang="en">Measure</common:Name>
+          <common:Description xml:lang="en">Data element that represents a simple aggregation and which takes one or more vectors as arguments and returns a scalar.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="REF_AREA">
+          <common:Name xml:lang="en">Reference area</common:Name>
+          <common:Description xml:lang="en">Country or geographic area to which the measured statistical phenomenon relates.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="AGE">
+          <common:Name xml:lang="en">Age</common:Name>
+        </structure:Concept>
+        <structure:Concept id="SEX">
+          <common:Name xml:lang="en">Sex</common:Name>
+        </structure:Concept>
+        <structure:Concept id="EDUCATION_LEV">
+          <common:Name xml:lang="en">Education level</common:Name>
+        </structure:Concept>
+        <structure:Concept id="CATEGORY">
+          <common:Name xml:lang="en">Category</common:Name>
+        </structure:Concept>
+        <structure:Concept id="UNIT_MEASURE">
+          <common:Name xml:lang="en">Unit of measure</common:Name>
+          <common:Description xml:lang="en">Unit in which the data values are expressed.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="TIME_PERIOD">
+          <common:Name xml:lang="en">Time period</common:Name>
+          <common:Description xml:lang="en">Time span or point in time to which the observation actually refers</common:Description>
+        </structure:Concept>
+        <structure:Concept id="OBS_VALUE">
+          <common:Name xml:lang="en">Observation value</common:Name>
+          <common:Description xml:lang="en">Observation value</common:Description>
+        </structure:Concept>
+        <structure:Concept id="UNIT_MULT">
+          <common:Name xml:lang="en">Unit multiplier</common:Name>
+          <common:Description xml:lang="en">Exponent in base 10 specified so that multiplying the observation numeric values by 10^UNIT_MULT gives a value expressed in the unit of measure</common:Description>
+        </structure:Concept>
+        <structure:Concept id="OBS_STATUS">
+          <common:Name xml:lang="en">Observation status</common:Name>
+          <common:Description xml:lang="en">Information on the quality of a value or an unusual or missing value</common:Description>
+        </structure:Concept>
+      </structure:ConceptScheme>
+    </structure:Concepts>
+    <structure:DataStructures>
+      <structure:DataStructure id="DSD_GOV_8_9" agencyID="OECD" version="2.0" isFinal="false">
+        <common:Name xml:lang="en">GOV DSD</common:Name>
+        <common:Description xml:lang="en">DSD for GOV chapters 8 and 9</common:Description>
+        <structure:DataStructureComponents>
+          <structure:DimensionList id="DimensionDescriptor">
+            <structure:Dimension id="FREQ" position="1">
+              <structure:ConceptIdentity>
+                <Ref id="FREQ" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_FREQ" version="2.0" agencyID="SDMX" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+                <structure:EnumerationFormat textType="String" />
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="MEASURE" position="2">
+              <structure:ConceptIdentity>
+                <Ref id="MEASURE" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_MEASURE" version="1.1" agencyID="OECD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+                <structure:EnumerationFormat textType="String" />
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="REF_AREA" position="3">
+              <structure:ConceptIdentity>
+                <Ref id="REF_AREA" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_AREA" version="1.0" agencyID="OECD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+                <structure:EnumerationFormat textType="String" />
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="AGE" position="4">
+              <structure:ConceptIdentity>
+                <Ref id="AGE" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_AGE" version="1.0" agencyID="OECD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+                <structure:EnumerationFormat textType="String" />
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="SEX" position="5">
+              <structure:ConceptIdentity>
+                <Ref id="SEX" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_SEX" version="1.0" agencyID="OECD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+                <structure:EnumerationFormat textType="String" />
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="EDUCATION_LEV" position="6">
+              <structure:ConceptIdentity>
+                <Ref id="EDUCATION_LEV" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_EDUCATION_LEV" version="1.0" agencyID="OECD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+                <structure:EnumerationFormat textType="String" />
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="CATEGORY" position="7">
+              <structure:ConceptIdentity>
+                <Ref id="CATEGORY" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_CATEGORY" version="1.0" agencyID="OECD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+                <structure:EnumerationFormat textType="String" />
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:Dimension id="UNIT_MEASURE" position="8">
+              <structure:ConceptIdentity>
+                <Ref id="UNIT_MEASURE" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_UNIT_MEASURE" version="1.0" agencyID="OECD" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+                <structure:EnumerationFormat textType="String" />
+              </structure:LocalRepresentation>
+            </structure:Dimension>
+            <structure:TimeDimension id="TIME_PERIOD" position="9">
+              <structure:ConceptIdentity>
+                <Ref id="TIME_PERIOD" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="DateTime" />
+              </structure:LocalRepresentation>
+            </structure:TimeDimension>
+          </structure:DimensionList>
+          <structure:AttributeList id="AttributeDescriptor">
+            <structure:Attribute id="UNIT_MULT" assignmentStatus="Mandatory">
+              <structure:ConceptIdentity>
+                <Ref id="UNIT_MULT" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_UNIT_MULT" version="1.1" agencyID="SDMX" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+            <structure:Attribute id="OBS_STATUS" assignmentStatus="Conditional">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_STATUS" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:Enumeration>
+                  <Ref id="CL_OBS_STATUS" version="2.1" agencyID="SDMX" package="codelist" class="Codelist" />
+                </structure:Enumeration>
+                <structure:EnumerationFormat textType="String" />
+              </structure:LocalRepresentation>
+              <structure:AttributeRelationship>
+                <structure:PrimaryMeasure>
+                  <Ref id="OBS_VALUE" />
+                </structure:PrimaryMeasure>
+              </structure:AttributeRelationship>
+            </structure:Attribute>
+          </structure:AttributeList>
+          <structure:MeasureList id="MeasureDescriptor">
+            <structure:PrimaryMeasure id="OBS_VALUE">
+              <structure:ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="CS_GOV_TEST" maintainableParentVersion="1.1" agencyID="OECD" package="conceptscheme" class="Concept" />
+              </structure:ConceptIdentity>
+              <structure:LocalRepresentation>
+                <structure:TextFormat textType="Double" />
+              </structure:LocalRepresentation>
+            </structure:PrimaryMeasure>
+          </structure:MeasureList>
+        </structure:DataStructureComponents>
+      </structure:DataStructure>
+    </structure:DataStructures>
+    <structure:Constraints>
+      <structure:ContentConstraint id="CR_DF_GOV_CORE_RESULTS" agencyID="OECD" version="2.0" isFinal="false" type="Allowed">
+        <common:Name xml:lang="en">CR_DF_GOV_CORE_RESULTS</common:Name>
+        <structure:ConstraintAttachment>
+          <structure:Dataflow>
+            <Ref id="DF_GOV_CORE_RESULTS" version="2.0" agencyID="OECD" package="datastructure" class="Dataflow" />
+          </structure:Dataflow>
+        </structure:ConstraintAttachment>
+        <structure:CubeRegion include="true">
+          <common:KeyValue id="REF_AREA">
+            <common:Value>AT</common:Value>
+            <common:Value>AU</common:Value>
+            <common:Value>BE</common:Value>
+            <common:Value>BG</common:Value>
+            <common:Value>BR</common:Value>
+            <common:Value>CA</common:Value>
+            <common:Value>CH</common:Value>
+            <common:Value>CL</common:Value>
+            <common:Value>CN</common:Value>
+            <common:Value>CO</common:Value>
+            <common:Value>CR</common:Value>
+            <common:Value>CY</common:Value>
+            <common:Value>CZ</common:Value>
+            <common:Value>DE</common:Value>
+            <common:Value>DK</common:Value>
+            <common:Value>EE</common:Value>
+            <common:Value>ES</common:Value>
+            <common:Value>FI</common:Value>
+            <common:Value>FR</common:Value>
+            <common:Value>GB</common:Value>
+            <common:Value>GR</common:Value>
+            <common:Value>HR</common:Value>
+            <common:Value>HU</common:Value>
+            <common:Value>ID</common:Value>
+            <common:Value>IE</common:Value>
+            <common:Value>IL</common:Value>
+            <common:Value>IN</common:Value>
+            <common:Value>IS</common:Value>
+            <common:Value>IT</common:Value>
+            <common:Value>JP</common:Value>
+            <common:Value>KR</common:Value>
+            <common:Value>LT</common:Value>
+            <common:Value>LU</common:Value>
+            <common:Value>LV</common:Value>
+            <common:Value>MT</common:Value>
+            <common:Value>MX</common:Value>
+            <common:Value>NL</common:Value>
+            <common:Value>NO</common:Value>
+            <common:Value>NZ</common:Value>
+            <common:Value>OECDAVG</common:Value>
+            <common:Value>OECDEU</common:Value>
+            <common:Value>PL</common:Value>
+            <common:Value>PT</common:Value>
+            <common:Value>RO</common:Value>
+            <common:Value>RU</common:Value>
+            <common:Value>SE</common:Value>
+            <common:Value>SI</common:Value>
+            <common:Value>SK</common:Value>
+            <common:Value>TR</common:Value>
+            <common:Value>US</common:Value>
+            <common:Value>ZA</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="UNIT_MEASURE">
+            <common:Value>DAYS</common:Value>
+            <common:Value>GINI</common:Value>
+            <common:Value>INDEX</common:Value>
+            <common:Value>PCT_HH_INCOME</common:Value>
+            <common:Value>PCT_HH_WEALTH</common:Value>
+            <common:Value>PCT_POP</common:Value>
+            <common:Value>USD</common:Value>
+            <common:Value>YEARS</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="MEASURE">
+            <common:Value>CONFNG</common:Value>
+            <common:Value>FR_CT</common:Value>
+            <common:Value>FR_PIT</common:Value>
+            <common:Value>H_ALSH</common:Value>
+            <common:Value>HI_TOP10</common:Value>
+            <common:Value>HW_TOP10</common:Value>
+            <common:Value>INEQ_G_ATAXTR</common:Value>
+            <common:Value>INEQ_G_BTAXTR</common:Value>
+            <common:Value>LEB_Y</common:Value>
+            <common:Value>PBE</common:Value>
+            <common:Value>PCE</common:Value>
+            <common:Value>PE_SWGD</common:Value>
+            <common:Value>PGC</common:Value>
+            <common:Value>PI_I</common:Value>
+            <common:Value>PI_IA</common:Value>
+            <common:Value>PIEV</common:Value>
+            <common:Value>RL_FR</common:Value>
+            <common:Value>RL_LGP</common:Value>
+            <common:Value>SAD</common:Value>
+            <common:Value>THE_POP</common:Value>
+            <common:Value>TRP</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="SEX">
+            <common:Value>_T</common:Value>
+            <common:Value>F</common:Value>
+            <common:Value>M</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="AGE">
+            <common:Value>_T</common:Value>
+            <common:Value>D0</common:Value>
+            <common:Value>Y_GE50</common:Value>
+            <common:Value>Y15T29</common:Value>
+            <common:Value>Y30T49</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="EDUCATION_LEV">
+            <common:Value>_T</common:Value>
+            <common:Value>ISCED11_5T8</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="CATEGORY">
+            <common:Value>CEP</common:Value>
+            <common:Value>PGR</common:Value>
+            <common:Value>PSE</common:Value>
+            <common:Value>RIW</common:Value>
+            <common:Value>ROL</common:Value>
+            <common:Value>TG</common:Value>
+          </common:KeyValue>
+          <common:KeyValue id="FREQ">
+            <common:Value>A</common:Value>
+          </common:KeyValue>
+        </structure:CubeRegion>
+      </structure:ContentConstraint>
+    </structure:Constraints>
+  </message:Structures>
+</message:Structure>
