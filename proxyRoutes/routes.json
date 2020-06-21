@@ -1,0 +1,12 @@
+[
+    {"host": "localhost", "target": "http://localhost:7001", "tenant": "default"},
+  
+    {"host": "de-camstat", "target": "http://data-explorer", "tenant": "camstat"},
+    {"host": "dlm-camstat", "target": "http://data-lifecycle-manager:7002", "tenant": "camstat"},
+    {"host": "dv-camstat", "target": "http://data-viewer", "tenant": "camstat"},
+
+    {"host": "de-admin", "target": "http://data-explorer", "tenant": "admin"},
+    {"host": "dlm-admin", "target": "http://data-lifecycle-manager:7002", "tenant": "admin"},
+    {"host": "dv-admin", "target": "http://data-viewer", "tenant": "admin"}
+  ]
+  

@@ -31,3 +31,19 @@ http://localhost:93/swagger
 
 // Auth management
 http://localhost:94/swagger
+
+
+// To set up clients for limited access - only one of multiple ways
+transfer-client
+auth-management-client
+camstat_app
+default_app
+admin_app
+camstat_nsi - add role, make bearer only
+default_nsi - add role, make bearer only
+
+create users with client role membership
+
+// Temporary method for limited access
+Add a user attribute mapper to each *_app client to resolve "ExtraClients" to "aud" claim
+Add an ExtraClients attribute to each user with ##-delimited list of the clients they should be allowed to access from DE or DLM (direct access to Transfer or Auth-Management is unaffected)

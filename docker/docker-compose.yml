@@ -63,7 +63,7 @@ services:
 
   data-lifecycle-manager:
     image: siscc/dotstatsuite-data-lifecycle-manager:master
-    container_name: data-lifecycle-manager-test
+    container_name: data-lifecycle-manager
     ports:
       - "${DLM_PORT}:7002"
     environment:
@@ -100,6 +100,18 @@ services:
       - "${VIEWER_PORT}:80"
     environment:
       CONFIG_URL:  http://config
+
+  proxy:
+    image: siscc/dotstatsuite-kube-proxy
+    container_name: proxy
+    ports:
+      - 80:80
+    environment:      
+      - CONFIG_URL=http://config 
+      - PORT=80
+    volumes:
+      - "../proxyRoutes:/opt/data"
+    
 
   sdmx-faceted-search:
     image: siscc/dotstatsuite-sdmx-faceted-search:master
